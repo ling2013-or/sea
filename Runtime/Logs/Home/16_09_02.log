@@ -1,0 +1,3428 @@
+[ 2016-09-02T12:37:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0515s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.436907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.436964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2016-09-02T12:38:00+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0785s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0433s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-09-02T12:38:02+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0361s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0379s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0379s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-09-02T12:38:03+08:00 ] 127.0.0.1 /index.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\19116f74b82e07401d85698c9e2b887f.php 第 126 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\19116f74b82e07401d85698c9e2b887f.php 第 260 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2016-09-02T12:38:12+08:00 ] 127.0.0.1 /index.php?username=18555555555&password=1111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0517s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-09-02T12:39:38+08:00 ] 127.0.0.1 /index.php?username=18555555555&password=1111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0479s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-09-02T12:39:47+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0403s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0401s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0539s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-09-02T12:39:55+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-09-02T12:40:00+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0669s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0556s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0537s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2016-09-02T12:40:04+08:00 ] 127.0.0.1 /index.php?s=/Goods/detail/gid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0408s ]
+SQL: SELECT * FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.1153s ]
+SQL: UPDATE `sea_goods` SET `browse`=browse+1 WHERE `id` = 1 AND `status` = 1 [ RunTime:0.0747s ]
+SQL: SHOW COLUMNS FROM `sea_goods_comment` [ RunTime:0.0378s ]
+SQL: SELECT comm.*,u.user_name,t2.order_sn FROM sea_goods_comment comm LEFT JOIN sea_user u ON u.uid = comm.user_id LEFT JOIN sea_order t2 ON t2.order_id = comm.order_id  WHERE comm.goods_id = '1'  [ RunTime:0.0985s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 1 AND `star` > 2 LIMIT 1   [ RunTime:0.0391s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 1 AND `star` < 3 LIMIT 1   [ RunTime:0.0364s ]
+SQL: SHOW COLUMNS FROM `sea_plan_sell` [ RunTime:0.0404s ]
+SQL: SELECT * FROM `sea_plan_sell` WHERE `goods_id` = 1 AND `status` = 0  [ RunTime:0.0392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 240 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 438 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-09-02T12:40:46+08:00 ] 127.0.0.1 /index.php?s=/Public/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\89a4d8db3b9a0191f86b7ef88aca3995.php 第 100 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\89a4d8db3b9a0191f86b7ef88aca3995.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-09-02T12:40:46+08:00 ] 127.0.0.1 /index.php?s=/Public/vcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-09-02T12:46:34+08:00 ] 127.0.0.1 /index.php?s=/Public/vcode.html&random=0.9077676399680923
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-09-02T12:46:45+08:00 ] 127.0.0.1 /index.php?username=jianjian&mobile=18555555555&code=9960&password=111111&surePassword=111111&rule=on
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2016-09-02T12:46:56+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-09-02T12:46:58+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0442s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0502s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0452s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2016-09-02T12:46:59+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0592s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0446s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.1378s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0458s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2016-09-02T12:47:00+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0375s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-09-02T12:47:41+08:00 ] 127.0.0.1 /index.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\19116f74b82e07401d85698c9e2b887f.php 第 126 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\19116f74b82e07401d85698c9e2b887f.php 第 260 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-09-02T12:47:54+08:00 ] 127.0.0.1 /index.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0473s ]
+SQL: SELECT `uid`,`user_name`,`user_email`,`user_phone`,`user_pass`,`user_encrypt`,`user_avatar`,`real_name` FROM `sea_user` WHERE `user_phone` = '18555555555' LIMIT 1   [ RunTime:0.0451s ]
+NOTIC: [8] Undefined index: login_from E:\wamp\sea\Application\Home\Controller\PublicController.class.php 第 52 行.
+NOTIC: [8] Undefined index: ip E:\wamp\sea\Application\Home\Controller\PublicController.class.php 第 55 行.
+
+[ 2016-09-02T12:47:59+08:00 ] 127.0.0.1 /index.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0520s ]
+SQL: SELECT `uid`,`user_name`,`user_email`,`user_phone`,`user_pass`,`user_encrypt`,`user_avatar`,`real_name` FROM `sea_user` WHERE `user_phone` = '18555555555' LIMIT 1   [ RunTime:0.0498s ]
+NOTIC: [8] Undefined index: login_from E:\wamp\sea\Application\Home\Controller\PublicController.class.php 第 52 行.
+NOTIC: [8] Undefined index: ip E:\wamp\sea\Application\Home\Controller\PublicController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0494s ]
+SQL: UPDATE `sea_user` SET `last_login_time`='1472791678' WHERE `uid` = 40 [ RunTime:0.0475s ]
+
+[ 2016-09-02T12:47:59+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0522s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-09-02T12:48:04+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0438s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0423s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0473s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0428s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2016-09-02T12:48:06+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0488s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0475s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0482s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0481s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2016-09-02T12:48:10+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0521s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0512s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0534s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0518s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-09-02T12:48:11+08:00 ] 127.0.0.1 /index.php?s=/User/userCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0379s ]
+SQL: SELECT * FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0369s ]
+SQL: SHOW COLUMNS FROM `sea_user_address` [ RunTime:0.0368s ]
+SQL: SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`is_default` FROM `sea_user_address` WHERE `uid` = 40 ORDER BY is_default DESC  [ RunTime:0.0366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2016-09-02T12:48:33+08:00 ] 127.0.0.1 /index.php?s=/Public/updatePwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0379s ]
+SQL: SELECT `user_name`,`user_email`,`user_phone`,`user_pass`,`user_encrypt`,`user_avatar` FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0406s ]
+NOTIC: [8] Undefined index: uid E:\wamp\sea\Application\Home\Controller\PublicController.class.php 第 260 行.
+NOTIC: [8] Undefined index: ip E:\wamp\sea\Application\Home\Controller\PublicController.class.php 第 264 行.
+SQL: UPDATE `sea_user` SET `user_pass`='7247276f569172e954e3d55cad14086a',`user_encrypt`='syUH54' WHERE `uid` = 40 [ RunTime:0.0364s ]
+
+[ 2016-09-02T12:48:34+08:00 ] 127.0.0.1 /index.php?s=/User/userCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0523s ]
+SQL: SELECT * FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0514s ]
+SQL: SHOW COLUMNS FROM `sea_user_address` [ RunTime:0.0525s ]
+SQL: SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`is_default` FROM `sea_user_address` WHERE `uid` = 40 ORDER BY is_default DESC  [ RunTime:0.0512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2016-09-02T12:48:52+08:00 ] 127.0.0.1 /index.php?s=/Public/updatePwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0375s ]
+SQL: SELECT `user_name`,`user_email`,`user_phone`,`user_pass`,`user_encrypt`,`user_avatar` FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0378s ]
+NOTIC: [8] Undefined index: uid E:\wamp\sea\Application\Home\Controller\PublicController.class.php 第 260 行.
+NOTIC: [8] Undefined index: ip E:\wamp\sea\Application\Home\Controller\PublicController.class.php 第 264 行.
+
+[ 2016-09-02T14:18:45+08:00 ] 127.0.0.1 /index.php?s=/User/userCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0496s ]
+SQL: SELECT * FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0477s ]
+SQL: SHOW COLUMNS FROM `sea_user_address` [ RunTime:0.0480s ]
+SQL: SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`is_default` FROM `sea_user_address` WHERE `uid` = 40 ORDER BY is_default DESC  [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-09-02T14:19:23+08:00 ] 127.0.0.1 /index.php?s=/User/userCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0449s ]
+SQL: SELECT * FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0435s ]
+SQL: SHOW COLUMNS FROM `sea_user_address` [ RunTime:0.0438s ]
+SQL: SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`is_default` FROM `sea_user_address` WHERE `uid` = 40 ORDER BY is_default DESC  [ RunTime:0.0418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-09-02T14:20:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0456s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-09-02T14:20:10+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0465s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0546s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0645s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0459s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2016-09-02T14:20:12+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0436s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0393s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2016-09-02T14:20:15+08:00 ] 127.0.0.1 /index.php?s=/Goods/detail/gid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0465s ]
+SQL: UPDATE `sea_goods` SET `browse`=browse+1 WHERE `id` = 1 AND `status` = 1 [ RunTime:0.0444s ]
+SQL: SHOW COLUMNS FROM `sea_goods_comment` [ RunTime:0.0458s ]
+SQL: SELECT comm.*,u.user_name,t2.order_sn FROM sea_goods_comment comm LEFT JOIN sea_user u ON u.uid = comm.user_id LEFT JOIN sea_order t2 ON t2.order_id = comm.order_id  WHERE comm.goods_id = '1'  [ RunTime:0.0469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 1 AND `star` > 2 LIMIT 1   [ RunTime:0.0469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 1 AND `star` < 3 LIMIT 1   [ RunTime:0.0461s ]
+SQL: SHOW COLUMNS FROM `sea_plan_sell` [ RunTime:0.0458s ]
+SQL: SELECT * FROM `sea_plan_sell` WHERE `goods_id` = 1 AND `status` = 0  [ RunTime:0.0462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 438 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2016-09-02T14:22:58+08:00 ] 127.0.0.1 /index.php?s=/Shop/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0488s ]
+SQL: SELECT `id`,`name`,`price`,`picture` FROM `sea_goods` WHERE `id` = 1 AND `goods_type` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0475s ]
+
+[ 2016-09-02T14:58:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2016-09-02T14:58:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0519s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2016-09-02T14:59:29+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0454s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-09-02T15:08:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0401s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-09-02T15:08:49+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0497s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2016-09-02T15:09:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0459s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2016-09-02T15:09:34+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0519s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2016-09-02T15:10:01+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0522s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0509s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0975s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0604s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2016-09-02T15:10:03+08:00 ] 127.0.0.1 /index.php?s=/User/userCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0459s ]
+SQL: SELECT * FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0456s ]
+SQL: SHOW COLUMNS FROM `sea_user_address` [ RunTime:0.0528s ]
+SQL: SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`is_default` FROM `sea_user_address` WHERE `uid` = 40 ORDER BY is_default DESC  [ RunTime:0.0504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-09-02T15:10:49+08:00 ] 127.0.0.1 /index.php?s=/User/userCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0487s ]
+SQL: SELECT * FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0458s ]
+SQL: SHOW COLUMNS FROM `sea_user_address` [ RunTime:0.0465s ]
+SQL: SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`is_default` FROM `sea_user_address` WHERE `uid` = 40 ORDER BY is_default DESC  [ RunTime:0.0448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2016-09-02T15:13:31+08:00 ] 127.0.0.1 /index.php?s=/User/userCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0434s ]
+SQL: SELECT * FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0392s ]
+SQL: SHOW COLUMNS FROM `sea_user_address` [ RunTime:0.0374s ]
+SQL: SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`is_default` FROM `sea_user_address` WHERE `uid` = 40 ORDER BY is_default DESC  [ RunTime:0.0379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-09-02T15:13:33+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-09-02T15:13:35+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0476s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0439s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0485s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0492s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-09-02T15:13:37+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0486s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-09-02T15:13:39+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0468s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0457s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0443s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2016-09-02T15:15:41+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2016-09-02T15:15:42+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-09-02T15:16:05+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0435s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0377s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0387s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0378s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-09-02T15:16:09+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0512s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0369s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0377s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0764s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0527s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-09-02T15:16:10+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-09-02T15:19:13+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0468s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2016-09-02T15:19:27+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2016-09-02T15:19:56+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0474s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0468s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0459s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0465s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-09-02T15:19:58+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0466s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0443s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0701s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0472s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0446s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-09-02T15:20:00+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0373s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-09-02T15:21:37+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2016-09-02T15:21:38+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-09-02T15:21:39+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.323886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.323931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2016-09-02T15:21:41+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2016-09-02T15:21:44+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-09-02T15:21:45+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-09-02T15:21:46+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-09-02T15:21:47+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-09-02T15:21:49+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2016-09-02T15:22:29+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-09-02T15:28:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0451s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0660s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2016-09-02T15:29:04+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0547s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0591s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0523s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-09-02T15:29:06+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0519s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0501s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0523s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0553s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-09-02T15:29:08+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0489s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0475s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0482s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-09-02T15:32:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0518s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2016-09-02T15:33:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0516s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0575s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2016-09-02T15:34:10+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0396s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0388s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0383s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2016-09-02T15:34:12+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0492s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0449s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0515s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0472s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2016-09-02T15:34:34+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0398s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0387s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-09-02T15:35:26+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0405s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2016-09-02T15:35:28+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0381s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0360s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0816s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2016-09-02T15:35:29+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0476s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0454s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0423s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2016-09-02T15:35:31+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 78 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 125 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-09-02T15:35:33+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0407s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0387s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0383s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-09-02T15:35:34+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0432s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0455s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0433s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2016-09-02T15:35:36+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0479s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0443s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0449s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-09-02T15:35:56+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0484s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0459s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0455s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-09-02T15:36:13+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0423s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0437s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0441s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0433s ]
+
+[ 2016-09-02T15:36:55+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0486s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0441s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0475s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0457s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0523s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 193 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-09-02T15:37:20+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0375s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0368s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0408s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0367s ]
+NOTIC: [8] Undefined variable: data E:\wamp\sea\Application\Home\Controller\GoodsController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-09-02T15:37:27+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0498s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0531s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0575s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0464s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-09-02T15:37:31+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0485s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0476s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0512s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0454s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-09-02T15:37:33+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0395s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0367s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0371s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2016-09-02T15:37:36+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0383s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0435s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0406s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0394s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2016-09-02T15:37:38+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0475s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0465s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0455s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2016-09-02T15:37:47+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0464s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0451s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0503s ]
+
+[ 2016-09-02T15:38:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0447s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-09-02T15:38:28+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0439s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0425s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-09-02T15:38:31+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-09-02T15:38:32+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0384s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0352s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0375s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0366s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2016-09-02T15:38:33+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0523s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0504s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0531s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0566s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-09-02T15:38:36+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 125 行.
+NOTIC: [8] Undefined variable: imgs E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-09-02T15:39:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0514s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001497s ]
+
+[ 2016-09-02T15:40:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0499s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-09-02T15:40:33+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0501s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/map' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2016-09-02T15:41:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0445s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2016-09-02T15:41:22+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0424s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/connect' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2016-09-02T15:41:58+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0534s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0515s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0558s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0536s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2016-09-02T15:42:00+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0373s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/privacy' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-09-02T15:42:02+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0413s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/map' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0383s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\260e4cf4db0ecc455398f1922201813f.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-09-02T15:42:05+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/connect' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\b32945f267ec2a0a229c9c614ba84817.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2016-09-02T15:42:06+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0397s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/map' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\260e4cf4db0ecc455398f1922201813f.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-09-02T15:42:07+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0459s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/privacy' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-09-02T15:42:09+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0579s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/map' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\260e4cf4db0ecc455398f1922201813f.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-09-02T15:44:20+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0702s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0477s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0489s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0485s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-09-02T15:44:22+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0484s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0449s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0492s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-09-02T15:44:24+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0524s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0462s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0427s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2016-09-02T15:44:25+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0436s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0428s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2016-09-02T15:45:31+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0378s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0383s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0376s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0372s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-09-02T15:45:33+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0509s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0464s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0474s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0494s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-09-02T15:45:34+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0461s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/privacy' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2016-09-02T15:45:47+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0482s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0476s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0521s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0491s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-09-02T15:45:48+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-09-02T15:45:49+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0481s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0566s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0465s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0445s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-09-02T15:55:31+08:00 ] 127.0.0.1 /index.php?s=/Other/privacy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\5117e8bb6f00a2730bbff1ed47e89e7b.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001348s ]
+
+[ 2016-09-02T15:55:32+08:00 ] 127.0.0.1 /index.php?s=/Other/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\260e4cf4db0ecc455398f1922201813f.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-09-02T15:55:33+08:00 ] 127.0.0.1 /index.php?s=/Other/connect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\b32945f267ec2a0a229c9c614ba84817.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2016-09-02T15:55:35+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0514s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0504s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0504s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0518s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-09-02T15:55:35+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2016-09-02T15:55:37+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0410s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-09-02T15:55:38+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0416s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0458s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0379s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0388s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2016-09-02T15:56:14+08:00 ] 127.0.0.1 /index.php?s=/Goods/index/goods_type/package.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0459s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 LIMIT 1   [ RunTime:0.0445s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 1 ORDER BY goods_star DESC  [ RunTime:0.0467s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0453s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-09-02T15:56:17+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0465s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0477s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0456s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2016-09-02T15:56:19+08:00 ] 127.0.0.1 /index.php?s=/Goods/detail/gid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0414s ]
+SQL: SELECT * FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0402s ]
+SQL: UPDATE `sea_goods` SET `browse`=browse+1 WHERE `id` = 1 AND `status` = 1 [ RunTime:0.0388s ]
+SQL: SHOW COLUMNS FROM `sea_goods_comment` [ RunTime:0.0424s ]
+SQL: SELECT comm.*,u.user_name,t2.order_sn FROM sea_goods_comment comm LEFT JOIN sea_user u ON u.uid = comm.user_id LEFT JOIN sea_order t2 ON t2.order_id = comm.order_id  WHERE comm.goods_id = '1'  [ RunTime:0.0405s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 1 AND `star` > 2 LIMIT 1   [ RunTime:0.0386s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 1 AND `star` < 3 LIMIT 1   [ RunTime:0.0385s ]
+SQL: SHOW COLUMNS FROM `sea_plan_sell` [ RunTime:0.0398s ]
+SQL: SELECT * FROM `sea_plan_sell` WHERE `goods_id` = 1 AND `status` = 0  [ RunTime:0.0391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: farm_admin E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 240 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 438 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-09-02T15:56:22+08:00 ] 127.0.0.1 /index.php?s=/Shop/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0433s ]
+SQL: SELECT * FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 AND `stock` > 0 LIMIT 1   [ RunTime:0.0442s ]
+
+[ 2016-09-02T15:56:22+08:00 ] 127.0.0.1 /index.php?s=/order/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-09-02T15:56:22+08:00 ] 127.0.0.1 /index.php?s=/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\99c1c0a5d7245e8fdf3bfb9fa728a2dc.php 第 42 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\99c1c0a5d7245e8fdf3bfb9fa728a2dc.php 第 145 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2016-09-02T15:57:44+08:00 ] 127.0.0.1 /index.php?s=/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\99c1c0a5d7245e8fdf3bfb9fa728a2dc.php 第 42 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\99c1c0a5d7245e8fdf3bfb9fa728a2dc.php 第 145 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-09-02T16:00:35+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-09-02T16:00:39+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0376s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0356s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0393s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0363s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2016-09-02T16:00:41+08:00 ] 127.0.0.1 /index.php?s=/Goods/detail/gid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0451s ]
+SQL: SELECT * FROM `sea_goods` WHERE `id` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0390s ]
+SQL: UPDATE `sea_goods` SET `browse`=browse+1 WHERE `id` = 2 AND `status` = 1 [ RunTime:0.0383s ]
+SQL: SHOW COLUMNS FROM `sea_goods_comment` [ RunTime:0.0386s ]
+SQL: SELECT comm.*,u.user_name,t2.order_sn FROM sea_goods_comment comm LEFT JOIN sea_user u ON u.uid = comm.user_id LEFT JOIN sea_order t2 ON t2.order_id = comm.order_id  WHERE comm.goods_id = '2'  [ RunTime:0.0430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 2 AND `star` > 2 LIMIT 1   [ RunTime:0.0381s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 2 AND `star` < 3 LIMIT 1   [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `sea_plan_sell` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `sea_plan_sell` WHERE `goods_id` = 2 AND `status` = 0  [ RunTime:0.0378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 240 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 438 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-09-02T16:00:44+08:00 ] 127.0.0.1 /index.php?s=/Shop/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0438s ]
+SQL: SELECT * FROM `sea_goods` WHERE `id` = 2 AND `status` = 1 AND `stock` > 0 LIMIT 1   [ RunTime:0.0566s ]
+
+[ 2016-09-02T16:00:44+08:00 ] 127.0.0.1 /index.php?s=/order/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-09-02T16:00:44+08:00 ] 127.0.0.1 /index.php?s=/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\99c1c0a5d7245e8fdf3bfb9fa728a2dc.php 第 42 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\99c1c0a5d7245e8fdf3bfb9fa728a2dc.php 第 145 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-09-02T16:00:50+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0374s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\9b1c26b1cee56f532f15c56b96a07c74.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-09-02T16:01:01+08:00 ] 127.0.0.1 /index.php?s=/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0494s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 LIMIT 1   [ RunTime:0.0514s ]
+SQL: SELECT * FROM `sea_goods` WHERE `status` = 1 AND `goods_type` = 0 ORDER BY goods_star DESC  [ RunTime:0.0497s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `status` = 1 AND `type` = 0 LIMIT 1   [ RunTime:0.0479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\7b3635392bd764ae088d371efaef15dc.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-09-02T16:01:04+08:00 ] 127.0.0.1 /index.php?s=/Goods/detail/gid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `sea_goods` [ RunTime:0.0431s ]
+SQL: SELECT * FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0436s ]
+SQL: UPDATE `sea_goods` SET `browse`=browse+1 WHERE `id` = 1 AND `status` = 1 [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `sea_goods_comment` [ RunTime:0.0432s ]
+SQL: SELECT comm.*,u.user_name,t2.order_sn FROM sea_goods_comment comm LEFT JOIN sea_user u ON u.uid = comm.user_id LEFT JOIN sea_order t2 ON t2.order_id = comm.order_id  WHERE comm.goods_id = '1'  [ RunTime:0.0441s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 1 AND `star` > 2 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sea_goods_comment` WHERE `goods_id` = 1 AND `star` < 3 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `sea_plan_sell` [ RunTime:0.0429s ]
+SQL: SELECT * FROM `sea_plan_sell` WHERE `goods_id` = 1 AND `status` = 0  [ RunTime:0.0432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: id E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 240 行.
+NOTIC: [8] Undefined variable: meta_title E:\wamp\sea\Runtime\Cache\Home\3c7db19ca91dbecceb4bde98a2fa48b6.php 第 438 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-09-02T16:03:45+08:00 ] 127.0.0.1 /index.php?s=/User/userCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `sea_user` [ RunTime:0.0452s ]
+SQL: SELECT * FROM `sea_user` WHERE `uid` = 40 LIMIT 1   [ RunTime:0.0448s ]
+SQL: SHOW COLUMNS FROM `sea_user_address` [ RunTime:0.0454s ]
+SQL: SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`is_default` FROM `sea_user_address` WHERE `uid` = 40 ORDER BY is_default DESC  [ RunTime:0.0443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+

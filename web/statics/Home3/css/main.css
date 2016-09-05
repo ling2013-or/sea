@@ -1,0 +1,470 @@
+
+
+/*--------------------------------------------------------------------------
+	General Style
+--------------------------------------------------------------------------*/
+button,button:active,button:focus{outline: none}
+.section {
+  padding: 30px 0;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+button{
+  outline: none;
+}
+ul li{list-style: none}
+.section-white {
+  background: #FFF;
+}
+.section .container:first-child h1,
+.section .container:first-child h2,
+.section .container:first-child h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+.input-micro {
+  width: 50px;
+  margin-bottom: 0 !important;
+}
+ul.no-list-style {
+  list-style-type: none;
+  margin-left: 0;
+}
+ul.no-list-style li {
+  line-height: 28px;
+}
+div[class*="span"] {
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  -ms-transition: all .4s linear;
+  transition: all .4s linear;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus{
+  outline: none;
+}
+/*--------------------------------------------------------------------------
+	Typography Style
+--------------------------------------------------------------------------*/
+body {
+  font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #535b60;
+}
+h1 {
+  color: #53555c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+h2 {
+  color: #53555c;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  border-bottom: 2px solid #53555c;
+  line-height: 1.5em;
+  margin: 30px 0;
+  padding-left: 10px;
+}
+h3 {
+  font-size: 1.2em;
+  margin:0
+}
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: #53555c;
+  margin-bottom: 10px;
+}
+a {
+  color: #4f8db3;
+}
+a:hover {
+  color: #2f556d;
+}
+.center{
+  text-align:center
+}
+/*.btn {*/
+  /*-webkit-background-clip: padding-box;*/
+  /*-moz-background-clip: padding;*/
+  /*background-clip: padding-box;*/
+  /*cursor: pointer;*/
+  /*display: inline-block;*/
+  /*text-transform: none;*/
+  /*-webkit-transition: all .25s ease;*/
+  /*-moz-transition: all .25s ease;*/
+  /*-o-transition: all .25s ease;*/
+  /*-ms-transition: all .25s ease;*/
+  /*transition: all .25s ease;*/
+  /*text-align: center;*/
+  /*background: none repeat scroll 0 0 white;*/
+  /*text-shadow: none;*/
+  /*box-shadow: none;*/
+  /*white-space: nowrap;*/
+/*}*/
+
+
+/*--------------------------------------------------------------------------
+	Footer Style
+--------------------------------------------------------------------------*/
+.footer{
+  margin:30px 0 50px 0
+}
+.col-footer{
+  width: 18%;
+  display: inline-block;
+  vertical-align: top;
+}
+.col-footer:nth-child(3),.col-footer:nth-child(4){
+  margin:0 2%;
+}
+.col-footer h3{
+  text-align:center
+}
+.footer ul {
+  padding: 0;
+}
+.footer-navigate-section li {
+  line-height: 20px !important;
+  text-align: center;
+}
+.footer-stay-connected a {
+  text-indent: -9999px;
+  display: block;
+  width: 115px;
+  height: 40px;
+  background: url(../img/stay-connected.png);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;
+  -ms-transition: opacity .25s linear;
+  transition: opacity .25s linear;
+}
+.footer-stay-connected a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.footer-stay-connected a.facebook {
+  background-position: -115px 0;
+}
+.footer-stay-connected a.twitter {
+  background-position: -230px 0;
+}
+.footer-stay-connected a.googleplus {
+  background-position: 0 0;
+}
+.footer-stay-connected li {
+  text-align: center;
+}
+.footer-copyright {
+  text-align: center;
+  color: #7C7C7C;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 0.9em;
+}
+/*--------------------------------------------------------------------------
++	Custom Style for Maps
+--------------------------------------------------------------------------*/
+.leaflet-popup-content-wrapper {
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+/*--------------------------------------------------------------------------
++	Custom Style for Tabs (overrides Bootstrap)
+--------------------------------------------------------------------------*/
+.nav-tabs > li > a {
+  font-size: 1.1em;
+  padding: 10px 15px;
+  color: #535b60;
+}
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  font-weight: 600;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-top: 3px solid #4f8db3;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+/*--------------------------------------------------------------------------
++	Main Menu Style
+--------------------------------------------------------------------------*/
+.mainmenu li.logo-wrapper a {
+  border-right: 1px solid #E8E8E8;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mainmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.mainmenu > ul,
+.mainmenu .mainmenu-submenu-inner {
+  margin: 0 auto;
+}
+.mainmenu > ul > li,
+.mainmenu .mainmenu-submenu-inner > li {
+  display: inline-block;
+  *display: inline;
+}
+.mainmenu > ul > li:hover,
+.mainmenu .mainmenu-submenu-inner > li:hover{
+  background: -moz-linear-gradient(top, rgba(253,253,253,0.1) 0%, rgba(224,224,224,0.56) 51%, rgba(211,211,211,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(253,253,253,0.1) 0%,rgba(224,224,224,0.56) 51%,rgba(211,211,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(253,253,253,0.1) 0%,rgba(224,224,224,0.56) 51%,rgba(211,211,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1afdfdfd', endColorstr='#d3d3d3',GradientType=0 ); /* IE6-9 */
+}
+.mainmenu > ul > li > a,
+.mainmenu .mainmenu-submenu-inner > li > a {
+  padding: 0 2.5em;
+  color: #666;
+  display: inline-block;
+  text-decoration: none;
+}
+.mainmenu > ul > li > a:hover,
+.mainmenu .mainmenu-submenu-inner > li > a:hover {
+  color: #4f8db3;
+  text-decoration: none;
+}
+.mainmenu > ul > li.active > a,
+.mainmenu .mainmenu-submenu-inner > li.active > a {
+  color: #4f8db3;
+  font-weight: 600 !important;
+}
+.mainmenu > ul > li.mainmenu-open a,
+.mainmenu .mainmenu-submenu-inner > li.mainmenu-open a,
+.mainmenu > ul li.mainmenu-open > a:hover,
+@media screen and (max-width: 479px) {
+  .mainmenu {
+    font-size: 120%;
+    border: none;
+  }
+  .mainmenu > ul,
+  .mainmenu .mainmenu-submenu-inner {
+    width: 100%;
+    padding: 0;
+  }
+  .mainmenu .mainmenu-submenu-inner {
+    padding: 0 1.5em;
+    font-size: 75%;
+  }
+  .mainmenu > ul > li {
+    display: block;
+    border-bottom: 4px solid #4f8db3;
+  }
+  .mainmenu > ul > li > a {
+    display: block;
+    padding: 1em 3em;
+  }
+  .mainmenu > ul > li:last-child {
+    border: none;
+  }
+  .mainmenu .mainmenu-submenu {
+    position: relative;
+  }
+  .mainmenu-submenu h4 {
+    padding-top: 0.6em;
+  }
+  .mainmenu .mainmenu-submenu-inner > div {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
+/*--------------------------------------------------------------------------
++	Extras Menu (Cart, Language, Login) Style
+--------------------------------------------------------------------------*/
+.menuextras {
+  font-size: 0.85em;
+  height: 2.5em;
+  line-height: 2.5em;
+  background-color:#e7e6e6;
+}
+.menuextras ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+  padding: 3px 0;
+}
+.menuextras li {
+  float: left;
+  padding: 0 8px;
+}
+.menuextras .extras li {
+  padding: 0 8px;
+}
+.menuextras .extras li a {
+  color: #333;
+}
+.menuextras .extras li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.menuextras .extras .shopping-cart-items i {
+  color: #333;
+}
+.panelList .col-sm-12 {
+  padding: 15px 0;
+  margin: 0 30px;
+  width: auto;
+  border-bottom: 1px solid #ccc;
+}
+.panelList .service-wrapper-row:last-child .col-sm-12{border:none}
+.panelList .col-sm-4,#panelList .col-sm-2{padding:0}
+#otherList .service-wrapper-row:last-child .col-sm-12{border-bottom:1px solid #ccc}
+#otherList .service-wrapper-row:first-child .col-sm-12{
+    border-top:1px solid #ccc
+}
+.service-wrapper {
+  background: #FFF;
+  margin: 20px 10px;
+  text-align: center;
+  padding: 30px 20px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 3px #999;
+  -moz-box-shadow: 0 0 3px #999;
+  box-shadow: 0 0 3px #999;
+  color: 0 0 3px #999;
+}
+.service-wrapper h3 {
+  font-size: 1.2em;
+  margin: 10px 0 !important;
+}
+.service-wrapper p {
+  margin-top: 0;
+}
+/* Row */
+.service-wrapper-row {
+  min-height: 322px;
+}
+.service-wrapper-row h3 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+}
+.service-wrapper-row .service-image {
+  text-align: center;
+  position:relative;
+}
+.service-wrapper-row .service-image img {
+  width:100%;
+  vertical-align: bottom;
+  border: 2px solid #d29d3e;
+}
+.service-wrapper-row .detail{
+  min-height: 322px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.service-wrapper-row .detail .price{
+  line-height: 30px;
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+.service-wrapper-row .detail .price .orginPrice{
+  padding-right:20px;
+  color:#838383
+}
+.service-wrapper-row .detail .price .curPrice{
+  color: #000;
+  font-weight: bold;
+}
+.service-wrapper-row .detail .price .curPrice span{
+  color:red;
+  font-weight:bold;
+  font-size:1.4em
+}
+.service-wrapper-row .btnActWrp{
+  min-height: 322px;
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+.service-wrapper-row .btnActWrp .btn{
+  width:100%;
+  height: 50px;
+  line-height: 50px;
+  padding-top:0;
+  padding-bottom: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+
+}
+.service-wrapper-row .btnActWrp .btn:focus{outline: none}
+.service-wrapper-row .detail .desc{
+  font-size: .8em;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.imgLabel{
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  width: 30px;
+  font-size: 1.5em;
+  background-color: #ffd301;
+  line-height: 36px;
+  color: #333;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+  color:white;
+  background-color:#55acef;
+  border-color:#55acef
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus{
+  color:#55acef;
+  border:1px solid #55acef;
+  background:none;
+}
+.pagination>li>a, .pagination>li>span{color:#333;margin: 0 5px}
+#page{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#page p{
+  line-height: 87px;
+  font-size: 18px;
+  margin-right: 20px;
+}
+#page input,#page button{
+  line-height: 1.42857143;
+  padding: 9px 18px;
+  font-size: 18px;
+}
+#page input{
+  width: 156px;
+}
+#page button{
+  border-radius: 0;
+  vertical-align: inherit;
+}

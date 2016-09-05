@@ -1,0 +1,161 @@
+<extend name="Public/common" />
+<block name="style">
+    <style>
+        thead{background:#F3F3F3;}
+        tfoot{background:#F8F8F8;}
+    </style>
+</block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>订单</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">交易订单</a>
+            </li>
+            <li class="active">订单列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+
+                                下单时间：
+                                <input type="text" name="start_time" value="{:I('start_time')}" class="laydate-icon form-control search-input" id="start" placeholder="开始时间"/>
+                                <input type="text" name="end_time" value="{:I('end_time')}" class="form-control search-input laydate-icon" id="end" placeholder="结束时间"/>
+
+                                <select name="kw" class="form-control">
+                                    <option value="1" <if condition="I('kw') eq 1">selected="true"</if>>支付单号</option>
+                                    <option value="2" <if condition="I('kw') eq 2">selected="true"</if>>用户名</option>
+                                </select>
+                                <input type="text" name="vw" class="form-control search-input" value="{:I('vw')}">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                                <a href="{:U()}" class="btn btn-primary" id="search">重置</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+
+                            <notempty name="lists">
+                                <volist name="lists" id="row">
+
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td colspan="7">
+                                                    <if condition="$row['is_platform'] eq 0">
+                                                        <if condition="$row['is_platform'] eq 0">
+                                                            真实用户
+                                                            <else/>
+                                                            平台用户
+                                                        </if>
+                                                    </if>
+                                                    &nbsp;
+                                                    支付单号：{$row.payment_sn}&nbsp;
+                                                    用户：{$row.user_name}&nbsp;
+                                                    下单时间：{$row.add_time|date="Y-m-d H:i:s", ###}
+                                                    <b class="text-warning pull-right">共计：{$row.pay_total}</b>
+                                                </td>
+                                            </tr>   
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td width="120">订单号</td>
+                                            <td>方案名称</td>
+                                            <td>存储方式/费用(元)</td>
+                                            <td>购买面积(平米)</td>
+                                            <td>方案单价(元/平米)</td>
+                                            <td>收益状态</td>
+                                            <td class="text-right">支付总额(元)</td>
+                                        </tr>
+                                        <notempty name="row.extend_sell_order">
+                                            <foreach name="row.extend_sell_order" item="list">
+                                                <tr>
+                                                    <td>{$list.order_sn}</td>
+                                                    <td>{$list.plan_name}</td>
+                                                    <td>{$list.storage_name} ( {$list.storage_price} )</td>
+                                                    <td>{$list.order_area}</td>
+                                                    <td>{$list.order_price}</td>
+                                                    <td>
+                                                        <if condition="$list['status'] eq 2">
+                                                            <a href="#">已收益</a>
+                                                            <else/>
+                                                            <a href="{:U('income',array('id'=>$list['order_id']))}" class="text-muted">未收益</a>
+                                                        </if>
+                                                    </td>
+                                                    <td class="text-right">{$list.pay_total}</td>
+                                                </tr>
+                                            </foreach>
+                                        </notempty>
+                                        </tbody>
+                                        
+                                    </table>
+                                </volist>
+                            <else/>
+                                <div class="alert alert-info text-center">
+                                    暂无数据
+                                </div>
+                            </notempty>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__ASSET__/laydate/laydate.js"></script>
+    <script>
+        var start = {
+            elem: '#start',
+            format: 'YYYY-MM-DD',
+            //min: '2015-10-10', //设定最小日期为当前日期
+            max: laydate.now(), //最大日期
+            istoday: false,
+            choose: function(datas){
+                end.min = datas; //开始日选好后，重置结束日的最小日期
+                end.start = datas; //将结束日的初始值设定为开始日
+            }
+        };
+        var end = {
+            elem: '#end',
+            format: 'YYYY-MM-DD',
+            //min: '2015-10-10',
+            max: laydate.now(), //最大日期
+            istoday: true,
+            choose: function(datas){
+                start.max = datas; //结束日选好后，重置开始日的最大日期
+            }
+        };
+        laydate.skin('molv');
+        laydate(start);
+        laydate(end);
+
+        $("#search").click(function(){
+            var url = "{:U('index')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+    </script>
+</block>

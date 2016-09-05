@@ -1,0 +1,75 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>会员</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">会员管理</a>
+            </li>
+            <li class="active">编辑会员</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">账号 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="user_name" value="{$info.user_name}" placeholder="账号">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">用户手机号 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="user_phone" value="{$info.user_phone}" placeholder="用户手机号">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">昵称 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="nick_name" value="{$info.nick_name}" placeholder="昵称">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">身份证号 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="id_card" value="{$info.id_card}" placeholder="身份证号">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">用户密码 <span class="check-tips">不填表示不修改</span></label>
+                                <input type="text" class="form-control" name="user_pass" placeholder="用户密码">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">用户邮箱 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="user_email" value="{$info.user_email}" placeholder="用户邮箱">
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="uid" value="{$info.uid}">
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('index')}");
+    </script>
+</block>

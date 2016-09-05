@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh-CN"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="zh-CN"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="zh-CN"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>一品农夫</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="__CSS__/bootstrap.min.css">
+	<link rel="stylesheet" href="__CSS__/leaflet.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="__CSS__/leaflet.ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="__CSS__/main.css">
+	<link rel="stylesheet" type="text/css" href="__CSS__/jquery-picZoomer.css">
+	<script src="__JS__/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<style>
+		body{
+			background-color:#e7e6e6
+		}
+		#navWrp{
+			border-bottom: 1px solid #d29d3e;
+			padding: 20px 0 10px 0;
+		}
+		#navWrp .container{
+			padding:0 100px
+		}
+		.piclist{
+			margin-top: 15px;
+			padding:0
+		}
+		.piclist li{
+			display: inline-block;
+			padding:0;
+			cursor: pointer;
+		}
+		.piclist li img{
+			width: 100%;
+			height: auto;
+			padding-right:15px
+		}
+		.picZoomer{
+			padding-right:15px
+		}
+		#main{
+			background: url(__IMG__/loginBg.jpg) no-repeat top center;
+			background-size: cover;
+		}
+
+		#loginWrp{
+			width: 70%;
+			background-color: rgba(255,255,255,0.75);
+			margin: 80px auto;
+			padding: 30px 10px;
+		}
+		.red{
+			color:red
+		}
+		label.control-label{
+			color: #565656;
+			padding-right: 0;
+			font-weight: normal;
+		}
+		.gray{
+			color:#9c9c9c
+		}
+	</style>
+</head>
+<body id="orderDetail">
+	<!--[if lt IE 7]>
+	<p class="chromeframe">您的浏览器版本过低，请升级下浏览器版本。</p>
+	<![endif]-->
+	<div id="main">
+	<!-- Navigation & Logo-->
+	<div class="mainmenu-wrapper">
+		<div class="menuextras">
+			<div class="container clearfix">
+				<div class="pull-left">嗨，欢迎来到一品农夫！</div>
+				<div class="pull-right">
+					<a href="page-login.html">请登陆</a>
+					<a href="page-register.html">免费注册</a>
+				</div>
+			</div>
+		</div>
+		<div id="navWrp">
+			<div class="container">
+				<a href="index.html" style="display:block">
+					<img class="img-circle" src="__IMG__/slogo.jpg">
+					<img src="__IMG__/logoTitle.png" alt="一品农夫销售平台">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!---main-->
+	<div class="clearfix">
+		<div id="loginWrp">
+			<div class="formWrp">
+				<h3 style="font-size:20px;font-weight:bold;text-align:left;margin-bottom:20px">用户注册</h3>
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">用户名：</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="userName" placeholder="支持中文，数字，字母，4-20位">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputMobile" class="col-sm-4 control-label">手机号：</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="inputMobile" placeholder="请输入11位手机号">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputCheckcode" class="col-sm-4 control-label">验证码：</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" id="inputCheckcode" placeholder="">
+						</div>
+						<div class="col-sm-2">
+							<img src="__IMG__/checkCode.jpg" alt="">
+						</div>
+						<div class="col-sm-2 form-control-static">看不清，<span style="color:#2990d8;cursor: pointer">换一张？</span></div>
+					</div>
+					<div class="form-group">
+						<label for="inputMescode" class="col-sm-4 control-label">校验码：</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" id="inputMescode" placeholder="">
+						</div>
+						<div class="col-sm-4">
+							<button class="btn btn-default">获取短信验证码</button>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="password" class="col-sm-4 control-label">密码：</label>
+						<div class="col-sm-4">
+							<input type="password" class="form-control" id="password" placeholder="6位数字">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="surePassword" class="col-sm-4 control-label">确认密码：</label>
+						<div class="col-sm-4">
+							<input type="password" class="form-control" id="surePassword" placeholder="输入与上次相同的密码">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="rule" class="col-sm-4 col-sm-offset-4 control-label" style="text-align:center">
+							<input type="checkbox" id="rule" style="margin-right:6px" checked="true">我已看过并同意<span style="color:#2990d8">《网络服务协议》</span>
+						</label>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-4" style="margin-top: 20px;">
+							<button class="btn btn-warning col-sm-5" style="height: 50px;font-size: 18px;">立即注册</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-footer col-md-2 col-xs-4">
+					<h3>友情链接</h3>
+				</div>
+				<div class="col-footer col-md-2 col-xs-4">
+					<ul class="no-list-style footer-navigate-section">
+						<li><a href="page-blog-posts.html">友情链接</a></li>
+						<li><a href="page-portfolio-3-columns-2.html">友情链接</a></li>
+						<li><a href="page-products-3-columns.html">友情链接</a></li>
+					</ul>
+				</div>
+				<div class="col-footer col-md-3 col-xs-6">
+					<ul class="no-list-style footer-navigate-section">
+						<li><a href="page-blog-posts.html">友情链接</a></li>
+						<li><a href="page-portfolio-3-columns-2.html">友情链接</a></li>
+						<li><a href="page-products-3-columns.html">友情链接</a></li>
+					</ul>
+				</div>
+				<div class="col-footer col-md-3 col-xs-6">
+					<ul class="no-list-style footer-navigate-section">
+						<li><a href="page-blog-posts.html">友情链接</a></li>
+						<li><a href="page-portfolio-3-columns-2.html">友情链接</a></li>
+						<li><a href="page-products-3-columns.html">友情链接</a></li>
+					</ul>
+				</div>
+				<div class="col-footer col-md-2 col-xs-4">
+					<ul class="no-list-style footer-navigate-section">
+						<li><a href="page-blog-posts.html">友情链接</a></li>
+						<li><a href="page-portfolio-3-columns-2.html">友情链接</a></li>
+						<li><a href="page-products-3-columns.html">友情链接</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				&copy; 2016 一品农夫. All rights reserved.
+			</div>
+		</div>
+	</div>
+	<script src="__JS__/jquery-1.9.1.min.js"></script>
+	<script src="__JS__/bootstrap.min.js"></script>
+	<script type="text/javascript" src="__JS__/jquery.picZoomer.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+</body>
+</html>

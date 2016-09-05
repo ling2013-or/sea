@@ -1,0 +1,6 @@
+[ 2016-07-14T10:28:04+08:00 ] 127.0.0.1 /api.php/Home/index.html
+SQL: SHOW COLUMNS FROM `farm_goods` [ RunTime:0.0720s ]
+SQL: SELECT `id`,`store_id`,`plan_id`,`seed_id`,`goods_name`,`goods_weight`,`goods_price`,`goods_description`,`goods_body`,`goods_image`,`goods_image_more`,`goods_click`,`goods_stock`,`goods_commend`,`goods_status`,`farm_id`,`goods_star`,`comment_num`,`sale_weight`,`transport_id`,`goods_add_time`,`is_home`,`storage_id` FROM `farm_goods` WHERE `is_home` = 1 AND `goods_status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `farm_plan_sell` [ RunTime:0.0390s ]
+SQL: SELECT plan.*,seed.seed_name,seed.seed_img FROM farm_plan_sell plan LEFT JOIN farm_seed seed ON seed.seed_id=plan.seed_id  WHERE plan.is_home = 1 AND plan.status = 1 ORDER BY plan.add_time DESC  [ RunTime:0.0130s ]
+

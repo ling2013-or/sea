@@ -1,0 +1,905 @@
+[ 2016-07-23T14:23:30+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+
+[ 2016-07-23T14:23:31+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-07-23T14:23:33+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_send.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-07-23T14:23:35+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_success.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+
+[ 2016-07-23T14:23:36+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_cancel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-07-23T21:03:16+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+
+[ 2016-07-23T21:03:16+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+
+[ 2016-07-23T21:03:16+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Undefined variable: config E:\wamp\sea\Runtime\Cache\Admin\3a6c842fd833fab3fb87a55ea38b7da4.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002044s ]
+
+[ 2016-07-23T21:03:17+08:00 ] 127.0.0.1 /admin.php?s=/Public/vcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001987s ]
+
+[ 2016-07-23T21:03:18+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined variable: config E:\wamp\sea\Runtime\Cache\Admin\3a6c842fd833fab3fb87a55ea38b7da4.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2016-07-23T21:03:29+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+SQL: SHOW COLUMNS FROM `sea_admin` [ RunTime:0.0114s ]
+SQL: SELECT `admin_id`,`group_id`,`admin_type`,`admin_name`,`admin_pwd`,`admin_salt`,`true_name`,`img`,`phone`,`email`,`status`,`add_time`,`update_time` FROM `sea_admin` WHERE `status` = 1 AND `admin_name` = 'admin' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sea_group` [ RunTime:0.4609s ]
+SQL: SELECT `group_auth` FROM `sea_group` WHERE `status` = 1 AND `group_id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sea_module_auth` [ RunTime:0.0204s ]
+SQL: SELECT `module_id`,`module_index`,`parent_id`,`is_menu`,`module_name`,`module_bind`,`status`,`add_time`,`update_time`,`module_img` FROM `sea_module_auth` WHERE `module_id` IN ('1','32','39','40','42','44','50','52','53','55','65','66','29','27','26','9','14','69','16','17','23','21','67','22','20','19','10','8','68','18','41','49','64','15','31','38','57','56','61') AND `status` = 1 ORDER BY module_index  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: child E:\wamp\sea\Application\Admin\Controller\PublicController.class.php 第 124 行.
+
+[ 2016-07-23T21:03:30+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+
+[ 2016-07-23T21:03:34+08:00 ] 127.0.0.1 /admin.php?s=/Sellplan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+
+[ 2016-07-23T21:03:44+08:00 ] 127.0.0.1 /admin.php?s=/Sellplan/dopush/id/4.html&status=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `sea_plan_sell` [ RunTime:0.0100s ]
+SQL: UPDATE `sea_plan_sell` SET `status`='1' WHERE `id` = 4 [ RunTime:0.1499s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0092s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Sellplan,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Sellplan/index.html','http://sea.com/admin.php?s=/Sellplan/dopush/id/4.html&status=1','','1469279022','127.0.0.1') [ RunTime:0.4237s ]
+
+[ 2016-07-23T21:03:46+08:00 ] 127.0.0.1 /admin.php?s=/Sellplan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+
+[ 2016-07-23T21:03:51+08:00 ] 127.0.0.1 /admin.php?s=/Sellplan/dopush/id/4/status/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `sea_plan_sell` [ RunTime:0.0087s ]
+SQL: UPDATE `sea_plan_sell` SET `status`='0' WHERE `id` = 4 [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0077s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Sellplan,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Sellplan/index.html','http://sea.com/admin.php?s=/Sellplan/dopush/id/4/status/0.html','','1469279030','127.0.0.1') [ RunTime:0.0007s ]
+
+[ 2016-07-23T21:03:54+08:00 ] 127.0.0.1 /admin.php?s=/Sellplan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+
+[ 2016-07-23T21:03:58+08:00 ] 127.0.0.1 /admin.php?s=/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+
+[ 2016-07-23T21:04:03+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+
+[ 2016-07-23T21:04:06+08:00 ] 127.0.0.1 /admin.php?s=/Order/detail/order_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+
+[ 2016-07-23T21:04:15+08:00 ] 127.0.0.1 /admin.php?s=/Marketprice/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+
+[ 2016-07-23T21:04:16+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+
+[ 2016-07-23T21:08:06+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+
+[ 2016-07-23T21:08:20+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html&start_time=2016-07-01&end_time=2016-07-23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+
+[ 2016-07-23T21:08:24+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+
+[ 2016-07-23T21:09:06+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002105s ]
+
+[ 2016-07-23T21:09:13+08:00 ] 127.0.0.1 /admin.php?s=/Order/detail/order_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+
+[ 2016-07-23T21:09:28+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+
+[ 2016-07-23T21:10:29+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html&start_time=1970&end_time=2016-07-23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+
+[ 2016-07-23T21:11:36+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+
+[ 2016-07-23T21:11:38+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_send.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+
+[ 2016-07-23T21:11:42+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_success.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+
+[ 2016-07-23T21:11:45+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_cancel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+
+[ 2016-07-23T21:11:49+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+
+[ 2016-07-23T21:11:52+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+
+[ 2016-07-23T21:12:35+08:00 ] 127.0.0.1 /admin.php?s=/Order/index/state_type/state_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+
+[ 2016-07-23T21:12:37+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+
+[ 2016-07-23T21:12:44+08:00 ] 127.0.0.1 /admin.php?s=/Marketprice/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002179s ]
+
+[ 2016-07-23T21:12:48+08:00 ] 127.0.0.1 /admin.php?s=/Sellplan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+
+[ 2016-07-23T21:12:52+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+
+[ 2016-07-23T21:12:59+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+ERR: 1054:Unknown column 'addr.area_id' in 'on clause'
+ [ SQL语句 ] : SELECT addr.*,city.area_name as cname,area.area_name as aname FROM sea_user_address addr LEFT JOIN sea_area AS city ON addr.city_id = city.area_id LEFT JOIN sea_area AS area ON addr.area_id = area.area_id  WHERE addr.uid = '38' ORDER BY addr.is_default desc 
+
+[ 2016-07-23T21:13:07+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+
+[ 2016-07-23T21:22:59+08:00 ] 127.0.0.1 /admin.php?s=/User/level.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+
+[ 2016-07-23T21:23:03+08:00 ] 127.0.0.1 /admin.php?s=/Sellorder/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+ERR: 1146:Table 'sea.sea_sell_order_summary' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sea_sell_order_summary`
+
+[ 2016-07-23T21:23:06+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+
+[ 2016-07-23T21:52:27+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+ERR: 1054:Unknown column 'addr.province_id' in 'on clause'
+ [ SQL语句 ] : SELECT addr.*,city.area_name as cname,area.area_name as aname FROM sea_user_address addr LEFT JOIN sea_area AS city ON addr.city_id = city.area_id LEFT JOIN sea_area AS area ON addr.province_id = area.area_id  WHERE addr.uid = '38' ORDER BY addr.is_default desc 
+
+[ 2016-07-23T21:54:11+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+
+[ 2016-07-23T22:04:52+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002611s ]
+
+[ 2016-07-23T22:07:00+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+
+[ 2016-07-23T22:07:04+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001858s ]
+
+[ 2016-07-23T22:07:06+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+
+[ 2016-07-23T22:07:10+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+
+[ 2016-07-23T22:07:16+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+
+[ 2016-07-23T22:30:40+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+
+[ 2016-07-23T22:30:46+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+
+[ 2016-07-23T22:30:49+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+
+[ 2016-07-23T22:32:37+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+
+[ 2016-07-23T23:30:44+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001987s ]
+
+[ 2016-07-23T23:31:06+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+
+[ 2016-07-23T23:41:06+08:00 ] 127.0.0.1 /admin.php?s=/User/showaddr/uid/37.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001588s ]
+
+[ 2016-07-23T23:41:16+08:00 ] 127.0.0.1 /admin.php?s=/Feedback/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003127s ]
+
+[ 2016-07-23T23:41:19+08:00 ] 127.0.0.1 /admin.php?s=/Feedback/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+
+[ 2016-07-23T23:41:21+08:00 ] 127.0.0.1 /admin.php?s=/User/level.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+
+[ 2016-07-23T23:41:23+08:00 ] 127.0.0.1 /admin.php?s=/Sellorder/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+ERR: 1146:Table 'sea.sea_sell_order_summary' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sea_sell_order_summary`
+
+[ 2016-07-23T23:41:42+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+
+[ 2016-07-23T23:41:52+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html&buyer_name=hello
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+
+[ 2016-07-23T23:42:01+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html&buyer_name=hello&order_sn=1111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+
+[ 2016-07-23T23:44:17+08:00 ] 127.0.0.1 /admin.php?s=/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+
+[ 2016-07-23T23:44:19+08:00 ] 127.0.0.1 /admin.php?s=/Sellplan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+
+[ 2016-07-23T23:57:27+08:00 ] 127.0.0.1 /admin.php?s=/Adminuser/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminuserController::uploadImg() should be compatible with Admin\Controller\AdminController::uploadimg($path = 'default/') E:\wamp\sea\Application\Admin\Controller\AdminuserController.class.php 第 10 行.
+
+[ 2016-07-23T23:57:28+08:00 ] 127.0.0.1 /admin.php?s=/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+
+[ 2016-07-23T23:57:30+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+
+[ 2016-07-23T23:57:36+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index/parent_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+
+[ 2016-07-23T23:57:45+08:00 ] 127.0.0.1 /admin.php?s=/Auth/edit/id/67.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+
+[ 2016-07-23T23:57:50+08:00 ] 127.0.0.1 /admin.php?s=/Auth/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `sea_module_auth` [ RunTime:0.0074s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `sea_module_auth` SET `module_name`='产品价格管理',`module_bind`='Marketprice/index',`is_menu`='0',`module_img`='',`module_index`='1',`parent_id`='15',`update_time`='1469289469' WHERE `module_id` = 67 [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0096s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Auth,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Auth/edit/id/67.html','http://sea.com/admin.php?s=/Auth/edit.html','module_id:67,module_name:产品价格管理,module_bind:Marketprice/index,is_menu:0,module_img:,module_index:1,parent_id:15,','1469289469','127.0.0.1') [ RunTime:0.0475s ]
+
+[ 2016-07-23T23:57:52+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index/parent_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+
+[ 2016-07-23T23:58:04+08:00 ] 127.0.0.1 /admin.php?s=/Auth/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001956s ]
+
+[ 2016-07-23T23:58:11+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+
+[ 2016-07-23T23:58:16+08:00 ] 127.0.0.1 /admin.php?s=/Auth/edit/id/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002884s ]
+
+[ 2016-07-23T23:58:20+08:00 ] 127.0.0.1 /admin.php?s=/Auth/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001858s ]
+SQL: SHOW COLUMNS FROM `sea_module_auth` [ RunTime:0.0079s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `sea_module_auth` SET `module_name`='其他',`module_bind`='Other/index',`is_menu`='0',`module_img`='fa fa-briefcase',`module_index`='5',`parent_id`='0',`update_time`='1469289499' WHERE `module_id` = 64 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0073s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Auth,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Auth/edit/id/64.html','http://sea.com/admin.php?s=/Auth/edit.html','module_id:64,module_name:其他,module_bind:Other/index,is_menu:0,module_img:fa fa-briefcase,module_index:5,parent_id:0,','1469289499','127.0.0.1') [ RunTime:0.0007s ]
+
+[ 2016-07-23T23:58:23+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+
+[ 2016-07-23T23:58:27+08:00 ] 127.0.0.1 /admin.php?s=/Sms/templete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+
+[ 2016-07-23T23:58:30+08:00 ] 127.0.0.1 /admin.php?s=/Sms/log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002159s ]
+
+[ 2016-07-23T23:58:35+08:00 ] 127.0.0.1 /admin.php?s=/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+
+[ 2016-07-23T23:58:36+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+
+[ 2016-07-23T23:58:38+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+
+[ 2016-07-23T23:58:58+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index/parent_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+
+[ 2016-07-23T23:59:09+08:00 ] 127.0.0.1 /admin.php?s=/Auth/edit/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-07-23T23:59:13+08:00 ] 127.0.0.1 /admin.php?s=/Auth/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `sea_module_auth` [ RunTime:0.0301s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `sea_module_auth` SET `module_name`='会员订单',`module_bind`='Sellorder/index',`is_menu`='0',`module_img`='',`module_index`='0',`parent_id`='41',`update_time`='1469289552' WHERE `module_id` = 14 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0074s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Auth,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Auth/edit/id/14.html','http://sea.com/admin.php?s=/Auth/edit.html','module_id:14,module_name:会员订单,module_bind:Sellorder/index,is_menu:0,module_img:,module_index:0,parent_id:41,','1469289552','127.0.0.1') [ RunTime:0.0007s ]
+
+[ 2016-07-23T23:59:15+08:00 ] 127.0.0.1 /admin.php?s=/Auth/index/parent_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+
+[ 2016-07-23T23:59:20+08:00 ] 127.0.0.1 /admin.php?s=/Public/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001391s ]
+
+[ 2016-07-23T23:59:21+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: config E:\wamp\sea\Runtime\Cache\Admin\3a6c842fd833fab3fb87a55ea38b7da4.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2016-07-23T23:59:21+08:00 ] 127.0.0.1 /admin.php?s=/Public/vcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001637s ]
+
+[ 2016-07-23T23:59:21+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Undefined variable: config E:\wamp\sea\Runtime\Cache\Admin\3a6c842fd833fab3fb87a55ea38b7da4.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2016-07-23T23:59:33+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+SQL: SHOW COLUMNS FROM `sea_admin` [ RunTime:0.0089s ]
+SQL: SELECT `admin_id`,`group_id`,`admin_type`,`admin_name`,`admin_pwd`,`admin_salt`,`true_name`,`img`,`phone`,`email`,`status`,`add_time`,`update_time` FROM `sea_admin` WHERE `status` = 1 AND `admin_name` = 'admin' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sea_group` [ RunTime:0.0075s ]
+SQL: SELECT `group_auth` FROM `sea_group` WHERE `status` = 1 AND `group_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sea_module_auth` [ RunTime:0.0072s ]
+SQL: SELECT `module_id`,`module_index`,`parent_id`,`is_menu`,`module_name`,`module_bind`,`status`,`add_time`,`update_time`,`module_img` FROM `sea_module_auth` WHERE `module_id` IN ('1','32','39','40','42','44','50','52','53','55','65','66','29','27','26','9','14','69','16','17','23','21','67','22','20','19','10','8','68','18','41','49','64','15','31','38','57','56','61') AND `status` = 1 ORDER BY module_index  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: child E:\wamp\sea\Application\Admin\Controller\PublicController.class.php 第 124 行.
+
+[ 2016-07-23T23:59:33+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003580s ]
+
+[ 2016-07-23T23:59:39+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+

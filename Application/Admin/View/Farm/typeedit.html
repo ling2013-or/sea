@@ -1,0 +1,71 @@
+<extend name="Public/common"/>
+<block name="style">
+	
+</block>
+
+<block name="page_nav">
+	<div class="page-heading">
+		<h3>农场管理</h3>
+		<ul class="breadcrumb">
+			<li>
+				<a href="{:U('farm')}">农场管理</a>
+			</li>
+            <li>
+                <a href="{:U('type')}">分类列表</a>
+            </li>
+			<li class="active"> 编辑分类</li>
+		</ul>
+	</div>
+</block>
+
+<block name="body">
+	<div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                        编辑分类
+                </header>
+
+                <div class="panel-body">
+                    <section id="unseen">
+                        <form class="form-horizontal form" role="form" action="{:U()}">
+							
+							<div class="form-group">
+                                <label class="col-lg-2 col-sm-2 control-label">分类名称</label>
+                                <div class="col-lg-10">
+                                    <div>
+                                        <input class="form-control" name="type_name" value="{$info.type_name}" placeholder="请输入分类名称" type="text">
+                                    </div>
+                                </div>
+                            </div>
+							
+                            <div class="form-group">
+								<div class="col-lg-offset-2 col-lg-10">
+                                    <input type="hidden" name="type_id" value="{$info.type_id}">
+									<button class="btn btn-primary ajax-post" target-form="form" type="submit">确 定</button>
+									<button class="btn a-back">返 回</button>
+								</div>
+							</div>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		// 导航高亮
+		highlight_subnav('{:U("Farm/farm")}');
+		
+		// 未填写信息的行变红
+		$('input').blur(function() {
+			if(!$(this).val()) {
+				$(this).parent().parent().parent().addClass('has-error');
+			}else {
+				$(this).parent().parent().parent().removeClass('has-error');
+			}
+		});
+	</script>
+</block>

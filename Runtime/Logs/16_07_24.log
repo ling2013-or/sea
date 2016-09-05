@@ -1,0 +1,3 @@
+[ 2016-07-24T09:41:43+08:00 ] 127.0.0.1 /game.php
+ERR: Think\Controller:isLogin方法不存在！
+

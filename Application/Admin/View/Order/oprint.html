@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="__CSS__/style.css" rel="stylesheet">
+    <link href="__CSS__/style-responsive.css" rel="stylesheet">
+    <link href="__CSS__/order.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/print.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="__JS__/jquery-1.10.2.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript" src="__ASSET__/layer/layer.js"
+            charset="utf-8"></script>
+    <script type="text/javascript" src="__JS__/jquery.printarea.js" charset="utf-8"></script>
+    <title>打印--发货单</title>
+</head>
+
+<body>
+<notempty name="order_info">
+    <div class="print-layout">
+        <div class="print-btn" id="printbtn" data-title="选择喷墨或激光打印机<br/>根据下列纸张描述进行<br/>设置并打印发货单据"><i class="fa fa-print"></i><a
+                href="javascript:void(0);">打印</a></div>
+        <div class="a5-size"></div>
+        <dl class="a5-tip">
+            <dt>
+            <h1>A5</h1>
+            <em>Size: 210mm x 148mm</em></dt>
+            <dd>当打印设置选择A5纸张、横向打印、无边距时每张A5打印纸可输出1页订单。</dd>
+        </dl>
+        <div class="a4-size"></div>
+        <dl class="a4-tip">
+            <dt>
+            <h1>A4</h1>
+            <em>Size: 210mm x 297mm</em></dt>
+            <dd>当打印设置选择A4纸张、竖向打印、无边距时每张A4打印纸可输出2页订单。</dd>
+        </dl>
+        <div class="print-page">
+            <div id="printarea">
+                <notempty name="goods_list">
+                    <volist name="goods_list" id="item" key="k">
+                        <div class="orderprint">
+                            <div class="top">
+                                <div class="full-title">发货单</div>
+                            </div>
+                            <table class="buyer-info">
+                                <tr>
+                                    <td class="w200">收货人：{$order_info.extend_order_common.reciver_name}</td>
+                                    <td>电话：
+                                        <if condition="isset($order_info['extend_order_common']['reciver_info']['phone'])">
+                                            {$order_info.extend_order_common.reciver_info.phone}&nbsp;
+                                        </if>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">地址：
+                                        <if condition="isset($order_info['extend_order_common']['reciver_info']['address'])">
+                                            {$order_info.extend_order_common.reciver_info.address}&nbsp;
+                                        </if>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>订单号：{$order_info.order_sn}</td>
+                                    <td>下单时间：{$order_info.add_time|date='Y-m-d H:i:s', ###}</td>
+                                    <td>
+                                        <notempty name="$order_info.shipping_code">
+                                            物流单号：{$info.shipping_code}
+                                        </notempty>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="order-info">
+                                <thead>
+                                <tr>
+                                    <th class="w40">序号</th>
+                                    <th class="text-left">商品名称</th>
+                                    <th class="w70 text-left">单价(元)</th>
+                                    <th class="w50">数量</th>
+                                    <th class="w70 text-left">小计(元)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="item" id="vo">
+                                <tr>
+                                    <td>{$key}</td>
+                                    <td class="text-left">{$vo.goods_name}</td>
+                                    <td class="text-left"><i class="fa fa-rmb"></i>{$vo.goods_price}</td>
+                                    <td>{$vo.goods_num}</td>
+                                    <td class="text-left"><i class="fa fa-rmb"></i>{$vo.goods_all_price}</td>
+                                </tr>
+                                </volist>
+                                <tr>
+                                    <th></th>
+                                    <th colspan="2" class="text-left">合计</th>
+                                    <th>{$goods_all_num}</th>
+                                    <th class="text-left"><i class="fa fa-rmb"></i>{$goods_total_price}</th>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th colspan="10">
+                                        <span>总计：<i class="fa fa-rmb"></i>{$goods_total_price}</span>
+                                        <span>运费：<i class="fa fa-rmb"></i>{$order_info.shipping_fee}</span>
+                                        <span>优惠：<i class="fa fa-rmb"></i>{$promotion_amount}</span>
+                                        <span>订单总额：<i class="fa fa-rmb"></i>{$order_info.order_amount}</span>
+                                        <span></span>
+                                    </th>
+                                </tr>
+                                </tfoot>
+                            </table>
+                            <div class="tc opage">
+                                第{$k}页/共{:count($goods_list)}页
+                            </div>
+                        </div>
+                    </volist>
+                </notempty>
+            </div>
+
+        </div>
+    </div>
+</notempty>
+</body>
+<script>
+    $(function () {
+        $("#printbtn").click(function () {
+            $("#printarea").printArea();
+        });
+    });
+
+    var tips;
+    $('#printbtn').mouseover(function () {
+        var content = $(this).data('title');
+        tips = layer.tips(content, this, {
+            tips: 3,
+            time: 0
+        });
+    }).mouseout(function () {
+        layer.close(tips);
+    });
+</script>
+</html>

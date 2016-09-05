@@ -1,0 +1,96 @@
+<extend name="Public/commonOther"/>
+<block name="style">
+	<style>
+		body{
+			background-color:#e7e6e6
+		}
+		#navWrp{
+			border-bottom: 1px solid #d29d3e;
+			padding: 20px 0 10px 0;
+		}
+		#navWrp .container{
+			padding:0 100px
+		}
+		.piclist{
+			margin-top: 15px;
+			padding:0
+		}
+		.piclist li{
+			display: inline-block;
+			padding:0;
+			cursor: pointer;
+		}
+		.piclist li img{
+			width: 100%;
+			height: auto;
+			padding-right:15px
+		}
+		.picZoomer{
+			padding-right:15px
+		}
+		#main{
+			background: url(__IMG__/loginBg.jpg) no-repeat top center;
+			background-size: cover;
+		}
+
+		#loginWrp{
+			width: 70%;
+			background-color: rgba(255,255,255,0.75);
+			margin: 80px auto;
+			padding: 30px 10px;
+		}
+		.red{
+			color:red
+		}
+		label.control-label{
+			color: #565656;
+			padding-right: 0;
+			font-weight: normal;
+		}
+		.gray{
+			color:#9c9c9c
+		}
+	</style>
+</block>
+<block name="body">
+	<!---main-->
+	<div class="clearfix">
+		<div id="loginWrp">
+			<div class="formWrp">
+				<h3 style="font-size:20px;font-weight:bold;text-align:left;margin-bottom:20px">密码找回</h3>
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-2 control-label"><span class="red">*</span>用户名称：</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="userName" placeholder="">
+						</div>
+						<p class="gray form-control-static">由字母、数字、下划线组成，不得少于2位，不得多于10位</p>
+					</div>
+					<div class="form-group">
+						<label for="inputMobile" class="col-sm-2 control-label"><span class="red">*</span>注册手机号：</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="inputMobile" placeholder="">
+						</div>
+						<p class="gray form-control-static">请输入11位手机号</p>
+					</div>
+					<div class="form-group">
+						<label for="inputCheckcode" class="col-sm-2 control-label"><span class="red">*</span>验证码：</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" id="inputCheckcode" placeholder="">
+						</div>
+						<div class="col-sm-2">
+							<img src="__IMG__/checkCode.jpg" alt="">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-4" style="margin-top: 40px;">
+							<button class="btn btn-primary col-sm-2">提交</button>
+							<button class="btn btn-default col-sm-offset-1 col-sm-2">返回</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</block>

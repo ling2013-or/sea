@@ -1,0 +1,7 @@
+[ 2016-08-21T15:39:48+08:00 ] 127.0.0.1 /api.php?s=user/login
+ERR: 1054:Unknown column 'nick_name' in 'field list'
+ [ SQL语句 ] : SELECT `uid`,`user_name`,`user_email`,`user_phone`,`user_pass`,`user_encrypt`,`nick_name`,`user_avatar`,`real_name` FROM `sea_user` WHERE `user_name` = 'liujianjian' LIMIT 1  
+
+[ 2016-08-21T20:50:15+08:00 ] 127.0.0.1 /api.php?s=order/details
+ERR: 非法操作:details
+

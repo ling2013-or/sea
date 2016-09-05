@@ -1,0 +1,125 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>农场</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">发货地址</a>
+            </li>
+            <li class="active">发货地址列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-left">
+                            <a href="{:U('addDelivery')}" class="btn btn-info">添加</a>
+                        </div>
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="text" name="query" class="form-control search-input" value="{:I('query')}" placeholder="请输入ID/电话">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>农场名称</th>
+                                <th>联系人</th>
+                                <th>电话</th>
+                                <th>城市</th>
+                                <th>地区</th>
+                                <th>地址</th>
+                                <th>公司名称</th>
+                                <th>默认地址</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="vo">
+                                    <tr>
+                                        <td>{$vo.id}</td>
+                                        <td>{$vo.farm_name}</td>
+                                        <td>{$vo.seller_name}</td>
+                                        <td>{$vo.telphone}</td>
+                                        <td>{$vo.city_id|get_area_name}</td>
+                                        <td>{$vo.area_id|get_area_name}</td>
+                                        <td>{$vo.address}</td>
+                                        <td>{$vo.company}</td>
+                                        <td>{$vo.is_defaule|get_default}</td>
+                                        <td id="operation">
+                                            <a href="{:U('editDelivery', array('id'=>$vo['id']))}">编辑</a>
+                                            <if condition="$vo.is_defaule eq 0">
+                                                <a href="javascript:;" class="setDefault" fid="{$vo.farm_id}" uid="{$vo.id}">默认</a>
+                                            <else />
+                                                已默认
+                                            </if>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                <else/>
+                                <tr>
+                                    <td colspan="12" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $("#search").click(function(){
+            var url = "{:U('')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+
+        //设置默认发货地址
+        $('.setDefault').on('click',function() {
+            var mine = $(this);
+            var id = mine.attr('uid');
+            var fid = mine.attr('fid');
+            var url = "{:U('setDefault')}";
+            var val = 1;
+            $.ajax({
+                url:url,
+                type:'post',
+                data:{'id':id,'val':val,'fid':fid},
+                dataType:'json',
+                success: function (msg) {
+                    location.reload();
+                }
+            });
+        });
+    </script>
+</block>

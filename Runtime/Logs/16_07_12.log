@@ -1,0 +1,10 @@
+[ 2016-07-12T09:29:11+08:00 ] 127.0.0.1 /api.php/Home/index.html
+ERR: SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+
+[ 2016-07-12T09:47:14+08:00 ] 127.0.0.1 /api.php/Home/index.html
+SQL: SHOW COLUMNS FROM `farm_goods` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`store_id`,`plan_id`,`seed_id`,`goods_name`,`goods_weight`,`goods_price`,`goods_description`,`goods_body`,`goods_image`,`goods_image_more`,`goods_click`,`goods_stock`,`goods_commend`,`goods_status`,`farm_id`,`goods_star`,`comment_num`,`sale_weight`,`transport_id`,`goods_add_time`,`is_home`,`storage_id` FROM `farm_goods` WHERE `is_home` = 1 AND `goods_status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `farm_plan_sell` [ RunTime:0.0040s ]
+SQL: SELECT plan.*,seed.seed_name,seed.seed_img FROM farm_plan_sell plan LEFT JOIN farm_seed seed ON seed.seed_id=plan.seed_id  WHERE plan.is_home = 1 AND plan.status = 1 ORDER BY plan.add_time DESC  [ RunTime:0.0000s ]
+

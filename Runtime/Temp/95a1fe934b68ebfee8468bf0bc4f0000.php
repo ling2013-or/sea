@@ -1,0 +1,3 @@
+<?php
+//000000000000a:14:{s:14:"WEB_SITE_TITLE";s:12:"一品农夫";s:20:"WEB_SITE_DESCRIPTION";s:12:"海鲜市场";s:16:"WEB_SITE_KEYWORD";s:0:"";s:14:"WEB_SITE_CLOSE";s:1:"1";s:16:"CONFIG_TYPE_LIST";a:5:{i:0;s:6:"数字";i:1;s:6:"字符";i:2;s:6:"文本";i:3;s:6:"数组";i:4;s:6:"枚举";}s:12:"WEB_SITE_ICP";s:0:"";s:17:"CONFIG_GROUP_LIST";a:4:{i:1;s:6:"基本";i:2;s:6:"内容";i:3;s:6:"用户";i:4;s:6:"系统";}s:23:"DRAFT_AOTOSAVE_INTERVAL";s:3:"0.6";s:9:"LIST_ROWS";s:2:"10";s:14:"ADMIN_ALLOW_IP";s:0:"";s:15:"SHOW_PAGE_TRACE";s:1:"1";s:14:"ADMIN_SMS_AUTH";s:1:"0";s:19:"ORDER_EVALUATE_TIME";s:7:"1296000";s:17:"DB_COMMENT_SWITCH";s:1:"1";}
+?>

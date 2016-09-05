@@ -1,0 +1,223 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>方案管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('Sellplan/index')}">销售方案</a>
+            </li>
+            <li class="active">新增方案</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="name">方案名称 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="plan_name" id="name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="bind">方案描述 <span class="check-tips"></span></label>
+                                <textarea class="form-control" name="plan_descript" id="bind"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="price">方案单价<span class="check-tips">（元/每平米）</span></label>
+                                <input type="number" class="form-control" name="plan_price" id="price" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="area_surplus">总面积<span class="check-tips">（单位:平米）</span></label>
+                                <input type="number" class="form-control" name="area_surplus" id="area_surplus" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="area_min">最小购买量<span class="check-tips">（单位:平米）</span></label>
+                                <input type="number" class="form-control" name="area_min" id="area_min" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="area_max">最大购买量<span class="check-tips">（单位:平米）</span></label>
+                                <input type="number" class="form-control" name="area_max" id="area_max" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="income_expect">预期产量<span class="check-tips">（单位:千克/平米）</span></label>
+                                <input type="number" class="form-control" name="income_expect" id="income_expect" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="income_min">预期最小产量<span class="check-tips">（单位:千克/平米）</span></label>
+                                <input type="number" class="form-control" name="income_min" id="income_min" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="income_max">预期最大产量<span class="check-tips">（单位:千克/平米）</span></label>
+                                <input type="number" class="form-control" name="income_max" id="income_max" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="plan_start">执行时间<span class="check-tips">（方案的生效日期）</span></label>
+                                <input type="text" class="form-control laydate-icon  search-input" name="plan_start" id="plan_start" value="{:date('Y-m-d')}">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="seed">使用种子 </label>
+                                <select class="form-control" id="seed" name="seed_id">
+                                    <notempty name="seedList">
+                                        <volist name="seedList" id="row">
+                                            <option value="{$row.seed_id}">{$row.seed_name}</option>
+                                        </volist>
+                                    <else/>
+                                        <option value="0"> - 暂无可选 - </option>
+                                    </notempty>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="discount">折扣方案 </label>
+                                <select class="form-control" id="discount" name="discount_id">
+                                    <notempty name="discountList">
+                                        <volist name="discountList" id="row">
+                                            <option value="{$row.discount_id}" >播种期:{$row.seeding} / 育苗期:{$row.nursery} / 生长期:{$row.grow} / 成熟期:{$row.maturity} / 收获期:{$row.reap} / 存储期:{$row.storage} / 过期:{$row.over}</option>
+                                        </volist>
+                                    <else/>
+                                        <option value="0"> - 暂无可选 - </option>
+                                    </notempty>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">存储方案 </label>
+                                <notempty name="storageList">
+                                        <volist name="storageList" id="row">
+                                            <label class="col-md-12"><input type="checkbox" name="storage_id[]" checked="true" value="{$row.storage_id}"> {$row.storage_name} ( 价格:{$row.storage_price}元 每千克每天; 存储期:{$row.storage_time}天)</label>
+                                        </volist>
+                                    <else/>
+                                        <span> &nbsp; 暂无可选</span>
+                                </notempty>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="farm">使用农场<span class="check-tips"></span></label>
+                                <select class="form-control" id="farm" name="farm_id">
+                                    <notempty name="farmList">
+                                        <volist name="farmList" id="row">
+                                            <option value="{$row.farm_id}">{$row.farm_name}</option>
+                                        </volist>
+                                    <else/>
+                                        <option value="0"> - 暂无可选 - </option>
+                                    </notempty>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="block">使用农场分区<span class="check-tips"></span></label>
+                                <select class="form-control" id="block" name="block_id">
+                                    <option value="0"> - 请先选择农场 - </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="camera">使用摄像头<span class="check-tips"></span></label>
+                                <select class="form-control" id="camera" name="camera_id">
+                                    <option value="0"> - 请先选择农场 - </option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__ASSET__/laydate/laydate.js"></script>
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('Sellplan/index')}");
+
+        var start = {
+            elem: '#plan_start',
+            format: 'YYYY-MM-DD',
+            //min: '2015-10-10', //设定最小日期为当前日期
+            //max: laydate.now(), //最大日期
+            istoday: false,
+            choose: function(datas){
+                //end.min = datas; //开始日选好后，重置结束日的最小日期
+            }
+        };
+        laydate.skin('molv');
+        laydate(start);
+
+        //通过农场获取分区
+        //首次加载
+        getBlock();
+
+        //动态获取
+        $('#farm').change(function(){
+            getBlock();
+        });
+
+        function getBlock(){
+            var id = $('#farm').val();
+            $.ajax({
+                url:'{:U("Sellplan/getBlock")}',
+                type:'post',
+                data:{'id':id},
+                dataType:'json',
+                success:function(res)
+                {
+                    $('#block').empty();
+                    $('#camera').empty().append('<option value="0">- 不使用 -</option>');
+                    if(res.hasOwnProperty('info')){
+                        $('#block').append('<option value="0">'+res.info+'</option>');
+                    }else{
+                        var block = res.block;
+                        var camera = res.camera;
+                        for (var i=0;i<block.length;i++){
+                            $('#block').append('<option value="'+block[i]['block_id']+'">'+block[i]['block_name']+'(可用面积:'+block[i]['area_used']+'平米)</option>');    
+                        }
+                        for (var i=0;i<camera.length;i++){
+                            $('#camera').append('<option value="'+camera[i]['id']+'">'+camera[i]['title']+'</option>');    
+                        }
+                    }
+                },
+                error:function()
+                {
+                    alert('网络链接失败,刷新后重试。');
+                }
+            });    
+        }
+    </script>
+</block>

@@ -1,0 +1,93 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>配置管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">配置管理</a>
+            </li>
+            <li class="active">编辑配置</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="name">配置标识 <span class="check-tips">（用于C函数调用，只能使用英文且不能重复）</span></label>
+                                <input type="text" class="form-control" name="name" id="name" value="{$info.name}" placeholder="配置标识">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="title">配置标题 <span class="check-tips">（用于后台显示的配置标题）</span></label>
+                                <input type="text" class="form-control" name="title" value="{$info.title}" id="title" placeholder="配置标题">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-2">
+                                <label class="item-label" for="sort">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
+                                <input type="number" class="form-control" name="sort" value="{$info.sort}" id="sort" placeholder="排序">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="type">配置类型<span class="check-tips">（系统会根据不同类型解析配置值）</span></label>
+                                <select class="form-control" id="type" name="type">
+                                    <volist name="Think.config.CONFIG_TYPE_LIST" id="type">
+                                        <option value="{$key}">{$type}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="group">配置分组<span class="check-tips">（配置分组 用于批量设置 不分组则不会显示在系统设置中）</span></label>
+                                <select class="form-control" id="group" name="group">
+                                    <option value="0">不分组</option>
+                                    <volist name="Think.config.CONFIG_GROUP_LIST" id="group">
+                                        <option value="{$key}">{$group}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="value">配置值<span class="check-tips">（配置值）</span></label>
+                                <textarea class="form-control" name="value" id="value" rows="6">{$info.value}</textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="extra">配置项<span class="check-tips">（如果是枚举型 需要配置该项）</span></label>
+                                <textarea class="form-control" name="extra" id="extra" rows="6">{$info.extra}</textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="remark">说明<span class="check-tips">（配置详细说明）</span></label>
+                                <textarea class="form-control" name="remark" id="remark" rows="6">{$info.remark}</textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="id" value="{$info.id}">
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        window.setValue("type", "{$info.type|default=0}");
+        window.setValue("group", "{$info.group|default=0}");
+        //导航高亮
+        highlight_subnav("{:U('Config/index')}");
+    </script>
+</block>

@@ -1,0 +1,190 @@
+<extend name="Public/common"/>
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__JS__/ios-switch/switchery.css" />
+</block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>支付方式管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">支付方式</a>
+            </li>
+            <li class="active">编辑（{$payment.name}）</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <if condition="$payment['code'] eq 'chinabank'">
+                        <!-- 网银在线支付 -->
+                            <input type="hidden" name="config_name" value="chinabank_account,chinabank_key" />
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">网银在线商户号</label>
+                                    <if condition="isset($payment['config']['chinabank_account'])">
+                                        <input type="text" class="form-control" name="chinabank_account" value="{$payment.config.chinabank_account}" placeholder="网银在线商户号" />
+                                    <else />
+                                        <input type="text" class="form-control" name="chinabank_account" value="" placeholder="网银在线商户号" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">网银在线密钥</label>
+                                    <if condition="isset($payment['config']['chinabank_account'])">
+                                        <input type="text" class="form-control" name="chinabank_key" value="{$payment.config.chinabank_account}" placeholder="网银在线密钥" />
+                                    <else />
+                                        <input type="text" class="form-control" name="chinabank_key" value="" placeholder="网银在线密钥" />
+                                    </if>
+                                </div>
+                            </div>
+                        <elseif condition="$payment['code'] eq 'tenpay'" />
+                            <!-- 财付通 -->
+                            <input type="hidden" name="config_name" value="tenpay_account,tenpay_key" />
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">财付通商户号</label>
+                                    <if condition="isset($payment['config']['tenpay_account'])">
+                                        <input type="text" class="form-control" name="tenpay_account" value="{$payment.config.tenpay_account}" placeholder="财付通商户号" />
+                                        <else />
+                                        <input type="text" class="form-control" name="tenpay_account" value="" placeholder="财付通商户号" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">财付通密钥</label>
+                                    <if condition="isset($payment['config']['tenpay_key'])">
+                                        <input type="text" class="form-control" name="tenpay_key" value="{$payment.config.tenpay_key}" placeholder="财付通密钥" />
+                                        <else />
+                                        <input type="text" class="form-control" name="tenpay_key" value="" placeholder="财付通密钥" />
+                                    </if>
+                                </div>
+                            </div>
+                        <elseif condition="$payment['code'] eq 'alipay'" />
+                            <!-- 支付宝 -->
+                            <input type="hidden" name="config_name" value="alipay_service,alipay_account,alipay_key,alipay_partner" />
+                            <input type="hidden" name="alipay_service" value="create_direct_pay_by_user" />
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">支付宝账号</label>
+                                    <if condition="isset($payment['config']['alipay_account'])">
+                                        <input type="text" class="form-control" name="alipay_account" value="{$payment.config.alipay_account}" placeholder="支付宝账号" />
+                                        <else />
+                                        <input type="text" class="form-control" name="alipay_account" value="" placeholder="支付宝账号" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">交易安全校验码（key）</label>
+                                    <if condition="isset($payment['config']['alipay_key'])">
+                                        <input type="text" class="form-control" name="alipay_key" value="{$payment.config.alipay_key}" placeholder="交易安全校验码（key）" />
+                                        <else />
+                                        <input type="text" class="form-control" name="alipay_key" value="" placeholder="交易安全校验码（key）" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">合作者身份（partner ID）</label>
+                                    <if condition="isset($payment['config']['alipay_partner'])">
+                                        <input type="text" class="form-control" name="alipay_partner" value="{$payment.config.alipay_partner}" placeholder="合作者身份（partner ID）" />
+                                        <else />
+                                        <input type="text" class="form-control" name="alipay_partner" value="" placeholder="合作者身份（partner ID）" />
+                                    </if>
+                                </div>
+                            </div>
+                            <elseif condition="$payment['code'] eq 'wxpay'" />
+                            <!-- 支付宝 -->
+                            <input type="hidden" name="config_name" value="appid,appsecret,encodingaeskey,token,mch_id,key" />
+                            <input type="hidden" name="alipay_service" value="create_direct_pay_by_user" />
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">APPID（公众账号ID）</label>
+                                    <if condition="isset($payment['config']['appid'])">
+                                        <input type="text" class="form-control" name="appid" value="{$payment.config.appid}" placeholder="应用ID" />
+                                        <else />
+                                        <input type="text" class="form-control" name="appid" value="" placeholder="应用ID" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">APPSECRET（公众号上的应用密钥）</label>
+                                    <if condition="isset($payment['config']['appsecret'])">
+                                        <input type="text" class="form-control" name="appsecret" value="{$payment.config.appsecret}" placeholder="应用密钥）" />
+                                        <else />
+                                        <input type="text" class="form-control" name="appsecret" value="" placeholder="应用密钥" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">EncodingAesKey（ 公众平台上，开发者设置的EncodingAESKey）</label>
+                                    <if condition="isset($payment['config']['encodingaeskey'])">
+                                        <input type="text" class="form-control" name="encodingaeskey" value="{$payment.config.encodingaeskey}" placeholder="消息加解密密钥" />
+                                        <else />
+                                        <input type="text" class="form-control" name="encodingaeskey" value="" placeholder="消息加解密密钥" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">TOKEN（公众平台上，开发者设置的Token）</label>
+                                    <if condition="isset($payment['config']['token'])">
+                                        <input type="text" class="form-control" name="token" value="{$payment.config.token}" placeholder="令牌" />
+                                        <else />
+                                        <input type="text" class="form-control" name="token" value="" placeholder="令牌" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">MCH_ID（微信支付分配的商户号）</label>
+                                    <if condition="isset($payment['config']['mch_id'])">
+                                        <input type="text" class="form-control" name="mch_id" value="{$payment.config.token}" placeholder="商户号码" />
+                                        <else />
+                                        <input type="text" class="form-control" name="mch_id" value="" placeholder="商户号码" />
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">key（微信支付分配的商户密钥）</label>
+                                    <if condition="isset($payment['config']['key'])">
+                                        <input type="text" class="form-control" name="key" value="{$payment.config.key}" placeholder="商户号码" />
+                                        <else />
+                                        <input type="text" class="form-control" name="key" value="" placeholder="商户密钥" />
+                                    </if>
+                                </div>
+                            </div>
+
+                        </if>
+                        <div class="row slide-toggle">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">启用</label>
+                                <input type="checkbox" class="js-switch-blue" value="1" name="status" <if condition="$payment.status eq 1">checked</if>/>
+                            </div>
+                        </div>
+                        <input type="hidden" name="id" value="{$payment.id}">
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__JS__/ios-switch/switchery.js" ></script>
+    <script>
+        var blue = document.querySelector('.js-switch-blue');
+        var switchery = new Switchery(blue, { color: '#41b7f1' });
+        highlight_subnav("{:U('index')}");
+    </script>
+</block>

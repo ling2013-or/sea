@@ -1,0 +1,84 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>会员</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('index')}">会员管理</a>
+            </li>
+            <li class="active">会员收货地址</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <!-- <div class="operate-body">
+                        <div class="pull-left">
+                            <a href="{:U('add')}" class="btn btn-info">添加</a>
+                        </div>
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                
+                            </form>
+                        </div>
+                    </div> -->
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>省份/直辖市</th>
+                                <!--<th>城市</th>-->
+                                <th>区域</th>
+                                <th>区域详情</th>
+                                <th>详细地址</th>
+                                <th>收货人</th>
+                                <th>联系电话</th>
+                                <th>邮编</th>
+                                <th>是否默认</th>
+                                <th>添加时间</th>
+                                
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="vo">
+                                    <tr>
+                                        <td>{$vo.pname}</td>
+                                        <!--<td>{$vo.cname}</td>-->
+                                        <td>{$vo.cname}</td>
+                                        <td>{$vo['area_info']?$vo['area_info']:"- -"}</td>
+                                        <td>{$vo['address']?$vo['address']:"- -"}</td>
+                                        <td>{$vo.consignee}</td>
+                                        <td>{$vo['phone']?$vo['phone']:"- -"}</td>
+                                        <td>{$vo['zip_code']?$vo['zip_code']:"- -"}</td>
+                                        
+                                        <td>{$vo['is_default']?"默认":"- -"}</td>
+                                        <td>{$vo['add_time']|date='Y-m-d
+                                            H:i:s', ###}</td>
+                                        
+                                    </tr>
+                                </volist>
+                                <else/>
+                                <tr>
+                                    <td colspan="10" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                        <button class="btn a-back">返 回</button>
+                    </section>
+                    
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        highlight_subnav('{:U("User/index")}');
+    </script>
+</block>

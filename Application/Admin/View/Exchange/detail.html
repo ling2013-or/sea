@@ -1,0 +1,122 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>以物交换</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">以物交换管理</a>
+            </li>
+            <li class="active">交换列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    交易详情
+                </header>
+                <div class="panel-body">
+                    <table class="table table-hover general-table table-bordered" >
+                        <thead>
+                            <tr>
+                                <th>订单号</th>
+                                <th>发起人</th>
+                                <th>发起人操作状态</th>
+                                <th>接受人</th>
+                                <th>接受人操作状态</th>
+                                <th>交易名称</th>
+                                <th>交易状态</th>
+                                <th>过期时间</th>
+                                <th>添加时间</th>
+                                <th>交易时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{$info.order_sn}</td>
+                                <td>{$info.initiator_name}</td>
+                                <td>{$info.initiator_status_txt}</td>
+                                <td>{$info.receive_name}</td>
+                                <td>{$info.receive_status_txt}</td>
+                                <td>{$info.title}</td>
+                                <td>{$info.status_txt}</td>
+                                <td><if condition="$info.expire_time eq 0">永不过期<else />{$info.expire_time|date='Y-m-d H:i:s', ###}</if></td>
+                                <td>{$info.add_time|date='Y-m-d H:i:s', ###}</td>
+                                <td><if condition="$info.expire_time eq 0">尚未交易<else />{$info.update_time|date='Y-m-d H:i:s', ###}</if></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <section class="panel">
+                <header class="panel-heading">
+                    发起人商品
+                </header>
+                <div class="panel-body">
+                    <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                            <tr>
+                                <th>商品名称</th>
+                                <th>重量</th>
+                                <th>销售方案名称</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <notempty name="initiator">
+                            <volist name="initiator" id="vo">
+                                <tr>
+                                    <td>{$vo.seed_name}</td>
+                                    <td>{$vo.weight}</td>
+                                    <td>{$vo.plan_name}</td>
+                                </tr>
+                            </volist>
+                        </notempty>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </div>
+        <div class="col-sm-6">
+            <section class="panel">
+                <header class="panel-heading">
+                    接受人商品
+                </header>
+                <div class="panel-body">
+                    <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                        <tr>
+                            <th>商品名称</th>
+                            <th>重量</th>
+                            <th>销售方案名称</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <notempty name="receive">
+                            <volist name="receive" id="vo">
+                                <tr>
+                                    <td>{$vo.seed_name}</td>
+                                    <td>{$vo.weight}</td>
+                                    <td>{$vo.plan_name}</td>
+                                </tr>
+                            </volist>
+                        </notempty>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        highlight_subnav("{:U('index')}");
+    </script>
+</block>

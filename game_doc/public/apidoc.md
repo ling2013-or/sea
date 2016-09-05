@@ -1,0 +1,46 @@
+```
+活动 farm_activity
+购买装饰 farm_buyitem
+消费，卖出 farm_exchange
+好友状态 farm_getstatus_filter
+用户仓库 farm_getusercrop
+签到活动 farm_login_click farm_login_home
+种子仓库 farm_seed_list
+单个卖出种子 farm_seed_sell
+升级红土地 farm_upgrade
+升级黑土地 farm_upgrade_black
+清空留言 chat_clearchat
+清空日志 chat_clearlog
+用户记录 chat_getallinfo
+用户留言 chat_sendchat
+狗粮提示 dog_feedmoney
+作物除草 farmlandstatus_clearweed
+作物杀虫 farmlandstatus_spraying
+作物施肥 farmlandstatus_fertilize
+作物浇水 farmlandstatus_water
+恶意放虫 farmlandstatus_pest
+恶意种草 farmlandstatus_scatterseed
+作物输出 farmlandstatus_getoutput
+收获作物 farmlandstatus_harvest
+播种作物 farmlandstatus_planting
+翻土作物 farmlandstatus_scarify
+偷取作物 farmlandstatus_scrounge
+好友列表 friend
+农场装饰 item_activeitem
+金币购买装饰 item_buy
+取消装饰 item_deactiveitem
+初始化装饰 item_getuseritems
+装饰品商店 item_shop
+作物商店 repertory_buyseed
+新手任务提示 task_accopt
+农场公告 user_getnotice 未读消息
+开垦土地 user_reclaim
+开地提示 user_recalimpay
+访问自己和别人农场 user_run
+购买道具 usertool_buytool
+道具商城 usertool_gettools
+游戏帮助 tools_help
+农贸市场 tools_market_nc  出售和购买市场时机遇事件
+游戏设置 tools_setting
+
+```

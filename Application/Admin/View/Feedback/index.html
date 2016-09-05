@@ -1,0 +1,101 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>反馈管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">反馈管理</a>
+            </li>
+            <li class="active">反馈列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="text" name="username" class="form-control search-input" value="{:I('username')}" placeholder="请输入用户名">
+                                <select name="status" class="form-control">
+                                    <option value="">请选择反馈状态</option>
+                                    <option value="0" <if condition="(I('status') eq 0) and (I('status') neq '')">selected</if>>未 处 理</option>
+                                    <option value="1" <if condition="I('status') eq 1">selected</if>>处 理 中</option>
+                                    <option value="2" <if condition="I('status') eq 2">selected</if>>已 处 理</option>
+                                </select>
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>用户名</th>
+                                <th>反馈内容</th>
+                                <th>反馈时间</th>
+                                <th>处理状态</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="vo">
+                                    <tr>
+                                        <td>{$vo.user_name}</td>
+                                        <td>{$vo.content}</td>
+                                        <td>{$vo.add_time|date='Y-m-d H:i:s', ###}</td>
+                                        <td>{$vo.status|get_feedback_status}</td>
+                                        <td>
+                                            <if condition="$vo.status eq 0">
+                                                <a class="confirm ajax-get" title="标记为处理中" href="{:U('state',array('id'=>$vo['id'], 'status'=>1))}">标记为处理中</a>
+                                            <elseif condition="$vo.status eq 1" />
+                                                <a class="confirm ajax-get" title="标记为已处理" href="{:U('state',array('id'=>$vo['id'], 'status'=>2))}">标记为已处理</a>
+                                            <else />
+                                                - - -
+                                            </if>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                <else/>
+                                <tr>
+                                    <td colspan="5" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $("#search").click(function(){
+            var url = "{:U('index')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+    </script>
+</block>

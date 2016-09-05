@@ -1,0 +1,90 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>种子价格管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('index')}">种子价格</a>
+            </li>
+            <li class="active">添加当日价格</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <thead>
+                                    <tr>
+                                        <th>种子名称</th>
+                                        <th>种子价格(单位:元)</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="seed_price_list">
+
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control" id="seed_list">
+                                                    <volist name="seeds" id="row">
+                                                        <option value="{$row.seed_id}">{$row.seed_name}</option>
+                                                    </volist>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" class="form-control" id="seed_price"></td>
+                                            <td><input type="button" value=" 添加 " class="btn btn-success btn-sm seed_price_add"></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('Marketprice/index')}");
+
+        //删除种子价格
+        function backOption(that){
+            var seed_tr = $(that).parent().prev().prev();
+            var val = seed_tr.children('input:last').val();
+            var html = seed_tr.children('input:first').val();
+            $('#seed_list').append('<option value="'+val+'">'+html+'</option>');
+            $(that).parent().parent().remove();
+        }
+
+        $(function(){
+            //添加种子价格
+            $(".seed_price_add").click(function(){
+                var option = $('#seed_list option:selected');
+                var seed_id = option.val();
+                var seed_name = option.html();
+                if (seed_id) {
+                    var tr = $('<tr></tr>');
+                    option.remove();
+                    $('<td></td>').append('<input type="text" value="'+seed_name+'" readonly="true" class="form-control"><input type="hidden" value="'+seed_id+'" name="seed_id[]">').appendTo(tr);
+                    $('<td></td>').append('<input type="text" class="form-control" value="'+$('#seed_price').val()+'" name="seed_price[]"></td>').appendTo(tr);
+                    $('<td></td>').append('<input type="button" onclick="backOption(this)" value=" 删除 " class="btn btn-danger btn-sm seed_price_del">').appendTo(tr);
+                    $('#seed_price_list').append(tr);
+                } else {
+                    $('#seed_price').val('所有种子都已被添加');
+                }
+            });
+        })
+    </script>
+</block>

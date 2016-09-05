@@ -1,0 +1,114 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="menu">
+	
+</block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>农场管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">农场管理</a>
+            </li>
+			<li>
+                <a href="{:U('farm')}">农场列表</a>
+            </li>
+            <li class="active">{:I('farm_name')}</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-left">
+                            <a href="{:U('blockadd', array('farm_id'=>$farm_id))}" class="btn btn-info">添加分区</a>
+                        </div>
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="text" name="block_sn" class="form-control search-input" value="{:I('block_sn')}" placeholder="请输入分区编码">
+                                <input type="text" name="block_name" class="form-control search-input" value="{:I('block_name')}" placeholder="请输入分区名称">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>分区编号</th>
+                                    <th>分区类型</th>
+                                    <th>分区名称</th>
+                                    <th>单价（平米/元）</th>
+                                    <th>盐碱度</th>
+                                    <th>平均温度（℃）</th>
+                                    <th>总面积（平米）</th>
+                                    <th>适用种子</th>
+                                    <th>添加时间</th>
+									<th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="vo">
+                                <tr>
+                                    <td>{$vo.block_sn}</td>
+                                    <td>{$vo.type_name}</td>
+                                    <td>{$vo.block_name}</td>
+                                    <td>{$vo.block_price}</td>
+                                    <td>{$vo.block_state}</td>
+                                    <td>{$vo.block_temp}</td>
+                                    <td>{$vo.area_total}</td>
+                                    <td>{$vo.seed}</td>
+                                    <td>{$vo.add_time|date='Y-m-d H:i:s', ###}</td>
+                                    <td>
+                                        <a title="编辑" href="{:U('blockedit', array('farm_id'=>$farm_id, 'block_id'=>$vo['block_id']))}">编辑</a>
+                                        <a class="confirm ajax-get" title="删除" href="{:U('blockdel', array('farm_id'=>$farm_id, 'block_id'=>$vo['block_id']))}">删除</a>
+                                    </td>
+                                </tr>
+                                </volist>
+                            <else/>
+                                <tr>
+                                    <td colspan="10" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+		// 导航高亮
+		highlight_subnav('{:U("Farm/farm")}');
+		
+		// 搜索
+        $("#search").click(function(){
+            var url = "{:U('?farm_id='.$farm_id)}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+    </script>
+</block>

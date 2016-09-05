@@ -1,0 +1,85 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>网站管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">网站管理</a>
+            </li>
+            <li class="active">网站管理</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="tab-body">
+                        <ul class="tab-nav nav">
+                            <volist name="Think.config.CONFIG_GROUP_LIST" id="group">
+                                <li <eq name="id" value="$key">class="current"</eq>><a href="{:U('?id='.$key)}">{$group}配置</a></li>
+                            </volist>
+                        </ul>
+                    </div>
+                    <form role="form" action="{:U('save')}" class="form">
+                        <volist name="list" id="config">
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="item-label">{$config.title}<span class="check-tips">（{$config.remark}）</span> </label>
+                                    <switch name="config.type">
+                                        <case value="0">
+                                            <input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
+                                        </case>
+                                        <case value="1">
+                                            <input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
+                                        </case>
+                                        <case value="2">
+                                            <textarea class="form-control" rows="6" name="config[{$config.name}]">{$config.value}</textarea>
+                                        </case>
+                                        <case value="3">
+                                            <textarea class="form-control" rows="6" name="config[{$config.name}]">{$config.value}</textarea>
+                                        </case>
+                                        <case value="4">
+                                            <select class="form-control" name="config[{$config.name}]">
+                                                <volist name=":parse_config_attr($config['extra'])" id="vo">
+                                                    <option value="{$key}" <eq name="config.value" value="$key">selected</eq>>{$vo}</option>
+                                                </volist>
+                                            </select>
+                                        </case>
+                                    </switch>
+                                </div>
+                            </div>
+                        </volist>
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $("#search").click(function(){
+            var url = "{:U('index')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+    </script>
+</block>

@@ -1,0 +1,110 @@
+<extend name="Public/common" />
+
+<block name="style">
+</block>
+
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>系统</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">系统权限</a>
+            </li>
+
+            <empty name="info">
+                <li class="active">
+                    <a href="{:U('Auth/index')}">权限列表</a>
+                </li>
+            </empty>
+
+            <notempty name="info">
+                <li><a href="{:U('Auth/index')}">权限列表</a></li>
+                <li class="active">{$info.module_name}</li>
+            </notempty>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-left">
+                            <a href="{:U('add')}" class="btn btn-info">添加</a>
+                            <if condition="I('parent_id') neq 0">
+                                <button class="btn a-back">返回</button>
+                            </if>
+                        </div>
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="text" name="name" class="form-control search-input" value="{:I('name')}" placeholder="请输入模块名称">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>排序ID</th>
+                                <th width="40px">图标</th>
+                                <th>名称</th>
+                                <th>绑定地址</th>
+                                <th width="130">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="row">
+                                    <tr>
+                                        <td width="80">{$row.module_index}</td>
+                                        <td><i class="{$row.module_img}"></i></td>
+                                        <td>{$row.module_name}</td>
+                                        <td><a href="{:U($row['module_bind'])}" target="_blank">{$row.module_bind}</a></td>
+                                        <td>
+                                            <a title="编辑" href="{:U('edit?id='.$row['module_id'])}">编辑</a>
+                                            <a class="confirm ajax-get" title="删除" href="{:U('del?id='.$row['module_id'])}">删除</a>
+                                            <if condition="$row['is_menu'] eq 1 && $row['parent_id'] eq 0">
+                                                <a title="删除" href="{:U('index?parent_id='.$row['module_id'])}">子菜单</a>
+                                            </if>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                <else/>
+                                <tr>
+                                    <td colspan="6" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">{$page}</div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $("#search").click(function(){
+            var url = "{:U('index')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+    </script>
+</block>

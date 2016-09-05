@@ -1,0 +1,121 @@
+<extend name="Public/commonOther"/>
+<block name="style">
+	<style>
+		body{
+			background-color:#e7e6e6
+		}
+		#navWrp{
+			border-bottom: 1px solid #d29d3e;
+			padding: 20px 0 10px 0;
+		}
+		#navWrp .container{
+			padding:0 100px
+		}
+		.piclist{
+			margin-top: 15px;
+			padding:0
+		}
+		.piclist li{
+			display: inline-block;
+			padding:0;
+			cursor: pointer;
+		}
+		.piclist li img{
+			width: 100%;
+			height: auto;
+			padding-right:15px
+		}
+		.picZoomer{
+			padding-right:15px
+		}
+		#main{
+			background: url(__IMG__/loginBg.jpg) no-repeat top center;
+			background-size: cover;
+		}
+
+		#loginWrp{
+			width: 70%;
+			background-color: rgba(255,255,255,0.75);
+			margin: 80px auto;
+			padding: 30px 10px;
+		}
+		.red{
+			color:red
+		}
+		label.control-label{
+			color: #565656;
+			padding-right: 0;
+			font-weight: normal;
+		}
+		.gray{
+			color:#9c9c9c
+		}
+	</style>
+</block>
+<block name="body">
+	<!---main-->
+	<div class="clearfix">
+		<div id="loginWrp">
+			<div class="formWrp">
+				<h3 style="font-size:20px;font-weight:bold;text-align:left;margin-bottom:20px">用户注册</h3>
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">用户名：</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="userName" placeholder="支持中文，数字，字母，4-20位">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputMobile" class="col-sm-4 control-label">手机号：</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="inputMobile" placeholder="请输入11位手机号">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputCheckcode" class="col-sm-4 control-label">验证码：</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" id="inputCheckcode" placeholder="">
+						</div>
+						<div class="col-sm-2">
+							<img src="__IMG__/checkCode.jpg" alt="">
+						</div>
+						<div class="col-sm-2 form-control-static">看不清，<span style="color:#2990d8;cursor: pointer">换一张？</span></div>
+					</div>
+					<div class="form-group">
+						<label for="inputMescode" class="col-sm-4 control-label">校验码：</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" id="inputMescode" placeholder="">
+						</div>
+						<div class="col-sm-4">
+							<button class="btn btn-default">获取短信验证码</button>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="password" class="col-sm-4 control-label">密码：</label>
+						<div class="col-sm-4">
+							<input type="password" class="form-control" id="password" placeholder="6位数字">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="surePassword" class="col-sm-4 control-label">确认密码：</label>
+						<div class="col-sm-4">
+							<input type="password" class="form-control" id="surePassword" placeholder="输入与上次相同的密码">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="rule" class="col-sm-4 col-sm-offset-4 control-label" style="text-align:center">
+							<input type="checkbox" id="rule" style="margin-right:6px" checked="true">我已看过并同意<span style="color:#2990d8">《网络服务协议》</span>
+						</label>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-4" style="margin-top: 20px;">
+							<button class="btn btn-warning col-sm-5" style="height: 50px;font-size: 18px;">立即注册</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</block>

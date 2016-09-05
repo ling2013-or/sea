@@ -1,0 +1,57 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>方案管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('Storageplan/index')}">存储方案</a>
+            </li>
+            <li class="active">新增方案</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="storage_name">方案名称 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="storage_name" id="storage_name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="storage_descript">方案描述 <span class="check-tips"></span></label>
+                                <textarea class="form-control" name="storage_descript" id="storage_descript"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="price">方案单价<span class="check-tips">（单位:元）</span></label>
+                                <input type="number" class="form-control" name="storage_price" id="price" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="storage_time">存储时间<span class="check-tips">（单位:天）</span></label>
+                                <input type="number" class="form-control" name="storage_time" id="storage_time">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('Storageplan/index')}");
+    </script>
+</block>

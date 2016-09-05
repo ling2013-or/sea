@@ -1,0 +1,79 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>系统</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('Adminuser/index')}">系统管理员</a>
+            </li>
+            <li class="active">添加管理员</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="name">管理员名称 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="admin_name" id="name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="group">所属分组 <span class="check-tips">（管理员所属的用户组）</span></label>
+                                <select class="form-control" id="group" name="group_id">
+                                    <volist name="group" id="list">
+                                        <option value="{$list.group_id}">{$list.group_name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="true_name">姓名 <span class="check-tips">（管理员真实姓名）</span></label>
+                                <input type="text" class="form-control" name="true_name" id="true_name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="phone">手机号</label>
+                                <input type="text" class="form-control" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="email">邮箱</label>
+                                <input type="text" class="form-control" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="new_pwd">密码 <span class="check-tips">（请输入至少6位的密码）</span></label>
+                                <input type="password" class="form-control" name="new_pwd" id="new_pwd">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="v_pwd">重复密码</label>
+                                <input type="password" class="form-control" name="v_pwd" id="v_pwd">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('Adminuser/index')}");
+    </script>
+</block>

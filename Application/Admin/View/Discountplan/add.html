@@ -1,0 +1,88 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>方案管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('Discountplan/index')}">折扣方案</a>
+            </li>
+            <li class="active">新增方案</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="col-lg-12 alert alert-info">
+                        提示：折扣为用户在各时期转换为收益时的百分比，如设置 <span class="label label-primary">播种期折扣</span> 为30,如果用户在播种期要获得收益,则 <span class="label label-primary">收益 = 市场价值 x 30%</span>
+                        <button type="button" class="close close-sm" data-dismiss="alert">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-12 alert alert-danger">
+                        注意：过期折扣是按照过期天数累加的，如设置过期折扣为1,如果用户在过期15天时获得收益为 <span class="label label-primary">收益 = 市场价值 x (100 - 1 x 15)%</span>
+                        <button type="button" class="close close-sm" data-dismiss="alert">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="seeding">播种期折扣 <span class="check-tips"></span></label>
+                                <input type="number" class="form-control" name="seeding" id="seeding">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="nursery">育苗期折扣 <span class="check-tips"></span></label>
+                                <input type="number" class="form-control" name="nursery" id="nursery">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="grow">生长期折扣 <span class="check-tips"></span></label>
+                                <input type="number" class="form-control" name="grow" id="grow">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="maturity">成熟期折扣 <span class="check-tips"></span></label>
+                                <input type="number" class="form-control" name="maturity" id="maturity">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="reap">收获期折扣 <span class="check-tips"></span></label>
+                                <input type="number" class="form-control" name="reap" id="reap">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="storage">存储期折扣 <span class="check-tips"></span></label>
+                                <input type="number" class="form-control" name="storage" id="storage">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="over">过期折扣 <span class="check-tips"></span></label>
+                                <input type="number" class="form-control" name="over" id="over">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('Discountplan/index')}");
+    </script>
+</block>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>农场管理平台</title>
+    <link href="__CSS__/style.css" rel="stylesheet">
+    <link href="__CSS__/style-responsive.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="sticky-header">
+<div class="col-xs-6">
+    <div class="panel">
+        <header class="panel-heading">当前组管理员</header>
+        <div class="panel-body">
+            <ul class="activity-list">123
+                <foreach name="group_admin_list" item="row">
+                    <li class="item" data="{$row.admin_id}"><i class="fa fa-user"></i> {$row.admin_name}</li>
+                </foreach>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="col-xs-6">
+    <div class="panel">
+        <header class="panel-heading">网站管理员</header>
+        <div class="panel-body">
+            <ul class="activity-list">
+                <foreach name="admin_list" item="row">
+                    <li class="item" data="{$row.admin_id}">
+                        <i class="fa fa-user"></i> {$row.admin_name}
+                        <span class="pull-right small"><if condition="$row['gorup_name'] eq ''">无分组<else/>{$row['group_name']}</if> <i class="fa fa-group"></i></span>
+                    </li>   
+                </foreach>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="__JS__/jquery-1.10.2.min.js"></script>
+<script src="__JS__/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="__JS__/jquery-migrate-1.2.1.min.js"></script>
+<script src="__JS__/bootstrap.min.js"></script>
+<script src="__JS__/modernizr.min.js"></script>
+<script src="__JS__/jquery.nicescroll.js"></script>
+<script src="__ASSET__/layer/layer.js" type="text/javascript"></script>
+<!--common scripts for all pages-->
+<script src="__JS__/scripts.js"></script>
+<script src="__JS__/common.js"></script>
+</body>
+</html>

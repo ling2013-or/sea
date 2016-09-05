@@ -1,0 +1,210 @@
+<extend name="Public/common" />
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>商城</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">商品管理</a>
+            </li>
+            <li class="active">商品评论列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-left">
+                            <button class="btn a-back">返 回</button>
+                        </div>
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="hidden" name="id" value="{:I('id')}">
+                                评论时间：
+                                <input type="text" name="start_time" value="{:I('start_time')}" class="laydate-icon form-control search-input" id="start" placeholder="开始时间"/>
+                                <input type="text" name="end_time" value="{:I('end_time')}" class="form-control search-input laydate-icon" id="end" placeholder="结束时间"/>
+                                <input type="text" name="user_name" class="form-control search-input" value="{:I('user_name')}" placeholder="请输入用户名">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th width="220">评价信息</th>
+                                <th >评价</th>
+                                <th width="270">回复</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="row">
+                                    <tr>
+                                        <td>
+                                            <span class="text-warning">用户名称: </span>{$row.user_name}<br>
+                                            <span class="text-warning">商品名称: </span>{$row.goods_name}<br>
+                                            <span class="text-warning">订单编号: </span><a href="{:U('Order/detail',array('order_id'=>$row['order_id']))}">{$row.order_sn}</a><br/>
+                                            <span class="text-warning">审核状态: </span>
+                                            <if condition="$row['status'] eq 1"><span class="badge badge-success" data="{$row['id']}" status="-2" role="change">通过</span></if>
+                                            <if condition="$row['status'] eq 0"><span class="badge">待审核</span> <a href="javascript:;" data="{$row['id']}" status="1" role="change">通过</a>/<a href="javascript:;" data="{$row['id']}" status="-2" role="change">不通过</a></if>
+                                            <if condition="$row['status'] eq -2"><span class="badge badge-important" data="{$row['id']}" status="1" role="change">未通过</span></if>
+                                        </td>
+                                        <td class="small img_show">
+                                            <span class="text-warning">评价分数: </span>
+                                            <for start="0" end="5" name="i">
+                                                <if condition="$row['star'] gt $i">
+                                                    <i class="fa fa-star text-success"></i>
+                                                    <else/>
+                                                    <i class="fa fa-star-o"></i>
+                                                </if>
+                                            </for>
+                                            <br>
+                                            <span class="text-warning">评论时间: </span>{$row.comment_time|date='Y-m-d H:i:s', ###}
+                                            <br>
+                                            <span class="text-warning">评论内容: </span> {$row.comment}
+                                            <br>
+                                            <notempty name="row['comment_image']">
+                                                <span class="text-warning">发表图片: </span>
+                                                <foreach name="row['comment_image']" item="list">
+                                                    <img src="{$list}"  style="width:20px;height:20px;" class="img-thumbnail">
+                                                </foreach>
+                                            </notempty>
+                                        </td>
+                                        <td class="small">
+                                            <if condition="$row['reply_time'] eq 0">
+                                                <a href="javascript:reply('{:U("addreply",array("id"=>$row['id']))}');" class="btn btn-success">快速回复</a>
+                                                <else/>
+                                                <span class="text-warning">回复时间: </span>{$row.reply_time|date='Y-m-d H:i:s', ###}
+                                                <br>
+                                                <span class="text-warning">回复内容: </span>{$row.reply}
+                                                <br>
+                                                <a href="javascript:reply('{:U("editreply",array("id"=>$row['id']))}');">编辑评论</a>
+                                            </if>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                <else/>
+                                <tr>
+                                    <td colspan="13" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+
+
+<block name="script">
+    <script src="__ASSET__/laydate/laydate.js"></script>
+    <script>
+
+
+        var start = {
+            elem: '#start',
+            format: 'YYYY-MM-DD',
+            min: '2015-10-10', //设定最小日期为当前日期
+            max: laydate.now(), //最大日期
+            istoday: false,
+            choose: function(datas){
+                end.min = datas; //开始日选好后，重置结束日的最小日期
+                end.start = datas; //将结束日的初始值设定为开始日
+            }
+        };
+        var end = {
+            elem: '#end',
+            format: 'YYYY-MM-DD',
+            min: '2015-10-10',
+            max: laydate.now(), //最大日期
+            istoday: true,
+            choose: function(datas){
+                start.max = datas; //结束日选好后，重置开始日的最大日期
+            }
+        };
+        laydate.skin('molv');
+        laydate(start);
+        laydate(end);
+        window.setValue('type', '{:I("type", 0, "intval")}');
+        $("#search").click(function(){
+            var url = "{:U('comment')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+
+        $('.img_show img').click(function(){
+            var img = '<img src="'+ $(this).attr("src") +'" width="516" class="img-thumbnail"/>';
+            layer.open({
+                type: 1,
+                title: false,
+                closeBtn: 1,
+                area: '526px',
+                skin: 'layui-layer-nobg', //没有背景色
+                shadeClose: true,
+                content: img,
+                end: function(){
+                }
+            });
+        });
+
+        function reply(url)
+        {
+            layer.open({
+                type: 2,
+                title: false,
+                closeBtn: 1,
+                area: ['80%','600px'],
+                skin: 'layui-layer-nobg', //没有背景色
+                shadeClose: true,
+                content: url,
+            });
+        }
+
+        $('#unseen [role="change"]').click(function(){
+            var that = $(this);
+            var url = "{:U('access')}";
+            var data = {};
+            data.status = $(this).attr('status');
+            data.id = $(this).attr('data');
+            $.get(url,data,function(res){
+                if (res.status == 1) {
+                    layer.msg(res.info,{icon:6});
+                    if (data.status == 1) {
+                        if (that.is('span')) that.attr('status', -2);
+                        that.parent().children('.badge').removeClass('badge-important').addClass('badge-success').html('通过');
+                    } else {
+                        if (that.is('span')) that.attr('status', 1);
+                        that.parent().children('.badge').removeClass('badge-success').addClass('badge-important').html('未通过');
+                    }
+
+                } else {
+                    layer.msg(res.info,{icon:5});
+                }
+            })
+        });
+    </script>
+</block>

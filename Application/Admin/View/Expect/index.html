@@ -1,0 +1,142 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>预期收获</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">预期收获管理</a>
+            </li>
+            <li class="active">预期列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="text" name="username" class="form-control search-input" value="{:I('username')}" placeholder="请输入用户名">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>销售方案批次</th>
+                                <th>用户名</th>
+                                <th>农场名称</th>
+                                <th>作物名称</th>
+                                <th>销售方案名称</th>
+                                <th>种植时间</th>
+                                <th>收获时间</th>
+                                <th>种植面积</th>
+                                <th>预期产量</th>
+                                <th>实际产量</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="vo">
+                                    <tr>
+                                        <td>{$vo.plan_sn}</td>
+                                        <td>{$vo.user_name}</td>
+                                        <td>{$vo.farm_name}</td>
+                                        <td>{$vo.seed_name}</td>
+                                        <td>{$vo.plan_name}</td>
+                                        <td>{$vo.plan_start|date='Y-m-d', ###}</td>
+                                        <td>{$vo.plan_end|date='Y-m-d', ###}</td>
+                                        <td>{$vo.plant_area}</td>
+                                        <td>{$vo.expect_yield}</td>
+                                        <td>{$vo.real_yield}</td>
+                                        <td>
+                                            <if condition="$vo.status eq 0 && $vo['plan_end'] elt $today">
+                                                <a href="javascript:doComple$te({$vo.id})">收益</a>
+                                                <else/>
+                                                --
+                                            </if>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                <else/>
+                                <tr>
+                                    <td colspan="10" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        highlight_subnav("{:U('index')}");
+        $("#search").click(function(){
+            var url = "{:U('index')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+
+        function doComplete(id)
+        {
+            layer.use('extend/layer.ext.js', function(){
+                layer.prompt({
+                    title: '实际收益(单位:千克)',
+                    formType: 0
+                }, function(cont){
+                    var cont = parseFloat(cont);
+                    layer.confirm('总收益为 <span class="label label-danger">'+cont+' 千克</span>', {
+                        btn: ['确定','返回']
+                    }, function(){
+                        $.ajax({
+                            url:'{:U("Expect/doComplete")}',
+                            data:{id:id,real:cont},
+                            type:'post',
+                            dataType:'json',
+                            success:function(res){
+                                if (res.status==0) {
+                                    layer.msg(res.info);  
+                                } else {
+                                    layer.msg('操作成功！');
+                                    //window.location.reload();  
+                                }
+                            },
+                            error:function(){
+                                layer.msg('提交失败');
+                                //window.location.reload();
+                            }
+                        })
+                    }, function(){
+                        doComplete(id,exp); 
+                    }); 
+                });
+            });
+        }
+    </script>
+</block>

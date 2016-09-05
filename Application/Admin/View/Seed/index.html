@@ -1,0 +1,103 @@
+<extend name="Public/common" />
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>种子</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('Seed/index')}">种子管理</a>
+            </li>
+            <li class="active">种子列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-left">
+                            <a href="{:U('add')}" class="btn btn-info">添加</a>
+                        </div>
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="text" name="sn" class="form-control search-input" value="{:I('sn')}" placeholder="请输入种子编码">
+                                <input type="text" name="name" class="form-control search-input" value="{:I('name')}" placeholder="请输入种子名称">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>编号</th>
+                                    <th>名称</th>
+                                    <th>单价(元/平米)</th>
+                                    <th>单株占地面积(平米)</th>
+                                    <th>预期产量(千克/平米)</th>
+                                    <th>生长周期</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="row">
+                                <tr>
+                                    <td>{$row.seed_sn}</td>
+                                    <td>{$row.seed_name}</td>
+                                    <td>{$row.seed_price}</td>
+                                    <td>{$row.density}</td>
+                                    <td>{$row.output_min} 至 {$row.output_max}</td>
+                                    <td>
+                                        <a href="javascript:void(0)" onmouseover="getDefault(this,{$row.period_seeding},{$row.period_nursery},{$row.period_grow},{$row.period_maturity},{$row.period_reap})">查看</a>
+                                    </td>
+                                    <td>
+                                        <a title="编辑" href="{:U('edit?id='.$row['seed_id'])}">编辑</a>
+                                        <a class="confirm ajax-get" title="删除" href="{:U('del?id='.$row['seed_id'])}">删除</a>
+                                    </td>
+                                </tr>
+                                </volist>
+                            <else/>
+                                <tr>
+                                    <td colspan="7" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $("#search").click(function(){
+            var url = "{:U('index')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+        function getDefault(obj,a,b,c,d,e){
+            layer.tips('播种期:'+a+' 天<br>育苗期:'+b+' 天<br>生长期:'+c+' 天<br>成熟期:'+d+' 天<br>收获期:'+e+' 天<br>', obj,{tips: [2, '#424F63']});
+        }
+    </script>
+</block>

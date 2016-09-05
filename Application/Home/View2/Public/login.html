@@ -1,0 +1,143 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <style>
+        body{
+            background-color:#e7e6e6
+        }
+        #navWrp{
+            border-bottom: 1px solid #d29d3e;
+            padding: 20px 0 10px 0;
+        }
+        #navWrp .container{
+            padding:0 100px
+        }
+        .piclist{
+            margin-top: 15px;
+            padding:0
+        }
+        .piclist li{
+            display: inline-block;
+            padding:0;
+            cursor: pointer;
+        }
+        .piclist li img{
+            width: 100%;
+            height: auto;
+            padding-right:15px
+        }
+        .picZoomer{
+            padding-right:15px
+        }
+        #main{
+            background: url(./img/loginBg.jpg) no-repeat top center;
+            background-size: cover;
+        }
+
+        #loginWrp{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            width: 70%;
+            background-color: rgba(255,255,255,0.75);
+            margin: 80px auto;
+            padding: 30px 10px;
+        }
+        .form-control{
+            height: 50px;
+            border: none;
+            padding: 0 0 0 10px;
+        }
+        .loginNote{
+            border-left:1px dashed #ccc;
+            margin-left: 30px;
+        }
+        .loginNote ul{
+            padding: 0;
+            margin-left: 10px;
+            margin-bottom: 0;
+        }
+        .loginNote li p{
+            color: #999;
+            margin-bottom: 20px;
+        }
+        .inputWrp{
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .inputWrp span{
+            height: 30px;
+            line-height: 30px;
+            border-right: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 0;
+            text-align: center;
+        }
+    </style>
+
+</block>
+<block name="body">
+
+    <!---main-->
+    <div class="clearfix">
+        <div id="loginWrp">
+            <div class="formWrp col-md-5">
+                <h3 style="font-size:20px;font-weight:bold;text-align:center;margin-bottom:20px">用户登陆</h3>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="clearfix inputWrp">
+                            <span class="col-md-2">头像</span>
+                            <div class="col-md-10" style="padding:0">
+                                <input type="text" class="form-control" id="userName" placeholder="用户名">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="clearfix inputWrp">
+                            <span class="col-md-2">密码</span>
+                            <div class="col-md-10" style="padding:0">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox pull-right">
+                            <label>
+                                <input type="checkbox">记住密码
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12" style="padding:0">
+                            <button type="submit" class="btn btn-primary" style="width:100%;height:50px">登陆</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="loginNote col-md-7">
+                <ul>
+                    <li class="clearfix">
+                        <h4>如果您还不是会员，请点击“马上注册”。</h4>
+                        <p>请创建并登录您的账户，享受更多的服务和了解更多的信息。</p>
+                        <button class="btn btn-primary pull-right">马上注册</button>
+                    </li>
+                    <li class="clearfix">
+                        <h4>如果您还忘记了密码，请点击“忘记密码”。</h4>
+                        <p>您可以通过点击“忘记密码”按钮，进入相应的页面进行密码找回工作。</p>
+                        <button class="btn btn-primary pull-right">忘记密码</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__JS__/jquery-1.9.1.min.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.picZoomer.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <script>
+
+    </script>
+</block>

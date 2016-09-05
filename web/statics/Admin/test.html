@@ -1,0 +1,165 @@
+http://mg.howjihui.com/home/login
+
+http://centaurus.adbee.technology/v5/index.html
+
+10个应用
+http://www.cnblogs.com/lhb25/archive/2011/09/14/10-exceptional-examples-of-html5-canvas-and-applications.html
+
+
+http://www.flightarcade.com/missions/tin/play
+
+
+提示框效果
+http://www.htmleaf.com/Demo/20141016209.html
+提示效果（可以移动的）
+http://www.51xuediannao.com/js/jquery/jquery_tanchu/#
+
+
+
+
+<script>
+	$(function(){
+		// 用假来代表我们的大图是隐藏的
+		var flag = false;
+		$('.l').click(function(){
+			if( !flag ){
+				$('.box').animate({"right":0},400);
+				flag = true;
+			}else{
+				$('.box').animate({"right":-131},400);
+				flag = false;
+			}
+			
+		});
+	});
+</script>
+
+
+
+
+
+表格插入
+<script type="text/javascript">
+    $(function () {
+        init();
+    });
+    function init() {
+        var html = '<table>';
+        html += '<thead>';
+        html += '<tr>';
+        html += '<th>周一</th>';
+        html += '<th>周二</th>';
+        html += '<th>周三</th>';
+        html += '<th>周四</th>';
+        html += '<th>周五</th>';
+        html += '<th>周六</th>';
+        html += '<th>周日</th>';
+        html += '</tr>';
+        html += '</thead>';
+        html += '</table>';
+        $(document.body).append(html);
+    }
+</script>
+
+
+
+http://www.howjihui.com/webdemo/staff_selection
+
+
+
+
+<script>
+var manage = function () { };
+    manage.prototype.init = function () {
+       var html = '<table>';
+       html += '<thead>';
+      html += '<tr>';
+        html += '<th>周一</th>';
+       html += '<th>周二</th>';
+        html += '<th>周三</th>';
+       html += '<th>周四</th>';
+       html += '<th>周五</th>';
+        html += '<th>周六</th>';
+        html += '<th>周日</th>';
+        html += '</tr>';
+      html += '</thead>';
+       html += '</table>';
+     $(document.body).append(html);
+</script>
+<script type="text/javascript">
+    var demo = new manage();
+    $(function () {
+     demo.init();
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+滚动///
+<script type="text/javascript">
+    $(function () {
+        loaded();
+    });
+    var myScroll1;
+    var myScroll2;
+    function loaded() {
+        myScroll1 = new IScroll('#wrapper1', { scrollX: true, scrollY: false, mouseWheel: true });
+        myScroll2 = new IScroll('#wrapper2', { scrollX: true, scrollY: false, mouseWheel: true });
+    }
+</script>
+
+
+
+
+
+
+<div class="form-group text-center">
+                    <a class="btn" href="#">取消</a>
+                    <button class="btn btn-success submit" type="submit">确认维修</button>
+                </div>
+
+
+
+ <div class="form-group text-center">
+        <button class="btn btn-success confirm " type="submit">确认提交</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+ <nav class="nav navbar-fixed-bottom">
+                    <div class="btn-group btn-group-justified" role="group">
+                        <div class="btn-group" role="group">
+                            <a href="phonerepair3.html" class="btn-pay">提交订单，并支付39元</a>
+                        </div>
+                    </div>
+                </nav>
+.rent-order-success .btn-pay {font-size:18px;color:#fff;height:50px;line-height:50px;background-color:#2ac87d;display:block;text-align:center; }
+
+
+
+.btn-pay {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #67b106;
+    color: #fff;
+    text-align: center;
+}

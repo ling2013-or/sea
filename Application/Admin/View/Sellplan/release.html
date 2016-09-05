@@ -1,0 +1,96 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>商城</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('index')}">养殖管理列表</a>
+            </li>
+            <li class="active">发布养殖管理</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <input type="hidden" name="plan_id" value="{$plan_id}">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="name">产品名称 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" id="name" readonly value="{$goods_name}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-8">
+                                <label class="item-label">接收人 <span class="check-tips"></span></label>
+                                <if condition="$lists[0] neq null">
+                                    <div class="col-md-12" id="checkControl" onselectstart="return false">
+                                        <label><input type="checkbox" id="checkAll"> 全选</label>
+                                        <label><input type="checkbox" id="revCheckAll"> 反选</label>
+                                        <label><input type="checkbox" id="cancelAll"> 取消</label>
+                                    </div>
+                                    <hr>
+                                    <div id="moduleList" onselectstart="return false">
+                                    <volist name="lists" id="va">
+                                        <label class="col-md-4"><input type="checkbox" name="goods_id[]" value="{$va.id}"> {$va.order_sn}:{$va.user_name}</label>
+                                    </volist>
+                                        </div>
+                                    <else/>
+                                    暂无接收人
+                                </if>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">发 布</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('Sellpan/index')}");
+        $(function(){
+            //全选
+            $('#checkAll').click(function(){
+                if($(this).is(':checked')){
+                    $('#revCheckAll').removeAttr('checked');
+                    $('#cancelAll').removeAttr('checked');
+                    $('#moduleList input').attr('checked','true');
+                }else{
+                    return false;
+                }
+            });
+
+            //反选
+            $('#revCheckAll').click(function(){
+                if($(this).is(':checked')){
+                    $('#checkAll').removeAttr('checked');
+                    $('#cancelAll').removeAttr('checked');
+                    $('#moduleList input').each(function(){
+                        if($(this).is(':checked')){
+                            $(this).removeAttr('checked');
+                        }else{
+                            $(this).attr('checked','true');
+                        }
+                    });
+                }else{
+                    return false;
+                }
+            });
+
+            //取消
+            $('#cancelAll').click(function(){
+                $('#checkAll').removeAttr('checked');
+                $('#revCheckAll').removeAttr('checked');
+                $('#moduleList input').removeAttr('checked');
+            })
+        })
+    </script>
+</block>

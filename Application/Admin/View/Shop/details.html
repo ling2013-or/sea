@@ -1,0 +1,245 @@
+<extend name="Public/common"/>
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__JS__/uploadify/uploadify.css">
+    <style>
+        #img_show span,#img_show_multi span{
+            position: relative;
+            display: inline-block;
+        }
+
+        #img_show img,#img_show_multi img{
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        #img_show a,#img_show_multi a{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>商城</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('index')}">商品详情</a>
+            </li>
+            <li class="active">商品详情</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form action="#" onsubmit="return false">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="goods_name">商品名称 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="goods_name" id="goods_name" value="{$goods['goods_name']}" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">商品状态</label>
+                                <if condition="$goods['goods_status'] eq 1">
+                                    <span class="badge badge-success">正常出售</span>
+                                    <else/>
+                                    <span class="badge">已下架</span>
+                                </if>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">销售方案分类 <span class="check-tips">（商品所属的销售方案）</span></label>
+                                <input type="text" class="form-control" value="{$goods.plan_name}" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="goods_weight">商品总重量 <span class="check-tips">（单位：千克）</span></label>
+                                <input type="text" class="form-control" name="goods_weight" value="{$goods['goods_weight']}" id="goods_weight" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="goods_price">商品价格<span class="check-tips">（单位：元/千克）</span></label>
+                                <input type="text" class="form-control" name="goods_price" id="goods_price" value="{$goods['goods_price']}"  readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="goods_stock">商品库存<span class="check-tips">（单位：千克）</span></label>
+                                <input type="text" class="form-control" name="goods_stock" value="{$goods['goods_stock']}" id="goods_stock" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">物流模板 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" value="{$goods.title}" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="goods_description">商品描述</label>
+                                <textarea class="form-control" name="goods_description" rows="6" id="goods_description"  readonly>{$goods['goods_description']}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        商品封面图片
+                                    </div>
+                                    <div class="panel-footer" id="img_show">
+                                        <notempty name="goods.goods_image" >
+                                            <span>
+                                                <img src="{$goods.goods_image}" style="width:160px;height:160px;" class="img-thumbnail" alt="商品展示图片">
+                                                <input type="hidden" name="goods_img[]" value="{$goods.goods_image}">
+                                            </span>
+                                        </notempty>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        商品展示图片
+                                    </div>
+                                    <div class="panel-footer" id="img_show_multi">
+                                        <foreach name="goods.goods_image_more" item="row">
+                                            <span>
+                                                <img src="{$row}" style="width:160px;height:160px;" class="img-thumbnail" alt="商品展示图片">
+                                                <input type="hidden" name="goods_img_more[]" value="{$row}">
+                                            </span>
+                                        </foreach>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        商品详情
+                                    </div>
+                                    <div class="panel-footer" id="img_show_multi">
+                                        {$goods.goods_body}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript" src="__JS__/uploadify/jquery.uploadify.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__JS__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__JS__/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript">
+        //ueditor编辑器
+        var ue = UE.getEditor('ueditor', {
+            textarea:'goods_body',
+        });
+
+        //导航高亮
+        highlight_subnav("{:U('Adminuser/index')}");
+
+        //uploadify配置
+        //单图上传
+        $("#upload_file").uploadify({
+            'auto':false,
+            'swf': '__JS__/uploadify/uploadify.swf',
+            'uploader': "{:U('uploadImg',array('path'=>'goods'))}",
+            'buttonText':'选择图片',
+            'fileObjName':'Filedata',
+            'fileSizeLimit':5120,
+            'fileTypeExts':'*.jpg;*.png;*.jpeg;*.gif',
+            'fileTypeDesc':'请您选择图片',
+            //'formData':{'uid':id},
+            'width':68,
+            'height':28,
+            'multi':false,
+            'queueSizeLimit':1,
+            'itemTemplate':false,
+            'onUploadSuccess':function(file, data){
+                var res = $.parseJSON(data);
+                if (res.status) {
+                    $('#seed_demo').remove();
+                    var cont = '<span><img src="'+res.info+'" style="width:160px;height:160px;" class="img-thumbnail" alt="商品封面图片">';
+                    cont += '<input type="hidden" name="goods_image" value="'+res.info+'">';
+                    cont += '<a href="javascript:void(0)" class="btn btn-xs btn-primary"> 删除 </a></span>';
+                    $('#img_show').append(cont);
+                    $('#img_show a').click(function() {
+                        $(this).parent().remove();
+                    })
+                } else {
+                    layer.msg(res.info);
+                }
+            }
+        });
+        $('#upload_btn').click(function() {
+            $('#upload_file').uploadify('upload','*');
+        });
+
+        //多图上传
+        $("#upload_file_multi").uploadify({
+            'auto':false,
+            'swf': '__JS__/uploadify/uploadify.swf',
+            'uploader': "{:U('uploadImg',array('path'=>'goods'))}",
+            'buttonText':'选择图片',
+            'fileObjName':'Filedata',
+            'fileSizeLimit':5120,
+            'fileTypeExts':'*.jpg;*.png;*.jpeg;*.gif',
+            'fileTypeDesc':'请您选择图片',
+            //'formData':{'uid':id},
+            'width':68,
+            'height':28,
+            'multi':true,
+            //'queueSizeLimit':1,
+            'itemTemplate':false,
+            'onUploadSuccess':function(file, data){
+                var res = $.parseJSON(data);
+                if (res.status) {
+                    $('#seed_demo').remove();
+                    var cont = '<span><img src="'+res.info+'" style="width:160px;height:160px;" class="img-thumbnail" alt="商品展示图片">';
+                    cont += '<input type="hidden" name="goods_image_more[]" value="'+res.info+'">';
+                    cont += '<a href="javascript:void(0)" class="btn btn-xs btn-primary"> 删除 </a></span>';
+                    $('#img_show_multi').append(cont);
+                    $('#img_show_multi a').click(function() {
+                        $(this).parent().remove();
+                    })
+                } else {
+                    layer.msg(res.info);
+                }
+            }
+        });
+        $('#upload_btn_multi').click(function() {
+            $('#upload_file_multi').uploadify('upload','*');
+        });
+
+        $('#img_show_multi a').add('#img_show a').click(function() {
+            $(this).parent().remove();
+        })
+    </script>
+</block>

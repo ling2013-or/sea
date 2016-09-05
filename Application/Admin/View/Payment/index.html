@@ -1,0 +1,49 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>支付方式</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">支付方式</a>
+            </li>
+            <li class="active">支付方式列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="alert alert-info fade in">
+                        <button type="button" class="close close-sm" data-dismiss="alert">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <strong>温馨提示：</strong> 此处列出了系统支持的支付方式，点击编辑可以设置支付参数及开关状态
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <td>支付方式</td>
+                                <td>状态</td>
+                                <td>操作</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <volist name="lists" id="vo">
+                                    <tr>
+                                        <td>{$vo.name}</td>
+                                        <td>{$vo.status|get_payment_status}</td>
+                                        <td><a href="{:U('edit', array('id'=>$vo['id']))}">编辑</a></td>
+                                    </tr>
+                                </volist>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>

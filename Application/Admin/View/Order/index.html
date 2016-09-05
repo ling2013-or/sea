@@ -1,0 +1,258 @@
+<extend name="Public/common"/>
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/order.css">
+</block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>订单管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">订单管理</a>
+            </li>
+            <li class="active">订单列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="tab-body">
+                        <ul class="tab-nav nav">
+                            <li
+                            <eq name="state_type" value="state_order">class="current"</eq>
+                            ><a href="{:U()}">所有订单</a></li>
+                            <li
+                            <eq name="state_type" value="state_new">class="current"</eq>
+                            ><a href="{:U('', array('state_type'=>'state_new'))}">待付款</a></li>
+                            <li
+                            <eq name="state_type" value="state_pay">class="current"</eq>
+                            ><a href="{:U('', array('state_type'=>'state_pay'))}">已付款</a></li>
+                            <li
+                            <eq name="state_type" value="state_send">class="current"</eq>
+                            ><a href="{:U('', array('state_type'=>'state_send'))}">待完成养殖</a></li>
+                            <li
+                            <eq name="state_type" value="state_success">class="current"</eq>
+                            ><a href="{:U('', array('state_type'=>'state_success'))}">待评论</a></li>
+                            <li
+                            <eq name="state_type" value="state_cancel">class="current"</eq>
+                            ><a href="{:U('', array('state_type'=>'state_cancel'))}">已取消</a></li>
+                        </ul>
+                    </div>
+                    <div class="operate-body">
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                下单时间：<input type="text" name="start_time" value="{:I('start_time')}" class="laydate-icon form-control search-input" id="start" placeholder="开始时间"/>
+                                <input type="text" name="end_time" value="{:I('end_time')}" class="form-control search-input laydate-icon" id="end" placeholder="结束时间"/>
+                                <input type="text" name="buyer_name" class="form-control search-input" value="{:I('buyer_name')}" placeholder="请输入会员名">
+                                <input type="text" name="order_sn" class="form-control search-input" value="{:I('order_sn')}" placeholder="请输入订单号">
+
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table order-table-style order">
+                            <thead>
+                            <tr>
+                                <th class="w10"></th>
+                                <th colspan="2">商品详情</th>
+                                <th class="w70">单价</th>
+                                <th class="w50">数量</th>
+                                <th class="w110">买家</th>
+                                <th class="w110">订单总价</th>
+                                <th class="w110">状态与操作</th>
+                            </tr>
+                            </thead>
+                            <notempty name="lists">
+                                <volist name="lists" id="vo">
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="20" class="sep-row"></td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="20">
+                                    <span class="fl ml10">订单编号：
+                                        <span class="goods-num"><em>{$vo.order_sn}</em><eq name="vo.order_from"
+                                                                                           value="2"><i
+                                                class="fa fa-mobile" style="font-size: 18px;"></i></eq></span>
+                                    </span>
+                                            <span class="fl ml20">下单时间：<em class="goods-time">{$vo.add_time|date='Y-m-d
+                                                H:i:s', ###}</em></span>
+                                    <span class="fr mr5">
+                                        <a href="{:U('detail', array('order_id'=>$vo['order_id']))}"  class="btn btn-xs">查看订单</a>
+
+                                    </span>
+                                        </th>
+                                    </tr>
+                                    <volist name="vo.extend_order_goods" id="goods">
+                                        <tr>
+                                            <td class="bdl"></td>
+                                            <td class="w50">
+                                                <div class="pic-thumb">
+                                                    <a href="javascript:;" target="_blank" class="img-thumbnail">
+                                                        <img src="{$goods.goods_cover}">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="tl">
+                                                <dl class="goods-name">
+                                                    <dt>
+                                                        <a target="_blank" href="javascript:;">{$goods.goods_name}</a>
+                                                    </dt>
+                                                    <dd></dd>
+                                                </dl>
+                                            </td>
+                                            <td><i class="fa fa-rmb"></i>{$goods.goods_price}</td>
+                                            <td>{$goods.goods_num}</td>
+                                            <if condition="((count($vo['extend_order_goods']) gt 1) and ($key eq 0)) or (count($vo['extend_order_goods']) eq 1)">
+                                                <td class="bdl" rowspan="{:count($vo['extend_order_goods'])}">
+                                                    <div class="buyer">{$vo.extend_user.user_name}
+                                                        <p>(账号名)</p>
+                                                        <div class="buyer-info" style="display: none;">
+                                                            <div class="con">
+                                                                <h3><i></i><span>联系信息</span></h3>
+                                                                <dl>
+                                                                    <dt>姓名：</dt>
+                                                                    <dd>{$vo.extend_user.user_name}</dd>
+                                                                </dl>
+                                                                <dl>
+                                                                    <dt>电话：</dt>
+                                                                    <dd>{$vo.extend_user.user_phone}</dd>
+                                                                </dl>
+                                                                <dl>
+                                                                    <dt>地址：</dt>
+                                                                    <dd>{$vo.address}</dd>
+                                                                </dl>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="bdl" rowspan="{:count($vo['extend_order_goods'])}">
+                                                    <p class="order-order-amount"><i class="fa fa-rmb"></i>{$vo.order_amount}
+                                                    </p>
+
+                                                    <p class="goods-pay">{$vo.payment_name}</p>
+
+                                                    <p class="goods-freight"></p>
+                                                </td>
+                                                <td class="bdl bdr" rowspan="{:count($vo['extend_order_goods'])}">
+                                                    <p>
+                                                        {$vo.state_txt}
+                                                        <notempty name="vo.evaluation_time">
+                                                            <br/>已评价
+                                                        </notempty>
+                                                    </p>
+                                                    <if condition="$vo.if_cancel eq true">
+                                                        <!-- 取消订单 -->
+                                                        <p>
+                                                            <a href="{:U('cancel', array('order_sn'=>$vo['order_sn'], 'order_id'=>$vo['order_id']))}"
+                                                               class="btn btn-danger btn-xs order-cancel">取消订单</a></p>
+                                                    </if>
+
+                                                    <if condition="$vo.if_pay eq true">
+                                                        <!-- 设为已付款 -->
+                                                        <p>
+                                                            <a href="{:U('order_pay', array('state_type'=>'modify_price', 'order_sn'=>$vo['order_sn'], 'order_id'=>$vo['order_id']))}"
+                                                               class="btn btn-warning btn-xs">确认支付</a></p>
+                                                    </if>
+
+                                                    <if condition="$vo.if_breed eq true">
+                                                        <!-- 养殖中 -->
+                                                        <p><a href="{:U('breed', array('order_id'=>$vo['order_id']))}"
+                                                              class="btn btn-success btn-xs confirm ajax-get">开始养殖</a></p>
+                                                    </if>
+
+                                                    <if condition="$vo.if_breed_over eq true">
+                                                        <!-- 养殖完成 -->
+                                                        <p><a href="{:U('over_will', array('order_id'=>$vo['order_id']))}"
+                                                              class="btn btn-success btn-xs confirm ajax-get">养殖完成</a></p>
+                                                    </if>
+
+                                                    <if condition="$vo.if_lock eq true">
+                                                        <!-- 锁定 -->
+                                                        退款退货中
+                                                    </if>
+                                                </td>
+                                            </if>
+                                        </tr>
+                                    </volist>
+                                    </tbody>
+                                </volist>
+                                <else/>
+                                <tbody>
+                                <tr>
+                                    <td colspan="8" class="text-center">暂无数据</td>
+                                </tr>
+                                </tbody>
+                            </notempty>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__ASSET__/laydate/laydate.js"></script>
+    <script>
+        window.setValue("is_platform", "{:I('is_platform')}");
+        var start = {
+            elem: '#start',
+            format: 'YYYY-MM-DD',
+            min: '2015-10-10', //设定最小日期为当前日期
+            max: laydate.now(), //最大日期
+            istoday: false,
+            choose: function(datas){
+                end.min = datas; //开始日选好后，重置结束日的最小日期
+                end.start = datas; //将结束日的初始值设定为开始日
+            }
+        };
+        var end = {
+            elem: '#end',
+            format: 'YYYY-MM-DD',
+            min: '2015-10-10',
+            max: laydate.now(), //最大日期
+            istoday: true,
+            choose: function(datas){
+                start.max = datas; //结束日选好后，重置开始日的最大日期
+            }
+        };
+        laydate.skin('molv');
+        laydate(start);
+        laydate(end);
+        var tips;
+        $('.buyer').mouseover(function () {
+            var content = $(this).find('.buyer-info').html();
+            tips = layer.tips(content, this, {
+                time: 0
+            });
+        }).mouseout(function () {
+            layer.close(tips);
+        });
+        highlight_subnav("{:U('index')}");
+        $("#search").click(function () {
+            var url = "{:U('index')}";
+            var query = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+            query = query.replace(/^&/g, '');
+            if (url.indexOf('?') > 0) {
+                url += '&' + query;
+            } else {
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function (e) {
+            if (e.keyCode === 13) {
+                $("#search").click();
+                return false;
+            }
+        });
+    </script>
+</block>

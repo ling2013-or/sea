@@ -1,0 +1,136 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>社区</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">社区</a>
+            </li>
+            <li class="active">社区列表</li>
+            <li class="active">添加文章</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="name">标题 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="title" id="name" value="{$info.name}" placeholder="文章标题">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="title">描述 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="descript" value="{$info.title}" id="title" placeholder="文章描述">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label carousel">图片<span class="check-tips"></span></label>
+                                <div class="col-md-6">
+                                    <img src="__IMG__/default.jpg" style="width:160px;height:160px;" class="img-thumbnail" id="img_show" alt="用户头像">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <input type="file" id="upload_file">
+                                        <input type="button" class="btn btn-primary btn-sm" id="upload_btn" value=" 上传图片 ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="remark">文章内容<span class="check-tips"></span></label>
+                                <textarea class="form-control" name="content" id="remark" rows="6"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">文章状态<span class="check-tips"></span></label>
+                                <label><input type="radio" name="status" value="1"  > 启用 </label>
+                                &nbsp;
+                                <label><input type="radio" name="status" value="0"  > 禁用 </label>
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <!--file upload-->
+    <script type="text/javascript" src="__JS__/uploadify/jquery.uploadify.js"></script>
+
+    <script>
+        //导航高亮
+        highlight_subnav("{:U('Marketing/community')}");
+        $("#search").click(function(){
+            var url = "{:U('index')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+
+
+        $(document).ready(function() {
+            var id= 123;
+        $("#upload_file").uploadify({
+            'auto':false,
+            'swf': '__JS__/uploadify/uploadify.swf',
+            'uploader': "{:U('Adminuser/uploadImg')}",
+            'buttonText':'选择图片',
+            'fileObjName':'Filedata',
+            'fileSizeLimit':5120,
+            'fileTypeExts':'*.jpg;*.png;*.jpeg;*.gif',
+            'fileTypeDesc':'请您选择图片格式的文件',
+            'formData':{'uid':id},
+            'width':68,
+            'height':28,
+            'multi':true,
+            'queueSizeLimit':1,
+            'itemTemplate':false,
+            'onUploadSuccess':function(file, data, response){
+                var res = $.parseJSON(data);
+                console.log(res);
+                if (res.status) {
+                    $('#upload_url').val(res.info);
+                    $('#img_show').attr('src',res.info);
+                } else {
+                    alert(res.info);
+                }
+
+            }
+        });
+        $('#upload_btn').click(function(){
+            $('#upload_file').uploadify('upload','*');
+        });
+        });
+
+    </script>
+</block>

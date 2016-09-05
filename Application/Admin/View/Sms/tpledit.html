@@ -1,0 +1,60 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>系统</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">模板管理</a>
+            </li>
+            <li class="">模板列表</li>
+            <li class="active">编辑模板</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="name2">模板名称 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="name" id="name2" value="{$info.name}" placeholder="请输入模板名称">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="alias">别名 <span class="check-tips"></span>（示例：alias）</label>
+                                <input type="text" class="form-control" name="alias" id="alias" value="{$info.alias}" placeholder="请输入英文别名">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="ls">模板标签 <span class="check-tips"></span><literal>（示例：手机号码,验证码 [mobile],[code]）</literal></label>
+                                <input type="text" class="form-control" name="param" id="ls" value="{$info.param}" placeholder="[mobile],[code]">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="remark">模板内容<span class="check-tips"><literal>(示例：您好，[name]先生/女士！)</literal></span></label>
+                                <textarea class="form-control" name="content" id="remark" placeholder="<literal>您好，[name]先生/女士！</literal>" rows="6">{$info.content}</textarea>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="id" value="{$info.id}"/>
+
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+
+</block>

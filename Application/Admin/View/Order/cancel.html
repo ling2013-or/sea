@@ -1,0 +1,101 @@
+<extend name="Public/common"/>
+<block name="style">
+    <link href="__JS__/iCheck/skins/square/square.css" rel="stylesheet">
+</block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>订单管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('index')}">订单列表</a>
+            </li>
+            <li class="active">取消订单</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">订单编号：<span class="check-tips"></span></label>
+                                {$order_info.order_sn}
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">取消原因：</label>
+                                    <div class="square single-row icheck">
+                                        <div class="radio pull-left">
+                                            <input tabindex="3" type="radio"  name="state_info" checked value="无法备齐货物">
+                                            <label>无法备齐货物</label>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <div class="square single-row icheck">
+                                    <div class="radio">
+                                        <input tabindex="3" type="radio"  name="state_info" value="不是有效的订单">
+                                        <label>不是有效的订单</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <div class="square single-row icheck">
+                                    <div class="radio">
+                                        <input tabindex="3" type="radio"  name="demo-radio" value="买家主动要求">
+                                        <label>买家主动要求</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <div class="square single-row icheck">
+                                    <div class="radio">
+                                        <input tabindex="3" type="radio"  name="state_info" value="">
+                                        <label>其他原因</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <div class="square single-row icheck">
+                                    <div class="radio">
+                                        <textarea name="state_info1" id="" cols="30" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="order_id" value="{$order_info.order_id}">
+                        <button type="submit" class="btn btn-primary confirm ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__JS__/iCheck/jquery.icheck.js"></script>
+
+    <script>
+        highlight_subnav("{:U('index')}");
+        $('.square input').iCheck({
+            checkboxClass: 'icheckbox_square',
+            radioClass: 'iradio_square',
+            increaseArea: '20%' // optional
+        });
+
+    </script>
+</block>

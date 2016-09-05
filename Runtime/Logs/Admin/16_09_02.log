@@ -1,0 +1,688 @@
+[ 2016-09-02T15:07:50+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+
+[ 2016-09-02T15:07:51+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: config E:\wamp\sea\Runtime\Cache\Admin\3a6c842fd833fab3fb87a55ea38b7da4.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-09-02T15:07:52+08:00 ] 127.0.0.1 /admin.php?s=/Public/vcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-09-02T15:07:53+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: config E:\wamp\sea\Runtime\Cache\Admin\3a6c842fd833fab3fb87a55ea38b7da4.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-09-02T15:08:00+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `sea_admin` [ RunTime:0.0459s ]
+SQL: SELECT `admin_id`,`group_id`,`admin_type`,`admin_name`,`admin_pwd`,`admin_salt`,`true_name`,`img`,`phone`,`email`,`status`,`add_time`,`update_time` FROM `sea_admin` WHERE `status` = 1 AND `admin_name` = 'admin' LIMIT 1   [ RunTime:0.0453s ]
+SQL: SHOW COLUMNS FROM `sea_group` [ RunTime:0.0454s ]
+SQL: SELECT `group_auth` FROM `sea_group` WHERE `status` = 1 AND `group_id` = 1 LIMIT 1   [ RunTime:0.0448s ]
+SQL: SHOW COLUMNS FROM `sea_module_auth` [ RunTime:0.0454s ]
+SQL: SELECT `module_id`,`module_index`,`parent_id`,`is_menu`,`module_name`,`module_bind`,`status`,`add_time`,`update_time`,`module_img` FROM `sea_module_auth` WHERE `module_id` IN ('1','27','29','32','39','72','55','42','44','53','50','26','23','71','9','70','40','16','17','69','21','65','52','20','22','8','10','19','41','18','68','49','15','31','38','14','66','67','64','56','57','61') AND `status` = 1 ORDER BY module_index  [ RunTime:0.0459s ]
+NOTIC: [8] Undefined variable: child E:\wamp\sea\Application\Admin\Controller\PublicController.class.php 第 124 行.
+
+[ 2016-09-02T15:08:00+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-09-02T15:08:09+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-09-02T15:08:15+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/dopush/id/1/status/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0516s ]
+SQL: UPDATE `sea_carousel` SET `status`='0' WHERE `id` = 1 [ RunTime:0.0623s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0518s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Carousel,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/index.html','http://sea.com/admin.php?s=/Carousel/dopush/id/1/status/0.html','','1472800095','127.0.0.1') [ RunTime:0.0598s ]
+
+[ 2016-09-02T15:08:17+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-09-02T15:08:19+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-09-02T15:08:36+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-09-02T15:08:39+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0396s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '首页' AND `id` <> '1' LIMIT 1   [ RunTime:0.0711s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `id` <> '1' LIMIT 1   [ RunTime:0.0524s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: UPDATE `sea_carousel` SET `title`='首页',`type`='0',`status`='0',`model`='Index/index',`url`='\"Active\\/index,Active\\/value\"',`img`='[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/8f70e1124e98a3613f85c41200b649a3.jpg\"]',`description`='<p>asdfasdf</p>',`num`='1',`update_time`='1472800119' WHERE `id` = 1 [ RunTime:0.0393s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0397s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Carousel,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/edit/id/1.html','http://sea.com/admin.php?s=/Carousel/edit.html','id:1,title:首页,type:0,status:0,model:Index/index,url:Active/index,Active/value,img:Array,description:<p>asdfasdf</p>,','1472800119','127.0.0.1') [ RunTime:0.0445s ]
+
+[ 2016-09-02T15:08:41+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+
+[ 2016-09-02T15:08:44+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/dopush/id/1/status/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0446s ]
+SQL: UPDATE `sea_carousel` SET `status`='1' WHERE `id` = 1 [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0469s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Carousel,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/index.html','http://sea.com/admin.php?s=/Carousel/dopush/id/1/status/1.html','','1472800124','127.0.0.1') [ RunTime:0.0434s ]
+
+[ 2016-09-02T15:08:47+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002137s ]
+
+[ 2016-09-02T15:09:09+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/dopush/id/1/status/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0430s ]
+SQL: UPDATE `sea_carousel` SET `status`='0' WHERE `id` = 1 [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0419s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Carousel,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/index.html','http://sea.com/admin.php?s=/Carousel/dopush/id/1/status/0.html','','1472800149','127.0.0.1') [ RunTime:0.0422s ]
+
+[ 2016-09-02T15:09:11+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-09-02T15:09:14+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+
+[ 2016-09-02T15:09:20+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+
+[ 2016-09-02T15:09:23+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0428s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '首页' AND `id` <> '1' LIMIT 1   [ RunTime:0.0425s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Index/index' AND `id` <> '1' LIMIT 1   [ RunTime:0.0422s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: UPDATE `sea_carousel` SET `title`='首页',`type`='0',`status`='0',`model`='Index/index',`url`='\"Active\\/index,Active\\/value\"',`img`='[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/8f70e1124e98a3613f85c41200b649a3.jpg\",\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/a207d34ab526444245ece362691482ed.jpg\"]',`description`='<p>asdfasdf</p>',`num`='2',`update_time`='1472800162' WHERE `id` = 1 [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0442s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Carousel,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/edit/id/1.html','http://sea.com/admin.php?s=/Carousel/edit.html','id:1,title:首页,type:0,status:0,model:Index/index,url:Active/index,Active/value,img:Array,description:<p>asdfasdf</p>,','1472800162','127.0.0.1') [ RunTime:0.0431s ]
+
+[ 2016-09-02T15:09:25+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+
+[ 2016-09-02T15:09:29+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/dopush/id/1/status/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0456s ]
+SQL: UPDATE `sea_carousel` SET `status`='1' WHERE `id` = 1 [ RunTime:0.0442s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0525s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Carousel,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/index.html','http://sea.com/admin.php?s=/Carousel/dopush/id/1/status/1.html','','1472800169','127.0.0.1') [ RunTime:0.0497s ]
+
+[ 2016-09-02T15:09:31+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-09-02T15:28:06+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-09-02T15:28:42+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-09-02T15:28:46+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-09-02T15:28:51+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0403s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '单品介绍' AND `id` <> '2' LIMIT 1   [ RunTime:0.0389s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Info/index' AND `id` <> '2' LIMIT 1   [ RunTime:0.0388s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: UPDATE `sea_carousel` SET `title`='单品介绍',`type`='0',`status`='1',`model`='Info/index',`url`='\"Goods\\/goods\"',`img`='[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/3bf0de1c3c396b0f81f38d4da4608a6a.jpg\",\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/09361ae3206ab6a79ec55efabda64987.jpg\"]',`description`='<p>123</p>',`num`='2',`update_time`='1472801331' WHERE `id` = 2 [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0420s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Carousel,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/edit/id/2.html','http://sea.com/admin.php?s=/Carousel/edit.html','id:2,title:单品介绍,type:0,status:1,model:Info/index,url:Goods/goods,img:Array,description:<p>123</p>,','1472801331','127.0.0.1') [ RunTime:0.0416s ]
+
+[ 2016-09-02T15:28:53+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-09-02T15:32:45+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-09-02T15:33:09+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+
+[ 2016-09-02T15:33:19+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+
+[ 2016-09-02T15:33:38+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0427s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '组合介绍' AND `id` <> '3' LIMIT 1   [ RunTime:0.0427s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Home/index' AND `id` <> '3' LIMIT 1   [ RunTime:0.0427s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: UPDATE `sea_carousel` SET `title`='组合介绍',`type`='0',`status`='0',`model`='Home/index',`url`='\"\"',`img`='[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/5199a03b6e882ca64fde2b3657e50b8c.jpg\",\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/b5f196e07df130aad6c57f0c4faf8057.jpg\"]',`description`='<p dir=\"ltr\"><img src=\"/uploads/ueditor/image/20160728/1469698427938092.jpg\" title=\"1469698427938092.jpg\" alt=\"56a71f5ee451d.jpg\"/><img src=\"http://img.baidu.com/hi/jx2/j_0016.gif\"/>311</p>',`num`='2',`update_time`='1472801618' WHERE `id` = 3 [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0428s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Carousel,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/edit/id/3.html','http://sea.com/admin.php?s=/Carousel/edit.html','id:3,title:组合介绍,type:0,status:0,model:Home/index,url:,img:Array,description:<p dir=\"ltr\"><img src=\"/uploads/ueditor/image/20160728/1469698427938092.jpg\" title=\"1469698427938092.jpg\" alt=\"56a71f5ee451d.jpg\"/><img src=\"http://img.baidu.com/hi/jx2/j_0016.gif\"/>311</p>,','1472801618','127.0.0.1') [ RunTime:0.0454s ]
+
+[ 2016-09-02T15:33:40+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-09-02T15:33:44+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+
+[ 2016-09-02T15:33:55+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0454s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '组合介绍' AND `id` <> '3' LIMIT 1   [ RunTime:0.0429s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/package' AND `id` <> '3' LIMIT 1   [ RunTime:0.0424s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: UPDATE `sea_carousel` SET `title`='组合介绍',`type`='0',`status`='0',`model`='Goods/package',`url`='\"\"',`img`='[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/5199a03b6e882ca64fde2b3657e50b8c.jpg\",\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/b5f196e07df130aad6c57f0c4faf8057.jpg\"]',`description`='<p dir=\"ltr\"><img src=\"/uploads/ueditor/image/20160728/1469698427938092.jpg\" title=\"1469698427938092.jpg\" alt=\"56a71f5ee451d.jpg\"/><img src=\"http://img.baidu.com/hi/jx2/j_0016.gif\"/>311</p>',`num`='2',`update_time`='1472801634' WHERE `id` = 3 [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0467s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Carousel,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/edit/id/3.html','http://sea.com/admin.php?s=/Carousel/edit.html','id:3,title:组合介绍,type:0,status:0,model:Goods/package,url:,img:Array,description:<p dir=\"ltr\"><img src=\"/uploads/ueditor/image/20160728/1469698427938092.jpg\" title=\"1469698427938092.jpg\" alt=\"56a71f5ee451d.jpg\"/><img src=\"http://img.baidu.com/hi/jx2/j_0016.gif\"/>311</p>,','1472801634','127.0.0.1') [ RunTime:0.0422s ]
+
+[ 2016-09-02T15:33:56+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+
+[ 2016-09-02T15:34:04+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/dopush/id/3/status/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0400s ]
+SQL: UPDATE `sea_carousel` SET `status`='1' WHERE `id` = 3 [ RunTime:0.0384s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0411s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Carousel,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/index.html','http://sea.com/admin.php?s=/Carousel/dopush/id/3/status/1.html','','1472801643','127.0.0.1') [ RunTime:0.0447s ]
+
+[ 2016-09-02T15:34:05+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-09-02T15:38:03+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/dopush/id/2/status/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0523s ]
+SQL: UPDATE `sea_carousel` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0509s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0511s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Carousel,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/index.html','http://sea.com/admin.php?s=/Carousel/dopush/id/2/status/0.html','','1472801882','127.0.0.1') [ RunTime:0.0510s ]
+
+[ 2016-09-02T15:38:05+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+
+[ 2016-09-02T15:38:07+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-09-02T15:38:17+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0430s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '单品介绍' AND `id` <> '2' LIMIT 1   [ RunTime:0.0467s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Goods/goods' AND `id` <> '2' LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: UPDATE `sea_carousel` SET `title`='单品介绍',`type`='0',`status`='0',`model`='Goods/goods',`url`='\"Goods\\/goods\"',`img`='[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/3bf0de1c3c396b0f81f38d4da4608a6a.jpg\",\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/09361ae3206ab6a79ec55efabda64987.jpg\"]',`description`='<p>123</p>',`num`='2',`update_time`='1472801897' WHERE `id` = 2 [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0426s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：更新成功<br/>模块：Admin,控制器：Carousel,方法：edit<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/edit/id/2.html','http://sea.com/admin.php?s=/Carousel/edit.html','id:2,title:单品介绍,type:0,status:0,model:Goods/goods,url:Goods/goods,img:Array,description:<p>123</p>,','1472801897','127.0.0.1') [ RunTime:0.0432s ]
+
+[ 2016-09-02T15:38:19+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-09-02T15:38:23+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/dopush/id/2/status/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0457s ]
+SQL: UPDATE `sea_carousel` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0444s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0483s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Carousel,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/index.html','http://sea.com/admin.php?s=/Carousel/dopush/id/2/status/1.html','','1472801903','127.0.0.1') [ RunTime:0.0500s ]
+
+[ 2016-09-02T15:38:25+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-09-02T15:39:22+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+
+[ 2016-09-02T15:39:57+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-09-02T15:40:02+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-09-02T15:40:09+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0455s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '会员福利' LIMIT 1   [ RunTime:0.0471s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/privacy' LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: INSERT INTO `sea_carousel` (`title`,`type`,`status`,`model`,`url`,`img`,`add_time`,`num`) VALUES ('会员福利','0','1','Other/privacy','\"\"','[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/816025b4174d5fc5e44db8c45f83bac5.jpg\",\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/1d1ac76b176d9f812f0e34dbfc784042.jpg\"]','1472802009','2') [ RunTime:0.0445s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0480s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：新增成功<br/>模块：Admin,控制器：Carousel,方法：add<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/add.html','http://sea.com/admin.php?s=/Carousel/add.html','title:会员福利,type:0,status:1,model:Other/privacy,url:,img:Array,','1472802009','127.0.0.1') [ RunTime:0.0466s ]
+
+[ 2016-09-02T15:40:11+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-09-02T15:40:16+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-09-02T15:40:48+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-09-02T15:40:54+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-09-02T15:41:00+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0433s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '来访地图' LIMIT 1   [ RunTime:0.0424s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/map' LIMIT 1   [ RunTime:0.0421s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: INSERT INTO `sea_carousel` (`title`,`type`,`status`,`model`,`url`,`img`,`add_time`,`num`) VALUES ('来访地图','0','0','Other/map','\"\"','[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/88b880dd67db9b71f1f33a451490e34e.jpg\",\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/ed5bc8f1bf1326c7d234caa0529e6df4.jpg\"]','1472802060','2') [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0476s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：新增成功<br/>模块：Admin,控制器：Carousel,方法：add<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/add.html','http://sea.com/admin.php?s=/Carousel/add.html','title:来访地图,type:0,status:0,model:Other/map,url:,img:Array,','1472802060','127.0.0.1') [ RunTime:0.0428s ]
+
+[ 2016-09-02T15:41:02+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-09-02T15:41:11+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+
+[ 2016-09-02T15:41:35+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-09-02T15:41:40+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/uploadImg/path/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-09-02T15:41:43+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0430s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sea_carousel` WHERE `title` = '联系我们' LIMIT 1   [ RunTime:0.0430s ]
+SQL: SELECT * FROM `sea_carousel` WHERE `model` = 'Other/connect' LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Wrong parameter count for intval() E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+SQL: INSERT INTO `sea_carousel` (`title`,`type`,`status`,`model`,`url`,`img`,`add_time`,`num`) VALUES ('联系我们','0','1','Other/connect','\"\"','[\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/82cae62bde18876dc5b060652475595a.jpg\",\"\\/uploads\\/Picture\\/goods\\/2016-09-02\\/0a64b93782ba7bb9459813210b40deb7.jpg\"]','1472802103','2') [ RunTime:0.0455s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0445s ]
+NOTIC: [8] Array to string conversion E:\wamp\sea\Application\Admin\Model\AdminOperateLogModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：新增成功<br/>模块：Admin,控制器：Carousel,方法：add<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/add.html','http://sea.com/admin.php?s=/Carousel/add.html','title:联系我们,type:0,status:1,model:Other/connect,url:,img:Array,description:,','1472802103','127.0.0.1') [ RunTime:0.0423s ]
+
+[ 2016-09-02T15:41:45+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-09-02T15:41:49+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/dopush/id/5/status/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `sea_carousel` [ RunTime:0.0397s ]
+SQL: UPDATE `sea_carousel` SET `status`='1' WHERE `id` = 5 [ RunTime:0.0435s ]
+SQL: SHOW COLUMNS FROM `sea_admin_operate_log` [ RunTime:0.0399s ]
+NOTIC: [8] Undefined index: validate E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\sea\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `sea_admin_operate_log` (`uid`,`status`,`info`,`refer`,`url`,`param`,`add_time`,`add_ip`) VALUES ('1','1','提示语：修改成功<br/>模块：Admin,控制器：Carousel,方法：dopush<br/>请求方式：AJAX','http://sea.com/admin.php?s=/Carousel/index.html','http://sea.com/admin.php?s=/Carousel/dopush/id/5/status/1.html','','1472802108','127.0.0.1') [ RunTime:0.0391s ]
+
+[ 2016-09-02T15:41:50+08:00 ] 127.0.0.1 /admin.php?s=/Carousel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+

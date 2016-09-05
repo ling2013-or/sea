@@ -1,0 +1,193 @@
+<extend name="Public/commonOther"/>
+<block name="style">
+    <link href="__CSS__/xcConfirm.css" media="all" rel="stylesheet" type="text/css"/>
+    <style>
+        body {
+            background-color: #e7e6e6
+        }
+
+        #navWrp {
+            border-bottom: 1px solid #d29d3e;
+            padding: 20px 0 10px 0;
+        }
+
+        #navWrp .container {
+            padding: 0 100px
+        }
+
+        .piclist {
+            margin-top: 15px;
+            padding: 0
+        }
+
+        .piclist li {
+            display: inline-block;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .piclist li img {
+            width: 100%;
+            height: auto;
+            padding-right: 15px
+        }
+
+        .picZoomer {
+            padding-right: 15px
+        }
+
+        #main {
+            background: url(__IMG__/loginBg.jpg) no-repeat top center;
+            background-size: cover;
+        }
+
+        #loginWrp {
+            width: 70%;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin: 80px auto;
+            padding: 30px 10px;
+        }
+
+        .red {
+            color: red
+        }
+
+        label.control-label {
+            color: #565656;
+            padding-right: 0;
+            font-weight: normal;
+        }
+
+        .gray {
+            color: #9c9c9c
+        }
+    </style>
+</block>
+<block name="body">
+    <!---main-->
+    <div class="clearfix">
+        <div id="loginWrp">
+            <div class="formWrp">
+                <h3 style="font-size:20px;font-weight:bold;text-align:left;margin-bottom:20px">用户注册</h3>
+
+                <form class="form-horizontal" id="registerForm">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">用户名：</label>
+
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="username" name="username"
+                                   placeholder="支持中文，数字，字母，4-20位" len="4,20" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMobile" class="col-sm-4 control-label">手机号：</label>
+
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputMobile" name="mobile"
+                                   placeholder="请输入11位手机号" regC="mobile" required regcInfo="请输入合法手机号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCheckcode" class="col-sm-4 control-label">验证码：</label>
+
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="inputCheckcode" name="code"
+                                   placeholder="" required>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="{:U('Public/vcode')}" id="vcodeImg"  class="form-control-static">
+                        </div>
+                        <!--<div class="col-sm-2 form-control-static">看不清，<span style="color:#2990d8;cursor: pointer">换一张？</span></div>-->
+                    </div>
+                    <!--<div class="form-group">-->
+                    <!--<label for="inputMescode" class="col-sm-4 control-label">校验码：</label>-->
+                    <!--<div class="col-sm-2">-->
+                    <!--<input type="text" class="form-control" id="inputMescode" name="inputMescode" placeholder="" required>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4">-->
+                    <!--<button class="btn btn-default">获取短信验证码</button>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="form-group">
+                        <label for="password" class="col-sm-4 control-label">密码：</label>
+
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="6~20位数字"
+                                   required len="6,20" lenInfo="长度必须为6~20">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="surePassword" class="col-sm-4 control-label">确认密码：</label>
+
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="surePassword" name="surePassword"
+                                   placeholder="输入与上次相同的密码" required len="6,20" lenInfo="长度必须为6~20" compare="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rule" class="col-sm-4 col-sm-offset-4 control-label" style="text-align:center">
+                            <input type="checkbox" id="rule" name="rule" style="margin-right:6px">我已看过并同意 <span
+                                style="color:#2990d8">《网络服务协议》</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-4" style="margin-top: 20px;">
+                            <button class="btn btn-warning col-sm-5" style="height: 50px;font-size: 18px;"
+                                    id="registerAct">立即注册
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__JS__/validate.js"></script>
+    <script src="__JS__/xcConfirm.js"></script>
+    <script>
+        $(function () {
+            var $vcodeImg = $("#vcodeImg");
+            var verifyimg = $vcodeImg.attr("src");
+            $vcodeImg.click(function(){
+                if( verifyimg.indexOf('?')>0){
+                    $vcodeImg.attr("src", verifyimg+'&random='+Math.random());
+                }else{
+                    $vcodeImg.attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+                }
+            });
+            $('#registerForm').formCheck('#registerAct', function (res) {
+                if (res) {
+                    if (!$('#rule').is(":checked")) {
+//                        console.log(123);
+                        windowInfo('请先同意网络服务协议', 'info', '', 1);
+                        return;
+                    } else {
+                        $.ajax({
+                            type: "POST",
+                            url: "{:U('Public/register')}",
+                            data: $('#registerForm').serialize(),
+                            dataType: "json",
+                            success: function (data) {
+                                if(data.status){
+                                    windowInfo('注册成功', 'success', '', 1);
+                                    setTimeout(window.location.href = data.url,3);
+                                }else{
+                                    windowInfo(data.info, 'info', '', 1);
+                                }
+                                $vcodeImg.attr("src", verifyimg+'&random='+Math.random());
+
+                            },
+                            complete:function(data){
+
+                            }
+                        });
+
+                    }
+                }
+            });
+        });
+    </script>
+</block>

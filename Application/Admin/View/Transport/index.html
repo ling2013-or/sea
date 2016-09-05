@@ -1,0 +1,63 @@
+<extend name="Public/common" />
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>物流</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">物流管理</a>
+            </li>
+            <li class="active">物流模板列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <th class="col-sm-2">运送方式</th>
+                                    <th class="col-sm-4">运送到</th>
+                                    <th class="col-sm-1">首重（kg）</th>
+                                    <th class="col-sm-1">运费（元）</th>
+                                    <th class="col-sm-1">续重（kg）</th>
+                                    <th class="col-sm-1">运费（元）</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <volist name="lists" id="vo">
+                            <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                <tr>
+                                    <th colspan="4" class="col-sm-6">{$vo.title}<span class="pull-right">{$vo.update_time|date='Y-m-d H:i:s', ###}</span></th>
+                                    <th colspan="2" class="text-center"><a href="{:U('edit', array('id'=>$vo['id']))}">修改</a></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <notempty name="extend[$vo['id']]['data']">
+                                        <volist name="extend[$vo['id']]['data']" id="list">
+                                        <tr>
+                                            <td class="col-sm-2">&nbsp;</td>
+                                            <td class="col-sm-4">{$list.area_name}</td>
+                                            <td class="col-sm-1">{$list.first_weight}</td>
+                                            <td class="col-sm-1">{$list.first_price}</td>
+                                            <td class="col-sm-1">{$list.next_weight}</td>
+                                            <td class="col-sm-1">{$list.next_price}</td>
+                                        </volist>
+                                        </tr>
+                                    </notempty>
+                                </tbody>
+                            </table>
+                        </volist>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+</block>

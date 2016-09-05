@@ -1,0 +1,83 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>监控管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">监控管理</a>
+            </li>
+            <li class="active">新增监控</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">所属分区</label>
+                                <select class="form-control" id="zone_id" name="zone_id">
+                                    <option value="">请选择分区</option>
+                                    <volist name="farm" id="vo">
+                                        <option <if condition="$vo.id eq $info['zone_id']">selected</if> value="{$vo.id}">{$vo.title}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">摄像头标题</label>
+                                <input type="text" class="form-control" name="title" value="{$info.title}" placeholder="摄像头标题">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">摄像头描述</label>
+                                <textarea class="form-control" name="description"  placeholder="摄像头描述" rows="6">{$info.description}</textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">摄像头唯一标识ID</label>
+                                <input type="text" class="form-control" name="camera_id" value="{$info.camera_id}" placeholder="摄像头唯一标识ID">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">摄像头IP地址</label>
+                                <input type="text" class="form-control" name="server_ip" value="{$info.server_ip}" placeholder="摄像头IP地址">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">摄像头端口</label>
+                                <input type="number" class="form-control" name="server_port" value="{$info.server_port}"  placeholder="摄像头端口">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">覆盖量</label>
+                                <input type="number" class="form-control" name="stock" value="{$info.stock}" placeholder="摄像头端口">
+                            </div>
+                        </div>
+                        <input type="hidden" name="id" value="{$info.id}">
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        window.setValue("farm_id", "{$info.farm_id|default=0}");
+        //导航高亮
+        highlight_subnav("{:U('index')}");
+    </script>
+</block>

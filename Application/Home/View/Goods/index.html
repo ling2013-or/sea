@@ -1,0 +1,253 @@
+<extend name="./Public/common"/>
+<block name="style">
+    <link href="__CSS__/xcConfirm.css" media="all" rel="stylesheet" type="text/css"/>
+<style>
+	body{
+		background-color:#e7e6e6
+	}
+	#navWrp{
+		background: rgb(245,245,245); /* Old browsers */
+		background: -moz-linear-gradient(top, rgb(255,255,255) 0%, rgb(255,255,255) 50%, rgb(255,255,255) 51%, rgb(245,245,245) 51%, rgb(245,245,245) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(255,255,255) 50%,rgb(255,255,255) 51%,rgb(245,245,245) 51%,rgb(245,245,245) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgb(255,255,255) 0%,rgb(255,255,255) 50%,rgb(255,255,255) 51%,rgb(245,245,245) 51%,rgb(245,245,245) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+		height:6.5em;
+		line-height:6.5em
+	}
+	.carousel-inner .item img{
+		width:100%
+	}
+	#competitive{
+		padding:0 15px 0 0;
+		border-top:1px solid #ddd;
+		border-left:1px solid #ddd;
+		border-right:1px solid #ddd;
+		border-bottom: 2px solid #d29d3e;
+		background-color:#f2f2f2
+	}
+	#competitive h3{
+		width:140px;
+		height:60px;
+		text-align:center;
+		font-size:1.5em;
+		font-weight:bold;
+		line-height:60px;
+		margin-top:15px;
+		background-color:#d29d3e;
+		color:white
+	}
+	.panelList{
+		margin-left:10px;
+		position:relative;
+		border-top-right-radius: 0;
+
+	}
+	.panelList:before{
+		content: '';
+		position: absolute;
+		top: -1px;
+		left: -10px;
+		width: 10px;
+		height: 10px;
+		background: linear-gradient(45deg,rgba(0,0,0,0) 7px,#838383 7px);
+		background: -moz-linear-gradient(45deg,rgba(0,0,0,0) 7px,#838383 7px);
+		background: -o-linear-gradient(45deg,rgba(0,0,0,0) 7px,#838383 7px);
+		background: -webkit-linear-gradient(45deg,rgba(0,0,0,0) 7px,#838383 7px);
+		display: block;
+		z-index: 15;
+	}
+	#otherList::before{
+		display:none;
+	}
+	#competitive a{
+		font-size: .8em;
+		padding-right: 6px;
+		color:#999
+	}
+	#competitive a:hover{
+		color:#4f8db3;
+		text-decoration: none;
+	}
+	::-moz-placeholder { color: #999;font-size:.9em }
+	::-webkit-input-placeholder { color: #999;font-size:.9em  }
+	:-ms-input-placeholder { color: #999;font-size:.9em  }
+
+	#competitive .input-group-btn>.btn,#competitive .input-group-btn>.btn:hover,#competitive .input-group-btn>.btn:active,#competitive .input-group-btn>.btn:focus{
+		color:white;
+		margin-left:-1px;
+		background-color:#55acef;
+	}
+	#competitive .input-group-btn>.btn:hover, .input-group-btn>.btn:focus, .input-group-btn>.btn:active{z-index:0}
+	#search{
+		padding-left: 40px;
+		color: #999;
+		border: 4px solid #55acef;
+		border-radius: 0;
+		background-color: #f2f2f2;
+		background: url(__IMG__/search.png) no-repeat 5px center;
+	}
+	.sImgLabel{
+		display: block;
+		width: 40px;
+		text-align: center;
+		height: 90px;
+		font-size: 1.5em;
+		background-color: #ffd301;
+		line-height: 36px;
+		padding-top: 9px;
+		color: #333;
+	}
+	.payAct,.payAct:hover,.payAct:active,.payAct:focus{
+		background-color: #c40000;
+		color: white;
+		margin-top: 6px;
+		font-size: 1.8rem;
+		outline: none;
+	}
+</style>
+</block>
+<block name="body">
+	<div id="myCarousel" class="carousel slide">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+            <volist name="imgs" id="car" key = 'cc'>
+                <li data-target="#myCarouse{$cc}" data-slide-to="{$cc-1}" <if condition='$cc eq 1'>class="active"></if></li>
+            </volist>
+		</ol>
+		<div class="carousel-inner">
+            <volist name="imgs" id="car" key="cc">
+                <div class="item <if condition='$cc eq 1'>active</if>">
+                    <img src="{$car}">
+                </div>
+            </volist>
+		</div>
+		<a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+		<a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+	</div>
+		<!---主体内容--->
+		<div id="main" style="background-color:#fff;padding-top:20px">
+		<div class="container" id="contentWrp">
+			<div class="clearfix" id="competitive">
+				<h3 class="pull-left">精品单品</h3>
+				<div class="pull-right" style="width:500px;margin-top:10px">
+				<div class="input-group">
+				<input type="text" class="form-control" id="search" placeholder="输入商品名称">
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="button">搜索</button>
+				</span>
+				</div>
+				<p><a href="">有机海参</a><a href="">有机基围虾</a><a href="">虾皮</a></p>
+				</div>
+			</div>
+			<div class="panel panel-default panelList">
+				<div class="panel-body" id="productWrp">
+                    <volist name="lists" id="list">
+					<div class="row service-wrapper-row productList">
+						<div class="col-sm-12">
+						<div class="col-sm-4">
+							<div class="service-image">
+								<img src="{$list['picture']}" alt="Color Schemes">
+								<span class="imgLabel">直播</span>
+							</div>
+						</div>
+						<div class="col-sm-6 detail">
+							<h3>{$list.name}</h3>
+							<p class="price"><span class="orginPrice"><del>市场价：￥{$list.mark_price}</del></span><span class="curPrice">售价：<span>￥{$list.price}</span></span></p>
+							<p class="desc">{$list.title}</p></div>
+						<div class="col-sm-2 btnActWrp">
+							<button class="btn btn-default buyAct" goods_id="{$list['id']}" goods_type="{$list['goods_type']}" style="border:2px solid #c40000;color:#c40000;line-height:44px">我要购买</button>
+							<a href="{:U('Goods/detail',array('gid'=>$list['id']))}" class="btn btn-default" style="background:#c40000;color:white" role="button">查看详情</a>
+							<a class="btn btn-default" style="background:#aaa;color:white" role="button">直接退款</a>
+						</div>
+						</div>
+					</div>
+                    </volist>
+
+			</div>
+
+		</div>
+		</div>
+	<!--购买弹窗--->
+	<div class="modal fade" id="buyModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document" style="z-index: 9999;">
+			<div class="modal-content">
+				<div class="modal-header" style="border:none">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row clearfix">
+						<div class="col-md-4">
+							<img src="__IMG__/product.jpg" alt="有机海参 有机基围虾 精品包装" style="width:100%;height:auto">
+						</div>
+						<ul class="col-md-8">
+							<li class="clearfix"><h5 class="pull-left">有机海参 有机基围虾 精品包装</h5><div class="sprice pull-right"><del>市场价：￥9999</del></div></li>
+							<li class="clearfix"><div class="pull-right"><span class="cprice">售价：￥66666</span></div></li>
+							<li class="clearfix"><h5 class="pull-left">运费</h5><div class="pull-right"><span class="cprice">￥50</span></div></li>
+							<li class="clearfix"><h5 class="pull-left">实付款（含运费）</h5><div class="pull-right"><span class="cprice">￥9999</span></div></li>
+							<li class="clearfix">
+								<button type="submit" class="btn btn-default payAct pull-right">
+									<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+									确定支付
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="row clearfix" style="margin-top:30px">
+						<div class="col-md-5" style="height: 150px;overflow: hidden;">
+							<img src="__IMG__/product.jpg" alt="有机海参 有机基围虾 精品包装" style="width:100%;height:100%;border-radius: 10px;">
+						</div>
+						<div class="col-md-5" style="margin-top:15px;max-height:120px;overflow:hidden">
+							会员卡会员卡会员卡会员卡会员卡会员卡
+							会员卡会员卡会员卡会员卡会员卡会员卡
+							会员卡会员卡会员卡会员卡会员卡会员卡
+							会员卡会员卡会员卡会员卡会员卡会员卡
+						</div>
+						<div class="col-md-2" style="width:30px;margin-top:15px">
+							<span class="sImgLabel">直播</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</block>
+<block name="script">
+    <script src="__JS__/validate.js"></script>
+    <script src="__JS__/xcConfirm.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.carousel').carousel({
+				interval: 2000
+			});
+			// 导航高亮
+			highlight_subnav("{:U('Goods/index')}");
+			//我要购买
+			$('.panelList').on('click','.productList .buyAct',function(){
+                var variety = 1;
+                var goods_id = $(this).attr('goods_id');
+                var goods_type = $(this).attr('goods_type');
+                $.ajax({
+                    type: "POST",
+                    url: "{:U('shop/add')}",
+                    data: {id:goods_id,goods_type:goods_type,variety:variety},
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.status) {
+                            setTimeout(window.location.href = data.url, 3);
+                        } else {
+                            windowInfo(data.info, 'info', '', 1);
+                            if(data.url != 'undefined'){
+                                setTimeout(window.location.href = data.url, 5);
+                            }
+                        }
+
+                    },
+                    complete: function (data) {
+
+                    }
+                });
+//                $('#buyModel').modal('show');
+			});
+		});
+	</script>
+</block>

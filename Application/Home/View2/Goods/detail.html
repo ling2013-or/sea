@@ -1,0 +1,496 @@
+<extend name="Public/common"/>
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="css/jquery-picZoomer.css">
+    <style>
+        body{
+            background-color:#e7e6e6
+        }
+        #navWrp{
+            background: #fff;
+            height:8em;
+            line-height:8em
+        }
+        #navWrp .container{
+            padding:0 100px
+        }
+        .piclist{
+            margin-top: 15px;
+            padding:0
+        }
+        .piclist li{
+            display: inline-block;
+            padding:0;
+            cursor: pointer;
+        }
+        .piclist li img{
+            width: 100%;
+            height: auto;
+            padding-right:15px
+        }
+        .picZoomer{
+            padding-right:15px
+        }
+        #orderDetail{
+            background-color:#fff;
+            border-top:1px solid #d29d3e;
+            padding-top:30px
+        }
+        #orderDetail h3.productTitle{
+            height: 2em;
+            font-size: 1.6em;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        .picZoomer-pic-wp{
+            max-height:350px;
+            border: 1px solid #efefef;
+            padding: 5px;
+            text-align: center;
+        }
+        #detailWrp h3{
+            height: 3em;
+            line-height: 3em;
+            color: #1d1d1d;
+            font-size: 1.5em;
+        }
+        .form-horizontal .control-label{text-align:left}
+        .productInfo{
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.4em;
+            background: rgb(255,240,232); /* Old browsers */
+            background: -moz-linear-gradient(-65deg, rgba(255,240,232,1) -1%, rgba(255,240,232,1) 50%, rgba(255,255,255,1) 51%, rgba(254,87,16,1) 51%, rgba(254,87,16,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-65deg, rgba(255,240,232,1) -1%,rgba(255,240,232,1) 50%,rgba(255,255,255,1) 51%,rgba(254,87,16,1) 51%,rgba(254,87,16,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(115deg, rgba(255,240,232,1) -1%,rgba(255,240,232,1) 50%,rgba(255,255,255,1) 51%,rgba(254,87,16,1) 51%,rgba(254,87,16,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0e8', endColorstr='#fe5710',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
+        #price span{color:#fe5710}
+        #express span{
+            display:block;
+            color: white;
+            text-align: center;
+        }
+        .orange{
+            color:#fe835e
+        }
+        label{font-weight:normal}
+        .padWrp span{padding-right:1.1em}
+        #buyAct{
+            font-size: 1.5em;
+            padding: .5em 0;
+            background-color: #c40000;
+            color: white;
+            margin-top:1em
+        }
+        .glyphicon-ok-circle:before{vertical-align: middle}
+
+        .nav-pills{
+            display: flex;
+            justify-content: center;
+            margin-top:2em;
+            margin-bottom: 2em;
+        }
+        .nav-pills>li{float: none}
+        .nav-pills li{
+            width:30%;
+            text-align: center;
+            background-color: #858585;
+            color: white;
+            cursor: pointer;
+        }
+        /*.nav-pills li:focus,.nav-pills li:active{*/
+        /*background-color: #858585;*/
+        /*}*/
+        .nav>li>a{
+            padding: 0;
+            height: 2.4em;
+            line-height: 2.4em;
+            font-size: 1.2em;
+        }
+        .nav li.col-md-4{padding:0}
+        .nav>li>a,.nav>li>a:hover,.nav>li>a:active{color:white}
+        .nav-pills>li>a,.nav-pills>li>a:hover,.nav-pills>li>a:active{border-radius: 0}
+        .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,.nav-pills>li>a:hover{background-color:#3c3c3c}
+        .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th{background-color:#fff}
+        .table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>th{background-color:#f9f9f9}
+        .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{border-top:none}
+        #prodcutShow{
+            border-left: 7px solid #b88939;
+            color: #b88939;
+            padding-left: 10px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .cmtLi{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cmtLi .avatarDt{
+            width:80%;
+            text-align:center;
+        }
+        .avatarImg{
+            width: 80px;
+            height: 80px;
+            border-radius: 80px;
+            background-color: #b88939;
+            padding: 2px;
+            margin: 10px auto;
+        }
+        .cmtTitle{
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px dashed #aaa;
+        }
+        .cmtAct span{
+            border-bottom:1px solid #535b60;
+            margin-left:10px;
+            cursor:pointer
+        }
+        .titleWrp{
+            position:relative;
+            clear: both;
+        }
+        #planWrp .planWrp:nth-child(even) .descTitle{
+            left:-webkit-calc(50% - 280px);
+            text-align: left;
+            padding-left: 20px;
+        }
+        #planWrp .planWrp:nth-child(even) .desc{
+            float: left;
+            width: 40%;
+        }
+        #planWrp .planWrp:nth-child(odd) .desc{
+            float: right;
+            width: 40%;
+        }
+
+        .circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            padding: 10px 0;
+            box-shadow: 0 0 50px #aaa;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .circle span{
+            display: inline-block;
+            width: 130px;
+            height: 130px;
+            border-radius: 130px;
+            background-color: #9d3b57;
+            line-height: 130px;
+            color: white;
+            font-size: 80px;
+        }
+        .descTitle{
+            position: absolute;
+            top: 45px;
+            left: -webkit-calc(50% + 100px);
+            height: 60px;
+            line-height: 20px;
+            background: url(__IMG__/titleBg.png) no-repeat center 0;
+            background-size: contain;
+            width: 200px;
+            text-align: right;
+            padding-right: 20px;
+            font-size: 16px;
+        }
+    </style>
+
+</block>
+<block name="page_nav">
+
+</block>
+<block name="body">
+<div id="orderDetail">
+<div class="container" style="padding:0 100px">
+<h3 class="productTitle">{$info.name}</h3>
+<div class="clearfix" style="padding:0">
+    <div class="col-md-6" style="padding:0">
+        <div class="picZoomer">
+            <img src="__IMG__/0.jpg" alt="">
+        </div>
+        <ul class="piclist clearfix">
+            <volist name = 'info.picture_more' id="mages">
+                <li class="col-md-4"><img src="{$mages}" alt=""></li>
+            </volist>
+
+
+        </ul>
+    </div>
+    <div class="col-md-5" style="float:right" id="detailWrp">
+        <div class="productInfo">
+            <p id="price">￥<span>{$info.price}</span></p>
+            <p id="express">
+                <span>快递</span>
+                <span style="padding-top:.5em;font-size:1.2em;">秦皇岛</span>
+            </p>
+        </div>
+        <h3>
+            {$info.name}
+        </h3>
+        <form class="form-horizontal" style="font-size: 1.1em;color: #777;">
+            <!--<div class="form-group">
+                <label class="col-sm-3 control-label">供应商</label>
+                <div class="col-sm-6" style="padding-top:7px;">
+                    <span class="orange" style="text-decoration:underline">河北擎远生物科技</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="variety" class="col-sm-3 control-label">选择品种</label>
+                <div class="col-sm-9">
+                    <select name="variety" class="form-control" id="variety">
+                        <option value="0">小龙虾</option>
+                        <option value="1">大龙虾</option>
+                        <option value="2">皮皮虾</option>
+                    </select>
+                </div>
+            </div>-->
+            <div class="form-group">
+                <label for="weight" class="col-sm-3 control-label">数量</label>
+                <div class="col-sm-9">
+                    <select name="weight" class="form-control" id="weight">
+                        <option value="1">1斤</option>
+                        <option value="2">2斤</option>
+                        <option value="3">3斤</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 padWrp">
+                    <span>月销量：<b class="orange">{$info.sales}</b></span>
+                    <span>累计评价：<b class="orange">{$info.statistics.total}</b></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 padWrp">
+                    <span>服务承诺</span>
+                    <span>正品保证</span>
+                    <span>极速退款</span>
+                    <span>七天无理由退换</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-10">
+                    <button type="submit" class="btn btn-default col-sm-6" id="buyAct">
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                        确定下单
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="col-md-12">
+    <ul class="nav nav-pills" id="navLi" role="tablist">
+        <li role="presentation" class="active"><a>产品详情</a></li>
+        <li role="presentation"><a>产品评价</a></li>
+        <li role="presentation"><a>养殖计划</a></li>
+    </ul>
+    <div class="tab-content" style="margin-top:15px">
+        <div role="tabpanel" class="tab-pane active" id="detail">
+            <div style="text-align: center;" class="embed-responsive embed-responsive-4by3">
+                <iframe src="__IMG__/testvedio.mp4" allowfullscreen="" class="embed-responsive-item" frameborder="0" style="width:100%"></iframe>
+            </div>
+            <table class="table table-striped">
+                <tr>
+                    <td>名称：{$info.name}</td>
+                    <td>适用对象：25-45</td>
+                </tr>
+                <tr>
+                    <td>级别：特级</td>
+                    <td>厚薄：常规</td>
+                </tr>
+                <tr>
+                    <td>细分风格：商务</td>
+                    <td>产品结构：其它</td>
+                </tr>
+                <tr>
+                    <td>上市年份季节：2016夏季</td>
+                    <td>适用场景：其它</td>
+                </tr>
+                <tr>
+                    <td>厂商：河北擎远生物科技</td>
+                    <td>产品成分：其它</td>
+                </tr>
+                <tr>
+                    <td>货号：66666666</td>
+                    <td>品牌：其它</td>
+                </tr>
+            </table>
+            <h5 id="prodcutShow">产品展示</h5>
+            <!---图片展示todo-->
+
+        </div>
+        <div role="tabpanel" class="tab-pane " id="comment">
+            <div class="cmtLi">
+                <div class="avatarDt">
+                    <div class="avatarImg"></div>
+                    <p>零点**</p>
+                    <p>订单号：<span>12334243243</span></p>
+                </div>
+                <div class="cmtWrp">
+                    <div class="cmtTitle clearfix">
+                        <div class="time pull-left">今天10:45</div>
+                        <div class="cmtAct pull-right">
+                            <span>点赞</span>
+                            <span>回复</span>
+                        </div>
+                    </div>
+                    <p style="margin-top:10px">
+                        吃起来特别棒，发货速度很快。质量很好，没有异味，颜色很漂亮，赠送的小礼物也很喜欢.   吃起来特别棒，发货速度很快。质量很好，
+                        没有异味，颜色很漂亮，赠送的小礼物也很喜欢.吃起来特别棒，发货速度很快。质量很好，没有异味，颜色很漂亮，赠送的小礼物也很
+                        喜欢.吃起来特别棒，发货速度很快。质量很好，没有异味，颜色很漂亮，赠送的小礼物也很喜欢.
+                    </p>
+                </div>
+            </div>
+            <div class="cmtLi">
+                <div class="avatarDt">
+                    <div class="avatarImg"></div>
+                    <p>零点**</p>
+                    <p>订单号：<span>12334243243</span></p>
+                </div>
+                <div class="cmtWrp">
+                    <div class="cmtTitle clearfix">
+                        <div class="time pull-left">今天10:45</div>
+                        <div class="cmtAct pull-right">
+                            <span>点赞</span>
+                            <span>回复</span>
+                        </div>
+                    </div>
+                    <p style="margin-top:10px">
+                        吃起来特别棒，发货速度很快。质量很好，没有异味，颜色很漂亮，赠送的小礼物也很喜欢.   吃起来特别棒，发货速度很快。质量很好，
+                        没有异味，颜色很漂亮，赠送的小礼物也很喜欢.吃起来特别棒，发货速度很快。质量很好，没有异味，颜色很漂亮，赠送的小礼物也很
+                        喜欢.吃起来特别棒，发货速度很快。质量很好，没有异味，颜色很漂亮，赠送的小礼物也很喜欢.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <div role="tabpanel" class="tab-pane " id="plan">
+            <div id="planWrp">
+                <div class="planWrp">
+                    <div class="oneTitle titleWrp">
+                        <div class="circle">
+                            <span>01</span>
+                        </div>
+                        <div class="descTitle">
+                            养殖设备
+                        </div>
+                    </div>
+                    <div class="desc">
+                        池塘面积以4～10亩为宜，深1～1.5米，坡比1∶2.5。池底平坦，底质以壤土为好，池坡土质较硬，池塘保水性好，水位易调控。水源充足，水质无污染。按照高灌低排的格局，建好进排水渠，做到灌得进，排得出。克氏螯虾逃逸能力较强，必须搞好防逃设施建设。通常用塑料薄膜或钙塑板，沿池埂四周用竹桩或木桩支撑围起防逃。
+                        池塘面积以4～10亩为宜，深1～1.5米，坡比1∶2.5。池底平坦，底质以壤土为好，池坡土质较硬，池塘保水性好，水位易调控。水源充足，水质无污染。按照高灌低排的格局，建好进排水渠，做到灌得进，排得出。克氏螯虾逃逸能力较强，必须搞好防逃设施建设。通常用塑料薄膜或钙塑板，沿池埂四周用竹桩或木桩支撑围起防逃
+                    </div>
+                </div>
+                <div class="planWrp">
+                    <div class="twoTitle titleWrp">
+                        <div class="circle">
+                            <span>02</span>
+                        </div>
+                        <div class="descTitle">
+                            放养前准备
+                        </div>
+                    </div>
+                    <div class="desc">
+                        1、彻底清池消毒虾苗虾种放养前20～30天，排干池水，清除过多淤泥，整修池埂，每亩用生石灰75公斤或漂白粉、漂白粉精等药物，彻底清池消毒。
+                        2、施足基肥每亩施腐熟畜禽粪肥500～600公斤，培育轮虫和枝角类、桡足类浮游生物，为虾苗虾种提供适口饵料。
+                        3、栽好水生植物池内栽轮叶黑藻、马来眼子菜、伊乐藻等水生植物，面积占虾池面积2/3。同时，架设网片，或设置竹筒、塑料筒等，为克氏螯虾提1、彻底清池消毒虾苗虾种放养前20～30天，排干池水，清除过多淤泥，整修池埂，每亩用生石灰75公斤或漂白粉、漂白粉精等药物，彻底清池消毒。
+                        4、施足基肥每亩施腐熟畜禽粪肥500～600公斤，培育轮虫和枝角类、桡足类浮游生物，为虾苗虾种提供适口饵料。
+                    </div>
+                </div>
+                <div class="planWrp">
+                    <div class="thrTitle titleWrp">
+                        <div class="circle">
+                            <span>03</span>
+                        </div>
+                        <div class="descTitle">
+                            虾苗虾种放养
+                        </div>
+                    </div>
+                    <div class="desc">
+                        1、养殖模式可以采用多种养殖模式。（1）夏季放养模式。以放养当年孵化的第一批稚虾为主，放养时间在7月中下旬，稚虾规格为0.8厘米以上。每亩放养3万～4万尾。（2）秋季放养模式。以放养当年培育的大规格虾苗或虾种为主，放养时间为8月中旬至9月。虾苗规格1.2厘米左右的，每亩放养2.5万～3万尾；虾种规格2.5～3厘米的，每亩放养1.5万～2万尾。少部分年底可达上市规格，大部分要到翌年6～7月起捕上市，商品虾只重25克，亩产300～500公斤。（3）冬春放养模式。一般在12月份或翌年3～4月放养。以放养当年不符合上市规格虾为主，规格为每公斤100～200只 ，每亩放养1.5万～2万尾。经过冬春养殖，到6～7月起捕上市，商品虾只重可达30克，亩产400～500公斤。
+                        2、苗种质量虾苗虾种质量要求是：（1）规格整齐。稚虾规格在0.8厘米以上，虾种规格在3厘米左右。同一池塘放养的虾苗虾种规格要一致，一次放足。（2）体质健壮，附肢齐全，无病无伤，生命力强。（3）虾苗虾种都是人工培育的。如果是野生虾种，应经过一段时间驯养后再放养，以免相互争斗残杀
+                    </div>
+                </div>
+                <div class="planWrp">
+                    <div class="fourTitle titleWrp">
+                        <div class="circle">
+                            <span>04</span>
+                        </div>
+                        <div class="descTitle">
+                            科学喂投
+                        </div>
+                    </div>
+                    <div class="desc">
+                        1、按照克氏螯虾同长发育阶段对营养的需要，搞好饲料的组合和投喂。克氏螯虾稚虾、幼虾阶段，以轮虫、枝角类、桡足类以及水生昆虫幼体等为食，成虾阶段则兼食动物性饲料、植物性饲料。虾苗、虾种放养后，要适时追施肥料，培肥水质。在8～10月克氏螯虾快速生长阶段，多喂麸皮、豆饼以及青绿饲料，适当喂给动物性饲料。11～12月克氏螯虾越冬前，以投喂动物性饲料为主。
+                        2、按照克氏螯虾的生活习性和摄食特点投喂。克氏螯虾多在夜里活动觅食，并具有争食、贪食习性。投喂饲料要坚持每天上午、下午各投喂一次，以下午一次为主，占全天投喂量70％；采取定质、定量、定时投喂方法，喂足喂匀，保证每只虾都吃饱，避免相互争食。
+                    </div>
+                </div>
+                <div class="planWrp">
+                    <div class="fiveTitle titleWrp">
+                        <div class="circle">
+                            <span>05</span>
+                        </div>
+                        <div class="descTitle">
+                            日常管理
+                        </div>
+                    </div>
+                    <div class="desc">
+                        1、建立巡池检查制度。每天巡池，发现异常及时采取对策。
+                        2、调控水质。保持虾池溶氧量在5 克/升以上，pH值7～8.5，透明度40厘米左右。每15～20天换一次水，每次换水1/3。每20天泼洒一次生石灰水，每次每亩用生石灰10公斤。保持水位稳定，不能忽高忽低。
+                        3、加强栖息蜕壳场所管理。虾池中始终保持有较多水生植物。大批虾蜕壳时严禁干扰，蜕壳后立即增喂优质适口饲料，防止相互残杀，促进生长。
+                        4、防逃防病。汛期加强检查，严防逃虾。做好病害防治和敌害清除工作。
+                    </div>
+                </div>
+                <div class="planWrp">
+                    <div class="sixTitle titleWrp">
+                        <div class="circle">
+                            <span>06</span>
+                        </div>
+                        <div class="descTitle">
+                            日常管理
+                        </div>
+                    </div>
+                    <div class="desc">
+                        1、建立巡池检查制度。每天巡池，发现异常及时采取对策。
+                        2、调控水质。保持虾池溶氧量在5 克/升以上，pH值7～8.5，透明度40厘米左右。每15～20天换一次水，每次换水1/3。每20天泼洒一次生石灰水，每次每亩用生石灰10公斤。保持水位稳定，不能忽高忽低。
+                        3、加强栖息蜕壳场所管理。虾池中始终保持有较多水生植物。大批虾蜕壳时严禁干扰，蜕壳后立即增喂优质适口饲料，防止相互残杀，促进生长。
+                        4、防逃防病。汛期加强检查，严防逃虾。做好病害防治和敌害清除工作。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</block>
+<block name="script">
+    <script src="__JS__/jquery-1.9.1.min.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.picZoomer.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.picZoomer').picZoomer();
+            //切换图片
+            $('.piclist li').on('click',function(event){
+                var $pic = $(this).find('img');
+                $('.picZoomer-pic').attr('src',$pic.attr('src'));
+            });
+            //tab切换
+            $("#navLi li").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".tab-content>div").eq($(this).index()).show().siblings().hide();
+            });
+        });
+    </script>
+</block>

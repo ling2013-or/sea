@@ -1,0 +1,79 @@
+<extend name="Public/common"/>
+<block name="style">
+    <style>
+        .existed
+        {
+            position:relative;
+            margin-left: 3px;
+        }
+        .deleteMe
+        {
+            position:absolute;
+            background:red;
+            top:0px;
+            width:18px;
+            height:20px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>会员</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">会员管理</a>
+            </li>
+            <li class="active">批量添加平台会员</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="num">添加数量 <span class="check-tips"></span></label>
+                                <input type="text" class="form-control" name="num" id="num" placeholder="新增用户数量">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="prex">统一用户名前缀 <span class="check-tips"></span></label>
+                                <input class="form-control" id="prex" name="prex" placeholder="用户名前缀">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label" for="password">统一密码 <span class="check-tips"></span></label>
+                                <input class="form-control" id="password" name="password" placeholder="统一密码">
+                            </div>
+                        </div>
+                        
+                        
+                        <button type="submit" class="btn btn-primary ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('user/index')}");
+
+        
+        $(document).ready(function() 
+        {
+        });
+    </script>
+</block>

@@ -1,0 +1,155 @@
+<extend name="Public/common" />
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>方案管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">销售方案</a>
+            </li>
+            <li class="active">销售方案列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-left">
+                            <a href="{:U('add')}" class="btn btn-info">添加</a>
+                        </div>
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="text" name="name" class="form-control search-input" value="{:I('name')}" placeholder="请输入方案名称">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>编号</th>
+                                    <th>名称</th>
+                                    <th>养殖周期(月)</th>
+                                    <th>饲养员</th>
+                                    <th>状态</th>
+                                    <th>添加时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="row">
+                                <tr>
+                                    <td>{$row.plan_id}</td>
+                                    <td>{$row.plan_sn}</td>
+                                    <td>{$row.plan_name}</td>
+                                    <td>{$row.plan_month}</td>
+                                    <td>{$row.area_breeder}</td>
+                                    <td>{$row.status|get_plan_status}</td>
+                                    <td>{$row.create_time|date='Y-m-d',###}</td>
+                                    <td>
+                                        <switch name="row['status']" >
+                                            <case value="0">
+                                                <span class="label label-primary">未发布</span> 
+                                                <a title="发布" class="confirm ajax-get" href="{:U('dopush?id='.$row['plan_id'])}">发布方案</a>
+                                            </case>
+                                            <case value="1">
+                                                <span class="label label-success">进行中</span> 
+                                                <a title="设置收益" href="javascript:doComplete('{$row.plan_id}','{$row.income_expect}')">设置收益</a>
+                                            </case>
+                                        <default />
+                                            --
+                                        </switch>
+                                    </td>
+                                    <td>
+                                        <if condition="$row.status lt 1">
+                                            <a title="编辑" href="{:U('edit?id='.$row['plan_id'])}">编辑</a>    
+                                        </if>
+                                        <a class="confirm ajax-get" title="删除" href="{:U('del?id='.$row['plan_id'])}">删除</a>
+                                    </td>
+                                </tr>
+                                </volist>
+                            <else/>
+                                <tr>
+                                    <td colspan="11" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $("#search").click(function(){
+            var url = "{:U('index')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+
+        //批量收获
+        function doComplete(id,exp)
+        {
+            layer.use('extend/layer.ext.js', function(){
+                layer.prompt({
+                    title: '设置实际收益的单位产量',
+                    formType: 0
+                }, function(cont){
+                    var cont = parseFloat(cont);
+                    layer.confirm('用户将获得 <span class="label label-danger">'+cont+' 千克/平米</span> 的收益', {
+                        btn: ['确定','返回']
+                    }, function(){
+                        $.ajax({
+                            url:'{:U("Plan/docomplete")}',
+                            data:{id:id,income:cont},
+                            type:'post',
+                            dataType:'json',
+                            success:function(res){
+                                if (res.status==0) {
+                                    layer.msg(res.info);  
+                                } else {
+                                    layer.msg('操作成功！');
+                                    setTimeout(function(){
+                                        window.location.reload();
+                                    },800);
+                                }
+                            },
+                            error:function(){
+                                layer.msg('提交失败');
+                                //window.location.reload();
+                            }
+                        })
+                    }, function(){
+                        doComplete(id,exp); 
+                    }); 
+                });
+            });
+
+        }
+    </script>
+</block>

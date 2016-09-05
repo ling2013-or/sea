@@ -1,0 +1,89 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>充值管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">充值管理</a>
+            </li>
+            <li class="active">编辑充值</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" class="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">充值单号 <span class="check-tips"></span></label>
+                                {$info.charge_sn}
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">充值金额（元）</label>
+                                {$info.charge_amount}
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">会员名称</label>
+                                {$info.user_name}
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="form-group col-lg-3">
+                                <label class="item-label">付款时间</label>
+                                <input type="text" class="laydate-icon form-control" name="paytime" id="paytime" value="" placeholder="付款时间">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">充值方式</label>
+                                <select class="form-control" name="payment">
+                                    <option value="">请选择</option>
+                                    <volist name="payment" id="vo">
+                                        <option value="{$vo.code}">{$vo.name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="item-label">支付平台交易号<span class="check-tips">（支付宝等第三方支付平台交易号）</span></label>
+                                <input type="text" class="form-control" name="trade_sn" value="" placeholder="第三方支付平台交易号">
+                            </div>
+                        </div>
+                        <input type="hidden" name="id" value="{$info.id}">
+                        <button type="submit" class="btn btn-primary confirm ajax-post" target-form="form">确 定</button>
+                        <button class="btn a-back">返 回</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__ASSET__/laydate/laydate.js"></script>
+    <script type="text/javascript">
+        window.setValue("type", "{$info.type|default=0}");
+        window.setValue("group", "{$info.group|default=0}");
+        //导航高亮
+        highlight_subnav("{:U('Config/index')}");
+        var paytime = {
+            elem: '#paytime',
+            format: 'YYYY-MM-DD hh:mm:ss',
+            istoday: true,
+            istime: true
+        };
+        laydate.skin('molv');
+        laydate(paytime);
+    </script>
+</block>

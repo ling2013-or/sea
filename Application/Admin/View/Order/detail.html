@@ -1,0 +1,139 @@
+<extend name="Public/common"/>
+<block name="style">
+
+</block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>订单管理</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('index')}">订单列表</a>
+            </li>
+            <li class="active">订单详情</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <section id="unseen">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>订单状态：{$info.state_txt}</td>
+                                    <td>订单编号：{$info.order_sn}</td>
+                                    <if condition="$info.order_status gt 1" >
+                                        <td>实付金额：{$info.pay_money}</td>
+                                    </if>
+                                    <td>下单时间：{$info.add_time|date='Y-m-d H:i:s', ###}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>商品名称</th>
+                                <th>分区</th>
+                                <th>数量</th>
+                                <th>价格</th>
+                                <!--<th>操作</th>-->
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <volist name="info.extend_order_goods" id="goods">
+                            <tr>
+                                <td>{$goods.goods_name}</td>
+                                <td>{$goods.zone_title}</td>
+                                <td>{$goods.goods_num}</td>
+                                <td>{$goods.goods_price}</td>
+                                <!--<td>-->
+
+                                    <!--<in name="info.order_status" value="$order">-->
+                                        <!--<a title="转移" href="{:U('transfer',array('oid'=>$info['order_id'],'gid'=>$goods['id'],'goods_id'=>$goods['goods_id'],'zone_id'=>$goods['zone_id']))}">转移分区</a>-->
+                                    <!--</in>-->
+                                <!--</td>-->
+
+                            </tr>
+                            </volist>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="5">
+
+                                    订单总价：<i class="fa fa-rmb"></i>{$info.order_price}
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                        <table class="table">
+                            <notempty name="info.pay_type">
+                                <tr>
+                                    <td>支付方式：{$info.pay_type|get_pay_type}</td>
+                                </tr>
+                            </notempty>
+                                <tr>
+                                    <td>下单时间：{$info.add_time|date='Y-m-d H:i:s', ###}</td>
+                                </tr>
+                            <notempty name="info.pay_time">
+                                <tr>
+                                    <td>付款时间：{$info.pay_time|date='Y-m-d H:i:s', ###}</td>
+                                </tr>
+                            </notempty>
+                            <notempty name="info.over_time">
+                                <tr>
+                                    <td>完成时间：{$info.over_time|date='Y-m-d H:i:s', ###}</td>
+                                </tr>
+                            </notempty>
+                            </tr>
+                        </table>
+
+                        <!-- 物流信息 -->
+                        <h3>物流信息</h3>
+                        <table class="table">
+
+                            <notempty name="info.order_message">
+                                <tr>
+                                    <td>买家留言：{$info.order_message}</td>
+                                </tr>
+                            </notempty>
+                            <tr>
+                                <td class="col-lg-2">收货人：
+                                    {$info.reciver_name}&nbsp;
+                                    <if condition="isset($info['reciver_tel'])">
+                                        {$info.reciver_tel}&nbsp;
+                                    </if>
+                                    <br />
+                                    <if condition="isset($info['address'])">
+                                        {$info.address}&nbsp;
+                                    </if>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- 订单操作日志 -->
+                        <notempty name="log">
+                            <h3>操作历史</h3>
+                            <table>
+                                <tbody>
+                                <volist name="log" id="vo">
+                                    <tr>
+                                        <td>{$vo.operate_rule} {$vo.operate_user} &emsp; {$vo.operate_time|date='Y-m-d H:i:s', ###} &emsp;  {$vo.description}</td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                            </notempty>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        highlight_subnav("{:U('index')}");
+    </script>
+</block>

@@ -1,0 +1,67 @@
+[ 2016-08-14T00:30:51+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 
+
+[ 2016-08-14T00:34:57+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1  
+
+[ 2016-08-14T00:35:34+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1  
+
+[ 2016-08-14T00:35:40+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1  
+
+[ 2016-08-14T00:35:41+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1  
+
+[ 2016-08-14T00:35:42+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1  
+
+[ 2016-08-14T00:35:43+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1  
+
+[ 2016-08-14T00:35:43+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1  
+
+[ 2016-08-14T00:36:02+08:00 ] 127.0.0.1 /api.php?s=goods/detail
+ERR: 1054:Unknown column 'comment' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`picture`,`picture_more`,`sales`,`real_sales`,`browse`,`stock`,`price`,`mark_price`,`breeder`,`breeder_picture`,`breeder_profile`,`goods_type`,`description`,`comment`,`status`,`add_time`,`gids`,`rate`,`goods_star` FROM `sea_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1  
+
+[ 2016-08-14T00:56:02+08:00 ] 127.0.0.1 /api.php?s=order/lists
+ERR: 1054:Unknown column 'goods_amount' in 'field list'
+ [ SQL语句 ] : SELECT `order_id`,`order_sn`,`goods_amount`,`order_amount`,`order_status`,`order_from`,`is_shipping`,`shipping_fee`,`shipping_code`,`add_time`,`finnshed_time` FROM `sea_order` ORDER BY order_id DESC LIMIT 0,10  
+
+[ 2016-08-14T00:56:16+08:00 ] 127.0.0.1 /api.php?s=order/lists
+ERR: 1054:Unknown column 'order_amount' in 'field list'
+ [ SQL语句 ] : SELECT `order_id`,`order_sn`,`order_amount`,`order_status`,`order_from`,`is_shipping`,`shipping_fee`,`shipping_code`,`add_time`,`finnshed_time` FROM `sea_order` ORDER BY order_id DESC LIMIT 0,10  
+
+[ 2016-08-14T00:56:28+08:00 ] 127.0.0.1 /api.php?s=order/lists
+ERR: 1054:Unknown column 'order_from' in 'field list'
+ [ SQL语句 ] : SELECT `order_id`,`order_sn`,`order_status`,`order_from`,`is_shipping`,`shipping_fee`,`shipping_code`,`add_time`,`finnshed_time` FROM `sea_order` ORDER BY order_id DESC LIMIT 0,10  
+
+[ 2016-08-14T00:57:01+08:00 ] 127.0.0.1 /api.php?s=order/lists
+ERR: 1146:Table 'sea.sea_order_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sea_order_common`
+
+[ 2016-08-14T00:59:26+08:00 ] 127.0.0.1 /api.php?s=order/detail
+ERR: 1054:Unknown column 'goods_amount' in 'field list'
+ [ SQL语句 ] : SELECT `order_id`,`order_sn`,`goods_amount`,`order_amount`,`order_status`,`order_from`,`is_shipping`,`shipping_fee`,`shipping_code`,`add_time`,`finnshed_time` FROM `sea_order` WHERE `order_id` = 1 LIMIT 1  
+
+[ 2016-08-14T01:02:36+08:00 ] 127.0.0.1 /api.php?s=address/detail
+ERR: 非法操作:detail
+
+[ 2016-08-14T01:02:42+08:00 ] 127.0.0.1 /api.php?s=address/lists
+ERR: 1054:Unknown column 'zip_code' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`consignee`,`area_info`,`address`,`phone`,`zip_code`,`is_default` FROM `sea_user_address` WHERE `uid` = 1 ORDER BY is_default DESC 
+
+[ 2016-08-14T10:43:53+08:00 ] 127.0.0.1 /api.php?s=goods/commentlist
+ERR: 1054:Unknown column 't1.user_name' in 'field list'
+ [ SQL语句 ] : SELECT t1.user_name,t1.id,t1.comment,t1.comment_time,t2.user_name,t2.user_avatar FROM sea_goods_comment t1 LEFT JOIN sea_user t2 ON t1.user_id = t2.uid  WHERE t1.goods_id = 1 AND t1.status = 1 ORDER BY id DESC LIMIT 0,10  
+

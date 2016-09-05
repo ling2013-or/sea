@@ -1,0 +1,102 @@
+<extend name="Public/common"/>
+<block name="style"></block>
+<block name="page_nav">
+    <div class="page-heading">
+        <h3>营销</h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">评论管理</a>
+            </li>
+            <li class="active">评论列表</li>
+        </ul>
+    </div>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="operate-body">
+                        <div class="pull-left">
+                            <a href="{:U('addComment')}" class="btn btn-info">添加</a>
+                        </div>
+                        <div class="pull-right search-form form-inline">
+                            <form action="" onsubmit="return false">
+                                <input type="text" name="query" class="form-control search-input" value="{:I('id')}" placeholder="请输入文章/评论ID">
+                                <a href="javascript:;" class="btn btn-info" id="search">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="unseen">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>评论ID</th>
+                                <th>文章ID</th>
+                                <th>评论者</th>
+                                <th>评论内容</th>
+                                <th>添加时间</th>
+                                <th>修改时间</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <notempty name="lists">
+                                <volist name="lists" id="article">
+                                    <tr>
+                                        <td>{$article.comment_id}</td>
+                                        <td>{$article.article_id}</td>
+                                        <td>{$article.true_name}</td>
+                                        <td>{$article.content}</td>
+                                        <td>{$article.add_time|date="Y-m-d H:i:s",###}</td>
+                                        <td>{$article.update_time|date="Y-m-d H:i:s",###}</td>
+                                        <td>{$article.status|get_comment_status}</td>
+                                        <td>
+                                            <a title="编辑" href="{:U('editComment',array('id'=>$article['comment_id']))}">编辑</a>
+                                            <a class="confirm ajax-get" title="删除" href="{:U('delComment',array('id'=>$article['comment_id']))}">删除</a>
+                                            <if condition="$article.status eq 2">
+                                                <a class="confirm ajax-get" title="审核" href="{:U('commentStatus',array('id'=>$article['comment_id']))}">审核</a>
+                                            </if>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                <else/>
+                                <tr>
+                                    <td colspan="10" class="text-center">暂无数据</td>
+                                </tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="page">
+                        {$page}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $("#search").click(function(){
+            var url = "{:U('')}";
+            var query  = $('form').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+        //回车搜索
+        $(".search-input").keyup(function(e){
+            if(e.keyCode === 13){
+                $("#search").click();
+                return false;
+            }
+        });
+    </script>
+</block>
